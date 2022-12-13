@@ -13,7 +13,9 @@ media
 venv/*
 temp/*
 data/server.txt
-dockerfile
-docker-compose.yml
+src/dockerfile
+src/docker-compose.yml
 celerybeat-schedule
 #*.js
+
+src/.coverage
