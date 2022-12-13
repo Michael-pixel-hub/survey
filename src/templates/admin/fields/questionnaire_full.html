@@ -1,0 +1,26 @@
+<div style="margin: -10px -10px -11px -10px; position: relative;">
+    <table style="width: 100%">
+        <thead>
+            <tr>
+                <th style="padding: 8px 10px;" class="column-step">Анкета</th>
+                <th style="padding: 8px 10px;" class="column-good">Вопрос</th>
+                <th style="padding: 8px 10px;" class="column-avail">Ответ</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in data %}
+                <tr class="{% cycle 'row1' 'row2' %}">
+                    <td>
+                        <p>{% if i.constructor_step_name == None %}-{% else %}{{ i.constructor_step_name }}{% endif %}</p>
+                    </td>
+                    <td>
+                        <p>{% if i.question == None %}-{% else %}{{ i.question }}{% endif %}</p>
+                    </td>
+                    <td>
+                        <p>{% if i.answer == None %}-{% else %}{{ i.answer }}{% endif %}</p>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,53 @@
+html, body {height: 100%; margin: 0; padding: 0}
+
+#YMapsID {width: 100%; height: 100%}
+#panel {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+
+#panel>div {
+    margin: 20px 20px;
+}
+
+#panel>div>div {
+    background: rgba(101,200,240,0.7);
+    width: 100%;
+    border-radius: 5px;
+}
+
+#panel form {
+    display: block;
+    padding: 10px 20px 10px 20px;
+}
+
+#search-input {
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    width: 360px;
+    font-size: 15pt;
+    color: #888;
+    height: 30px;
+    padding: 4px 36px 4px 12px
+}
+
+.fa-search {
+    position: relative;
+    left: -36px;
+    color: #888;
+    font-size: 20px;
+    background: none;
+    border: none;
+    z-index: 1002;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.help-inline {
+    display: none !important;
+}

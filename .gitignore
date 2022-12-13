@@ -1,0 +1,21 @@
+# Temp files
+*.pyc
+src/static/map/data.json
+
+# Media files
+static/*
+media/*
+media
+
+# Development files
+.idea/*
+.vscode/*
+venv/*
+temp/*
+data/server.txt
+dockerfile
+docker-compose.yml
+celerybeat-schedule
+#*.js
+
+src/application/users/tests

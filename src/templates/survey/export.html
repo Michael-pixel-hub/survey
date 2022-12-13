@@ -1,0 +1,126 @@
+{% extends "admin/base_site.html" %}
+{% load i18n staticfiles humanize %}
+
+{% block content_title %}<h1>{{ _('Export data') }}</h1>{% endblock %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <script type="text/javascript" src="/jsi18n/"></script>
+    <script type="text/javascript" src="{% static "admin/js/core.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/vendor/jquery/jquery.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/jquery.init.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/admin/RelatedObjectLookups.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/actions.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/urlify.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/prepopulate.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/vendor/xregexp/xregexp.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/calendar.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/admin/DateTimeShortcuts.js" %}"></script>
+{% endblock %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/widgets.css" %}" />
+{% endblock %}
+
+{% block usertools %}
+<div id="user-tools">
+    {% block welcome-msg %}
+        {% trans 'Welcome,' %}
+        <strong>{% firstof user.get_short_name user.get_username %}</strong>.
+    {% endblock %}
+    {% block userlinks %}
+        {% if site_url %}
+            <a href="{{ site_url }}">{% trans 'View site' %}</a> /
+        {% endif %}
+        {% if user.is_active and user.is_staff %}
+            {% url 'django-admindocs-docroot' as docsroot %}
+            {% if docsroot %}
+                <a href="{{ docsroot }}">{% trans 'Documentation' %}</a> /
+            {% endif %}
+        {% endif %}
+        {% if user.has_usable_password %}
+        <a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a> /
+        {% endif %}
+        <a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
+    {% endblock %}
+</div>
+{% endblock %}
+
+
+{% block title %}{{ _('Export data') }} | {{ _('Django site admin') }}{% endblock %}
+
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+&rsaquo; {{ _('Export data') }}
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+
+    <form enctype="multipart/form-data" action="" method="post" id="import_form" novalidate="">
+        {% csrf_token %}
+
+        <div>
+            {% if form.file.errors %}
+            <p class="errornote">
+                {% trans "Please correct the errors below." %}
+            </p>
+            {% endif %}
+            <fieldset class="module aligned ">
+                <div class="form-row field-value {% if form.tasks.errors %}errors{% endif %}">
+                    {% if form.errors %}
+                    <ul class="errorlist">
+                        {% for error in form.tasks.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <div>
+                        <label style="width: 400px" class="required" for="{{ form.tasks.id_for_label }}">{{ form.tasks.label }}:</label>
+                        {{ form.tasks }}
+                    </div>
+                </div>
+                <div class="form-row field-value {% if form.categories.errors %}errors{% endif %}">
+                    {% if form.errors %}
+                    <ul class="errorlist">
+                        {% for error in form.categories.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <div>
+                        <label style="width: 400px" class="required" for="{{ form.categories.id_for_label }}">{{ form.categories.label }}:</label>
+                        {{ form.categories }}
+                    </div>
+                </div>
+                <div class="form-row field-value {% if form.regions.errors %}errors{% endif %}">
+                    {% if form.errors %}
+                    <ul class="errorlist">
+                        {% for error in form.regions.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <div>
+                        <label style="width: 400px" class="required" for="{{ form.regions.id_for_label }}">{{ form.regions.label }}:</label>
+                        {{ form.regions }}
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="submit-row">
+                <input type="submit" value="{% trans "Export" %}" class="default">
+            </div>
+        </div>
+
+
+    </form>
+
+</div>
+{% endblock %}
+

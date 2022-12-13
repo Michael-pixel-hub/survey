@@ -1,0 +1,349 @@
+{% extends "admin/base_site.html" %}
+{% load i18n staticfiles humanize %}
+
+{% block content_title %}<h1>{{ _('Reports') }}</h1>{% endblock %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <script type="text/javascript" src="/jsi18n/"></script>
+    <link href="{% static "admin/css/vendor/select2/select2.css" %}" type="text/css" media="screen" rel="stylesheet">
+    <link href="{% static "admin/css/autocomplete.css" %}" type="text/css" media="screen" rel="stylesheet">
+    <link href="{% static "autocomplete_light/select2.css" %}" type="text/css" media="screen" rel="stylesheet">
+    <script type="text/javascript" src="{% static "admin/js/core.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/vendor/jquery/jquery.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/vendor/select2/select2.full.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/jquery.init.js" %}"></script>
+    <script type="text/javascript" src="{% static "autocomplete_light/autocomplete_light.js" %}"></script>
+    <script type="text/javascript" src="{% static "autocomplete_light/select2.js" %}"></script>
+    <script type="text/javascript" src="{% static "autocomplete_light/i18n/ru.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/admin/RelatedObjectLookups.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/actions.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/urlify.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/prepopulate.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/vendor/xregexp/xregexp.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/calendar.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/admin/DateTimeShortcuts.js" %}"></script>
+{% endblock %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/widgets.css" %}" />
+{% endblock %}
+
+{% block usertools %}
+<div id="user-tools">
+    {% block welcome-msg %}
+        {% trans 'Welcome,' %}
+        <strong>{% firstof user.get_short_name user.get_username %}</strong>.
+    {% endblock %}
+    {% block userlinks %}
+        {% if site_url %}
+            <a href="{{ site_url }}">{% trans 'View site' %}</a> /
+        {% endif %}
+        {% if user.is_active and user.is_staff %}
+            {% url 'django-admindocs-docroot' as docsroot %}
+            {% if docsroot %}
+                <a href="{{ docsroot }}">{% trans 'Documentation' %}</a> /
+            {% endif %}
+        {% endif %}
+        {% if user.has_usable_password %}
+        <a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a> /
+        {% endif %}
+        <a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
+    {% endblock %}
+</div>
+{% endblock %}
+
+{% block title %}{{ _('Reports') }} | {{ _('Django site admin') }}{% endblock %}
+
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+&rsaquo; {{ _('Reports') }}
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+<form method="get" action="{% url 'survey:report_te' %}">
+<table>
+    <tr>
+        <td colspan="4">
+            <h2 style="color: darkgreen">1. Отчет по задачам</h2>
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 0 0">
+            Дата начала: &nbsp; с &nbsp; <input type="text" name="datetime_start" value="{{ datetime_start|date:"d.m.Y" }}" size="10" id="te_datetime_start" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        &nbsp;&nbsp;&nbsp; по &nbsp; <input type="text" name="datetime_end" value="{{ datetime_end|date:"d.m.Y" }}" size="10" id="te_datetime_end" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        </td>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 0 20px">
+            Статус: &nbsp;
+            <select name="status">
+                <option value="">{% trans "Any" %}</option>
+                {% for i in te_report_statuses %}
+                    <option value="{{ i.0 }}">{{ i.1 }}</option>
+                {% endfor %}
+            </select>
+        </td>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 0 20px">
+            Задачи: &nbsp;
+    <select name="task" data-placeholder="Одна или несколько задач" id="id_task" data-autocomplete-light-language="ru" data-autocomplete-light-url="/survey/autocomplete/tasks/" data-autocomplete-light-function="select2" multiple>
+
+    </select>
+        </td>
+        <td style="vertical-align: middle; padding: 10px 0 10px 20px">
+            <input type="submit" value="{% trans "Export to Excel" %}" id="report_te" class="default"> &nbsp;
+        </td>
+    </tr>
+</table>
+</form>
+
+{% if request.user.is_superuser %}
+<form method="get" action="{% url 'survey:report_agent_orders' %}">
+<table>
+    <tr>
+        <td colspan="3">
+            <h2>2. Отчет по заказам «Агент бот»</h2>
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 0 0">
+            Дата начала: &nbsp; с &nbsp; <input type="text" name="datetime_start" value="{{ datetime_start|date:"d.m.Y" }}" size="10" id="orders_datetime_start" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        &nbsp;&nbsp;&nbsp; по &nbsp; <input type="text" name="datetime_end" value="{{ datetime_end|date:"d.m.Y" }}" size="10" id="orders_datetime_end" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        </td>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 0 20px">
+            Статус: &nbsp;
+            <select name="status">
+                <option value="">{% trans "Any" %}</option>
+                {% for i in agent_orders_statuses %}
+                    <option value="{{ i.0 }}">{{ i.1 }}</option>
+                {% endfor %}
+            </select>
+        </td>
+        <td style="vertical-align: middle; padding: 10px 0 10px 20px">
+            <input type="submit" value="{% trans "Export to Excel" %}" id="report_orders" class="default"> &nbsp;
+        </td>
+    </tr>
+</table>
+</form>
+{% endif %}
+
+{% if request.user.is_superuser %}
+<form method="get" action="{% url 'survey:report_surveyors' %}">
+<table>
+    <tr>
+        <td colspan="3">
+            <h2>3. Отчет по сурвеерам</h2>
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 0 0">
+            Дата начала: &nbsp; с &nbsp; <input type="text" name="datetime_start" value="{{ datetime_start|date:"d.m.Y" }}" size="10" id="orders_datetime_start" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        &nbsp;&nbsp;&nbsp; по &nbsp; <input type="text" name="datetime_end" value="{{ datetime_end|date:"d.m.Y" }}" size="10" id="orders_datetime_end" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        </td>
+{#        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 0 20px">#}
+{#            Регион: &nbsp;#}
+{#            <select name="region">#}
+{#                <option value="">{% trans "Any" %}</option>#}
+{#                {% for i in regions %}#}
+{#                    <option value="{{ i.id }}">{{ i.name }}</option>#}
+{#                {% endfor %}#}
+{#            </select>#}
+{#        </td>#}
+        <td style="vertical-align: middle; padding: 10px 0 10px 20px">
+            <input type="submit" value="{% trans "Построить отчет" %}" id="report_surveyors" class="default"> &nbsp;
+        </td>
+    </tr>
+</table>
+</form>
+{% endif %}
+
+
+{% if request.user.is_superuser %}
+<form method="get" action="{% url 'loyalty:report_stores' %}">
+<table>
+    <tr>
+        <td colspan="4">
+            <h2>4. Отчет по магазинам лояльности</h2>
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 0 0">
+            Дата регистрации: &nbsp; с &nbsp; <input type="text" name="datetime_start" value="{{ datetime_start|date:"d.m.Y" }}" size="10" id="orders_datetime_start" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        &nbsp;&nbsp;&nbsp; по &nbsp; <input type="text" name="datetime_end" value="{{ datetime_end|date:"d.m.Y" }}" size="10" id="orders_datetime_end" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        </td>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 0 20px">
+            Отдел: &nbsp;
+            <select name="department">
+                <option value="">{% trans "Any" %}</option>
+                {% for i in loyalty_departments %}
+                    <option value="{{ i.id }}">{{ i.name }}</option>
+                {% endfor %}
+            </select>
+        </td>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 0 20px">
+            Программа лояльности: &nbsp;
+            <select name="program">
+                <option value="">{% trans "Any" %}</option>
+                {% for i in loyalty_programs %}
+                    <option value="{{ i.id }}">{{ i.name }}</option>
+                {% endfor %}
+            </select>
+        </td>
+        <td style="vertical-align: middle; padding: 10px 0 10px 20px">
+            <input type="submit" value="{% trans "Export to Excel" %}" id="report_orders" class="default"> &nbsp;
+        </td>
+    </tr>
+</table>
+</form>
+{% endif %}
+
+{% if request.user.is_superuser %}
+<form method="get" action="{% url 'survey:report_acts' %}">
+<table>
+    <tr>
+        <td colspan="3">
+            <h2>5. Акты и чеки самозанятых</h2>
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 0 0">
+            Дата акта: &nbsp; с &nbsp; <input type="text" name="datetime_start" value="{{ datetime_start|date:"d.m.Y" }}" size="10" id="acts_datetime_start" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        &nbsp;&nbsp;&nbsp; по &nbsp; <input type="text" name="datetime_end" value="{{ datetime_end|date:"d.m.Y" }}" size="10" id="acts_datetime_end" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        </td>
+        <td style="vertical-align: middle; padding: 10px 0 10px 20px">
+            <input type="submit" value="{% trans "Export to Excel" %}" id="report_acts" class="default"> &nbsp;
+        </td>
+    </tr>
+</table>
+</form>
+{% endif %}
+
+{% if request.user.is_superuser %}
+<form method="get" action="{% url 'survey:reports_declines' %}">
+<table>
+    <tr>
+        <td colspan="3">
+            <h2>6. Отказы по задачам</h2>
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 0 0">
+            Дата начала: &nbsp; с &nbsp; <input type="text" name="datetime_start" value="{{ datetime_start|date:"d.m.Y" }}" size="10" id="acts_datetime_start" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        &nbsp;&nbsp;&nbsp; по &nbsp; <input type="text" name="datetime_end" value="{{ datetime_end|date:"d.m.Y" }}" size="10" id="acts_datetime_end" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        </td>
+        <td style="vertical-align: middle; padding: 10px 0 10px 20px">
+            <input type="submit" value="{% trans "Export to Excel" %}" id="report_acts" class="default"> &nbsp;
+        </td>
+    </tr>
+</table>
+</form>
+{% endif %}
+
+{% if request.user.is_superuser %}
+<form method="get" action="{% url 'survey:report_auditors' %}">
+<table>
+    <tr>
+        <td colspan="3">
+            <h2 style="color: darkgreen">7. Отчет по аудиторам</h2>
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 0 0">
+            Дата начала: &nbsp; с &nbsp; <input type="text" name="datetime_start" value="{{ datetime_start|date:"d.m.Y" }}" size="10" id="acts_datetime_start" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        &nbsp;&nbsp;&nbsp; по &nbsp; <input type="text" name="datetime_end" value="{{ datetime_end|date:"d.m.Y" }}" size="10" id="acts_datetime_end" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        </td>
+        <td style="vertical-align: middle; padding: 10px 0 10px 20px">
+            <input type="submit" value="{% trans "Export to Excel" %}" id="report_acts" class="default"> &nbsp;
+        </td>
+    </tr>
+</table>
+</form>
+{% endif %}
+
+{% if request.user.is_superuser %}
+<form method="get" action="{% url 'survey:report_devicesurveyors' %}">
+<table>
+    <tr>
+        <td colspan="3">
+            <h2>8. Отчет о мобильных устройствах пользователей</h2>
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 0 0">
+            Дата начала: &nbsp; с &nbsp; <input type="text" name="datetime_start" value="{{ datetime_start|date:"d.m.Y" }}" size="10" id="orders_datetime_start" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        &nbsp;&nbsp;&nbsp; по &nbsp; <input type="text" name="datetime_end" value="{{ datetime_end|date:"d.m.Y" }}" size="10" id="orders_datetime_end" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        </td>
+        <td style="vertical-align: middle; padding: 10px 0 10px 20px">
+            <input type="submit" name="build_report" value="{% trans "Построить отчет" %}" id="report_surveyorsdevice" class="default"> &nbsp;
+        </td>
+        <td style="vertical-align: middle; padding: 10px 0 10px 20px">
+            <input type="submit" name="export_report" value="{% trans "Export to Excel" %}" id="report_taxpayers" class="default"> &nbsp;
+        </td>
+    </tr>
+</table>
+</form>
+{% endif %}
+
+{% if request.user.email in taxpayers_users %}
+<form method="get" action="{% url 'survey:report_taxpayers' %}">
+<table>
+    <tr>
+        <td colspan="3">
+            <h2>9. Самозанятые</h2>
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 0 0">
+            Дата регистрации: &nbsp; с &nbsp; <input type="text" name="datetime_start" value="{{ datetime_start|date:"d.m.Y" }}" size="10" id="orders_datetime_start" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        &nbsp;&nbsp;&nbsp; по &nbsp; <input type="text" name="datetime_end" value="{{ datetime_end|date:"d.m.Y" }}" size="10" id="orders_datetime_end" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        </td>
+        <td style="vertical-align: middle; padding: 10px 0 10px 20px">
+            <input type="submit" value="{% trans "Export to Excel" %}" id="report_taxpayers" class="default"> &nbsp;
+        </td>
+    </tr>
+</table>
+</form>
+{% endif %}
+
+</div>
+{% endblock %}

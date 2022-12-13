@@ -1,0 +1,59 @@
+<table style="margin: 0 0 0 -10px">
+    {% if not have_rights %}
+    <tr>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px" colspan="2">
+            Внимание! У вас нет прав просматривать полную информацию.
+        </td>
+    </tr>
+    {% endif %}
+    <tr>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px"><label>Заполнена анкета самозанятого:</label></td>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px">{% if obj.taxpayer_status %}<b>Да</b>{% else %}Нет{% endif %}</td>
+    </tr>
+    {% if have_rights %}
+    <tr>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px"><label>Фамилия:</label></td>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px">{% if  obj.taxpayer_surname %}{{ obj.taxpayer_surname }}{% else %}-{% endif %}</td>
+    </tr>
+    <tr>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px"><label>Имя:</label></td>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px">{% if  obj.taxpayer_name %}{{ obj.taxpayer_name }}{% else %}-{% endif %}</td>
+    </tr>
+    <tr>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px"><label>Отчество:</label></td>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px">{% if  obj.taxpayer_patronymic %}{{ obj.taxpayer_patronymic }}{% else %}-{% endif %}</td>
+    </tr>
+    <tr>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px"><label>Серия паспорта:</label></td>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px">{% if  obj.taxpayer_passport_series %}{{ obj.taxpayer_passport_series }}{% else %}-{% endif %}</td>
+    </tr>
+    <tr>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px"><label>Номер паспорта:</label></td>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px">{% if  obj.taxpayer_passport_number %}{{ obj.taxpayer_passport_number }}{% else %}-{% endif %}</td>
+    </tr>
+    <tr>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px"><label>ИНН:</label></td>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px">{% if  obj.taxpayer_inn %}{{ obj.taxpayer_inn }}{% else %}-{% endif %}</td>
+    </tr>
+    <tr>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px"><label>Банк:</label></td>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px">{% if  obj.taxpayer_bank %}{{ obj.taxpayer_bank }}{% else %}-{% endif %}</td>
+    </tr>
+    <tr>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px"><label>Счет в банке:</label></td>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px">{% if  obj.taxpayer_bank_account %}{{ obj.taxpayer_bank_account }}{% else %}-{% endif %}</td>
+    </tr>
+    <tr>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px"><label>E-mail:</label></td>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px">{% if  obj.taxpayer_email %}{{ obj.taxpayer_email }}{% else %}-{% endif %}</td>
+    </tr>
+    <tr>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px"><label>Телефон:</label></td>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px">{% if  obj.taxpayer_phone %}{{ obj.taxpayer_phone }}{% else %}-{% endif %}</td>
+    </tr>
+    {% endif %}
+    <tr>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px"><label>Дата заполнения анкеты:</label></td>
+        <td style="border-bottom: none; vertical-align: top; line-height: 30px">{% if  obj.taxpayer_date %}{{ obj.taxpayer_date }}{% else %}-{% endif %}</td>
+    </tr>
+</table>

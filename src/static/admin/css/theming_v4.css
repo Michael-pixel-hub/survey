@@ -1,0 +1,99 @@
+#content {
+    padding: 0;
+    margin: 15px;
+}
+
+#header {
+    background: #333;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#header #branding h1 {
+    margin: 0;
+    padding: 5px 10px;
+    text-indent: -9999px;
+    background: transparent url(../img/logo.png) 10px 5px no-repeat;
+    height: 31px;
+    width: 93px;
+}
+
+#header #user-tools {
+    padding-right: 1.2em;
+}
+
+#bookmark-form {
+    clear: both;
+}
+
+div.breadcrumbs {
+    display: block;
+    padding: 10px 15px;
+    border: 0;
+    border-bottom: 1px solid #ededed;
+    background: #eee;
+    color: #555;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+}
+
+div.breadcrumbs a {
+    display: inline;
+    color: #5B80B2;
+}
+
+div.breadcrumbs a:focus, div.breadcrumbs a:hover {
+    color: #036;
+}
+
+#header #navigation-menu {
+    background: linear-gradient(to top, #e8e8e8, #f8f8f8) #ccc;
+    z-index: 999;
+}
+
+#bookmark-form {
+    z-index: 1000 !important;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: #666
+}
+
+.dashboard-module-text {
+    font-size: 13px;
+    font-family: Verdana, Arial, sans-serif
+}
+
+.dashboard-content-package-version {
+    color: #777
+}
+
+.dashboard-content-nowrap {
+    white-space: nowrap
+}
+
+.dashboard-module {
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    font-size: 13px
+}
+
+#result_list tbody tr:hover th, #result_list tbody tr:hover td {
+    background: #e5e5e5
+}
+
+fieldset.collapsed h2 {
+    background: #ddd;
+    color: #666;
+}
+
+.original p, .dashboard-module-content h3 {display: none}
+
+.calendar table caption {background: #eee}
+
+.select2-container {
+    min-width: 300px !important;
+    max-width: 300px !important;
+}
+
+/*#result_list .nowrap {*/
+    /*white-space: normal !important;*/
+/*}*/

@@ -1,0 +1,7 @@
+sudo apt install postgis
+
+export PGPASSWORD='postgres';
+psql -h localhost -U postgres
+
+\c shop_survey;
+CREATE EXTENSION IF NOT EXISTS postgis;

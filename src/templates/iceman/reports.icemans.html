@@ -1,0 +1,203 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block content_title %}<h1>{{ _('Отчет по торговым представителям') }}</h1>{% endblock %}
+
+{% block extrahead %}
+    <script type="text/javascript" src="/jsi18n/"></script>
+    <link href="{% static "admin/css/vendor/select2/select2.css" %}" type="text/css" media="screen" rel="stylesheet">
+    <link href="{% static "admin/css/autocomplete.css" %}" type="text/css" media="screen" rel="stylesheet">
+    <link href="{% static "autocomplete_light/select2.css" %}" type="text/css" media="screen" rel="stylesheet">
+    <script type="text/javascript" src="{% static "admin/js/vendor/jquery/jquery.js" %}"></script>
+    <script type="text/javascript" src="{% static "public_model/boolean_switch.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/vendor/select2/select2.full.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/jquery.init.js" %}"></script>
+    <script type="text/javascript" src="{% static "autocomplete_light/autocomplete_light.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/core.js" %}"></script>
+    <script type="text/javascript" src="{% static "autocomplete_light/select2.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/admin/RelatedObjectLookups.js" %}"></script>
+    <script type="text/javascript" src="{% static "autocomplete_light/i18n/ru.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/actions.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/urlify.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/prepopulate.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/vendor/xregexp/xregexp.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/calendar.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/admin/DateTimeShortcuts.js" %}"></script>
+{% endblock %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/widgets.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/changelists.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/select2.css" %}">
+    <link href="{% static "admin/css/vendor/select2/select2.css" %}" type="text/css" media="screen" rel="stylesheet">
+    <link href="{% static "admin/css/autocomplete.css" %}" type="text/css" media="screen" rel="stylesheet">
+    <link href="{% static "autocomplete_light/select2.css" %}" type="text/css" media="screen" rel="stylesheet">
+{% endblock %}
+
+        {% block usertools %}
+        <div id="user-tools">
+            {% block welcome-msg %}
+                {% trans 'Welcome,' %}
+                <strong>{% firstof user.get_short_name user.get_username %}</strong>.
+            {% endblock %}
+            {% block userlinks %}
+                {% if site_url %}
+                    <a href="{{ site_url }}">{% trans 'View site' %}</a> /
+                {% endif %}
+                {% if user.is_active and user.is_staff %}
+                    {% url 'django-admindocs-docroot' as docsroot %}
+                    {% if docsroot %}
+                        <a href="{{ docsroot }}">{% trans 'Documentation' %}</a> /
+                    {% endif %}
+                {% endif %}
+                {% if user.has_usable_password %}
+                <a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a> /
+                {% endif %}
+                <a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
+            {% endblock %}
+        </div>
+        {% endblock %}
+
+{% block title %}{{ _('Icemans report') }} | {{ _('Django site admin') }}{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+&rsaquo; <a href="{% url 'iceman:reports' %}">{% trans 'Reports' %}</a>
+&rsaquo; {{ _('Icemans report') }}
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+
+<form method="get" action="{% url 'iceman:report_icemans' %}">
+<table>
+    <tr>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 10px 0">
+            Дата начала: &nbsp; с &nbsp; <input type="text" name="datetime_start" value="{{ datetime_start|date:"d.m.Y" }}" size="10" id="orders_datetime_start" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        &nbsp;&nbsp;&nbsp; по &nbsp; <input type="text" name="datetime_end" value="{{ datetime_end|date:"d.m.Y" }}" size="10" id="orders_datetime_end" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        </td>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 0 20px 10px 20px">
+            Регионы: &nbsp;
+    <select name="region" data-placeholder="Один или несколько регионов" id="id_region" data-autocomplete-light-language="ru" data-autocomplete-light-url="/iceman/autocomplete/regions/" data-autocomplete-light-function="select2" multiple>
+        {% for i in regions_selected %}
+            <option value="{{ i.id }}" selected>{{ i.name }}</option>
+        {% endfor %}
+    </select>
+
+
+
+        </td>
+
+
+    </tr>
+
+<tr>
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 20px 20px 20px 0">
+            Супервайзеры: &nbsp; &nbsp;
+            <select name="superviser" data-placeholder="Выберите супервайзера" autocomplete='off' id="id_superviser" data-autocomplete-light-language="ru" data-autocomplete-light-url="/iceman/autocomplete/usersubs/" data-autocomplete-light-function="select2">
+                {% for i in superviser_selected %}
+                    <option value="{{ i.id }}" selected>{{ i }}</option>
+                {% endfor %}
+            </select>
+        </td>
+
+        <td style="vertical-align: middle; border-right: 1px solid #eee; padding: 20px 20px 20px 20px">
+            Статус-айсмен: &nbsp; &nbsp;
+            <select name="statusiceman" data-placeholder="Выберите статус-айсмен" autocomplete='off' id="id_statusiceman" data-autocomplete-light-language="ru" data-autocomplete-light-url="/iceman/autocomplete/statusiceman/" data-autocomplete-light-function="select2">
+                {% for i in statusiceman_selected %}
+                    <option value="{{ i.id }}" selected>{{ i.name }}</option>
+                {% endfor %}
+            </select>
+        </td>
+
+        <td style="vertical-align: middle; padding: 10px 20px 10px 20px">
+            <input type="submit" name="build_report" value="{% trans "Построить отчет" %}" id="report_surveyors" class="default"> &nbsp;
+        </td>
+        <td style="vertical-align: middle; padding: 10px 0 10px 0px">
+                <input type="submit" name="export_report" value="{% trans "Export to Excel" %}" id="export_report_icemans" class="default"> &nbsp;
+        </td>
+</tr>
+</table>
+</form>
+
+<div id="content-main"><div class="results"><div class="module filtered" id="changelist">
+<table id="result_list" style="height: 100%">
+<thead>
+
+
+<tr>
+<th scope="col">
+   <div class="text"><span>Торговый представитель</span></div>
+   <div class="clear"></div>
+</th>
+<th scope="col">
+   <div class="text"><span>Кол-во возможных заданий</span></div>
+   <div class="clear"></div>
+</th>
+<th scope="col">
+   <div class="text"><span>Кол-во выполненных заданий</span></div>
+   <div class="clear"></div>
+</th>
+<th scope="col">
+   <div class="text"><span>Количество заказов</span></div>
+   <div class="clear"></div>
+</th>
+<th scope="col">
+   <div class="text"><span>Сумма заказов</span></div>
+   <div class="clear"></div>
+</th>
+<th scope="col">
+   <div class="text"><span>Первое задание</span></div>
+   <div class="clear"></div>
+</th>
+<th scope="col">
+   <div class="text"><span>Последнее задание</span></div>
+   <div class="clear"></div>
+</th>
+<th scope="col">
+   <div class="text"><span>Прогресс</span></div>
+   <div class="clear"></div>
+</th>
+</tr>
+</thead>
+<tbody>
+
+{% for r in data %}
+
+{% for i in r.data %}
+<tr class="row1">
+    <td class="field-user_surname"><a href="{% url 'admin:survey_user_change' i.user_id%}">{{ i.fio }}</a></td>
+    <td class="field-user_surname"><a href="/iceman/reports/icemans/tasklist?page=1&datetime_start={{datetime_start|date:"d.m.Y"}}&datetime_end={{datetime_end|date:"d.m.Y"}}&id_user={{i.user_id}}">{{ i.te_count }}</a></td>
+    <td class="field-user nowrap">
+        <a href="/survey/tasksexecution/?date_start__gte={{ datetime_start|date:"Y-m-d" }} 00:00:00&date_start__lt={{ datetime_end|date:"Y-m-d" }} 23:59:59&user__id={{ i.user_id }}">{{ i.te_count_done }}</a>
+    </td>
+    <td class="field-user_surname">{{ i.order_count }}</td>
+    <td class="field-user_surname">{{ i.order_sum }}</td>
+    <td class="field-date_start nowrap">{% if i.te_min_date %}{{ i.te_min_date|date:'j E Y г. H:i' }}{% else %}-{% endif %}</td>
+    <td class="field-date_end nowrap">{% if i.te_max_date %}{{ i.te_max_date|date:'j E Y г. H:i' }}{% else %}-{% endif %}</td>
+    <td class="field-user_surname" style="height: 100%; padding: 0;">
+          <div style="text-align: center; vertical-align: middle; background: {{i.progress_color}}; height: 100%; margin: 0; width: {{i.progress}}%">
+              <div style="display: inline-block; margin-top: 10px;">{% if i.progress > 0 %}{{ i.progress }}%{% else %}{{i.progress}}{% endif %}</div>
+          </div>
+    </td>
+</tr>
+{% endfor %}
+
+{% endfor %}
+
+</tbody>
+    </table>
+
+<!-- Отключено предупреждение о необходимости выбрать регион или супервайзера -->
+<!-- {% if not region and not superviser %} <div style="text-align: center;"><p><b>Для отображения данных выберите регион или супервайзера</b></p></div>
+{% endif %} -->
+</div></div></div>
+{% endblock %}

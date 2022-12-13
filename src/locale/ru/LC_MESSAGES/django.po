@@ -1,0 +1,3450 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-15 18:25+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: application/agent/admin.py:46 application/agent/admin.py:419
+#: application/agent/models.py:477 application/iceman/admin.py:362
+#: application/solar_staff/models.py:90 application/survey/admin.py:428
+msgid "Payment"
+msgstr "Платеж"
+
+#: application/agent/admin.py:49 application/menu.py:58 application/menu.py:162
+#: application/survey/admin.py:1820 application/survey/models/all.py:145
+#: application/survey/models/te.py:77 application/survey/models_old.py:71
+#: application/telegram/apps.py:7 application/telegram/prefs.py:8
+#: application/telegram/prefs.py:14 application/telegram/prefs.py:26
+#: application/telegram/prefs.py:32
+msgid "Telegram"
+msgstr "Телеграм"
+
+#: application/agent/admin.py:72
+msgid "Visibility"
+msgstr "Видимость"
+
+#: application/agent/admin.py:120 application/agent/admin.py:191
+#: application/agent/admin.py:387 application/agent/models.py:67
+#: application/agent/models.py:106 application/agent/models.py:223
+#: application/agent/models.py:410 application/iceman/models.py:26
+#: application/inspector/models.py:63 application/inspector/models.py:75
+#: application/mobile/models.py:19 application/profi/models.py:77
+#: application/survey/forms.py:32 application/survey/models/all.py:384
+#: application/survey/models/all.py:409 application/survey/models_old.py:133
+#: application/survey/models_old.py:158 application/telegram/models.py:20
+msgid "Category"
+msgstr "Раздел"
+
+#: application/agent/admin.py:123 application/agent/models.py:113
+#: application/agent/models.py:149 application/agent/models.py:166
+#: application/agent/models.py:416 application/profi/models.py:150
+msgid "Price"
+msgstr "Цена"
+
+#: application/agent/admin.py:126 application/agent/models.py:103
+#: application/loyalty/models.py:31 application/loyalty/models.py:51
+#: application/profi/models.py:127 application/profi/models.py:149
+#: application/profi/models.py:195 application/survey/models/all.py:448
+#: application/survey/models/all.py:486 application/survey/models/te.py:798
+#: application/survey/models_old.py:196 application/survey/models_old.py:229
+msgid "Description"
+msgstr "Описание"
+
+#: application/agent/admin.py:129 application/agent/admin.py:209
+#: application/iceman/admin.py:34 application/iceman/admin.py:108
+#: application/iceman/admin.py:164 application/iceman/admin.py:409
+#: application/iceman/admin.py:446 application/mobile/admin.py:28
+#: application/survey/admin.py:243
+msgid "Flags"
+msgstr "Метки"
+
+#: application/agent/admin.py:153 application/agent/admin.py:194
+#: application/agent/admin.py:404 application/archive/admin.py:333
+#: application/iceman/admin.py:412 application/iceman_imports/admin.py:24
+#: application/iceman_imports/admin.py:52
+#: application/iceman_imports/admin.py:80 application/profi/admin.py:79
+#: application/profi/admin.py:153 application/solar_staff/admin.py:80
+#: application/solar_staff/admin.py:167 application/survey/admin.py:116
+#: application/survey/admin.py:164 application/survey/admin.py:187
+#: application/survey/admin.py:213 application/survey/admin.py:240
+#: application/survey/admin.py:938 application/survey/admin.py:975
+#: application/survey/admin.py:996 application/survey/admin.py:1267
+#: application/survey/admin.py:1359 application/survey/admin.py:1730
+#: application/survey/admin.py:1757 application/survey/admin.py:1782
+msgid "Dates"
+msgstr "Даты"
+
+#: application/agent/admin.py:174 application/agent/models.py:217
+#: application/agent/models.py:230 application/agent/resources.py:41
+#: application/iceman/admin.py:144 application/loyalty/admin.py:64
+#: application/loyalty/models.py:87 application/survey/models/all.py:414
+#: application/survey/models_old.py:163
+msgid "Address"
+msgstr "Адрес"
+
+#: application/agent/admin.py:178 application/agent/admin.py:381
+#: application/agent/resources.py:49
+msgid "Advisor"
+msgstr "Менеджер"
+
+#: application/agent/admin.py:188 application/survey/models/all.py:662
+#: application/survey/models/all.py:663 application/survey/models_old.py:448
+#: application/survey/models_old.py:449
+msgid "Agreement"
+msgstr "Соглашение"
+
+#: application/agent/admin.py:197
+msgid "External data"
+msgstr "Полученные данные"
+
+#: application/agent/admin.py:201 application/loyalty/admin.py:74
+#: application/menu.py:132
+msgid "Loyalty"
+msgstr "Лояльность"
+
+#: application/agent/admin.py:204 application/loyalty/admin.py:77
+msgid "1с values"
+msgstr "Данные 1с"
+
+#: application/agent/admin.py:247 application/agent/admin.py:269
+#: application/solar_staff/admin.py:109 application/solar_staff/admin.py:131
+#: application/survey/admin.py:519 application/survey/admin.py:716
+msgid "You do not have rights to set this status."
+msgstr "Вы не имеете достаточно прав выставить этот статус"
+
+#: application/agent/admin.py:267 application/agent/admin.py:287
+#: application/agent/admin.py:305 application/solar_staff/admin.py:129
+#: application/survey/admin.py:498 application/survey/admin.py:517
+#: application/survey/admin.py:537 application/survey/admin.py:557
+#: application/survey/admin.py:577
+#, python-format
+msgid "%s items made changed status"
+msgstr "%s записей был изменен статус"
+
+#: application/agent/admin.py:272 application/solar_staff/admin.py:134
+#: application/survey/admin.py:522
+msgid "Mark selected item status pay in solar"
+msgstr "Изменить выбранным статус на «Оплатить в Solar Staff»"
+
+#: application/agent/admin.py:290 application/survey/admin.py:539
+msgid "Mark selected item status payed"
+msgstr "Изменить выбранным статус на «Оплачено»"
+
+#: application/agent/admin.py:308
+msgid "Mark selected item status finished"
+msgstr "Изменить выбранным статус на «Завершено»"
+
+#: application/agent/admin.py:325
+#, python-format
+msgid "%s items was calc cashback"
+msgstr "%s заказам посчитан кешбек"
+
+#: application/agent/admin.py:328
+msgid "Calc cashback selected items"
+msgstr "Посчитать кешбек выбранным заказам"
+
+#: application/agent/admin.py:363 application/agent/models.py:197
+#: application/agent/models.py:335 application/agent/models.py:508
+#: application/agent/resources.py:18 application/archive/admin.py:143
+#: application/iceman_imports/models.py:26
+#: application/iceman_imports/models.py:61
+#: application/iceman_imports/models.py:96 application/profi/models.py:185
+#: application/solar_staff/admin.py:64 application/solar_staff/admin.py:151
+#: application/solar_staff/models.py:37 application/solar_staff/models.py:77
+#: application/survey/admin.py:656 application/survey/admin.py:861
+#: application/survey/admin.py:933 application/survey/admin.py:1823
+#: application/survey/admin.py:2154 application/survey/models/te.py:93
+#: application/survey/models/te.py:734 application/survey/models/te.py:769
+#: application/survey/models_old.py:299 application/survey/models_old.py:472
+msgid "Status"
+msgstr "Статус"
+
+#: application/agent/admin.py:369 application/agent/models.py:218
+#: application/agent/resources.py:42 application/loyalty/models.py:88
+msgid "Inn"
+msgstr "ИНН"
+
+#: application/agent/admin.py:375 application/agent/models.py:45
+#: application/agent/models.py:148 application/agent/models.py:222
+#: application/agent/resources.py:43 application/loyalty/models.py:89
+msgid "City"
+msgstr "Город"
+
+#: application/agent/admin.py:394 application/agent/models.py:264
+#: application/agent/models.py:489 application/archive/admin.py:152
+#: application/loyalty/models.py:111 application/solar_staff/admin.py:56
+#: application/survey/admin.py:1378 application/survey/admin.py:1533
+#: application/survey/admin.py:1807 application/survey/admin.py:2160
+#: application/survey/forms.py:12 application/survey/models/all.py:426
+#: application/survey/models/all.py:496 application/survey/models/all.py:637
+#: application/survey/models/all.py:672 application/survey/models/te.py:95
+#: application/survey/models/te.py:98 application/survey/models/te.py:191
+#: application/survey/models_old.py:174 application/survey/models_old.py:213
+#: application/survey/models_old.py:239 application/survey/models_old.py:301
+#: application/survey/models_old.py:489
+msgid "Store"
+msgstr "Магазин"
+
+#: application/agent/admin.py:407
+msgid "Delivery"
+msgstr "Доставка"
+
+#: application/agent/admin.py:410 application/agent/models.py:326
+#: application/agent/models.py:417 application/solar_staff/models.py:43
+#: application/survey/models/all.py:504 application/survey/models/te.py:87
+#: application/survey/models/te.py:631 application/survey/models_old.py:241
+msgid "Sum"
+msgstr "Сумма, руб."
+
+#: application/agent/admin.py:413 application/archive/admin.py:330
+#: application/survey/admin.py:971 application/survey/admin.py:992
+#: application/survey/admin.py:1263
+msgid "Status change"
+msgstr "Изменение статуса"
+
+#: application/agent/admin.py:416
+msgid "1c data"
+msgstr "Данные из 1с"
+
+#: application/agent/admin.py:422 application/solar_staff/admin.py:170
+msgid "Solar Staff"
+msgstr "Solar staff"
+
+#: application/agent/admin.py:502 application/agent/models.py:352
+msgid "Payment type"
+msgstr "Способ оплаты"
+
+#: application/agent/admin.py:505
+msgid "Payment info"
+msgstr "Информация по платежу"
+
+#: application/agent/admin.py:508
+msgid "System info"
+msgstr "Системная информация"
+
+#: application/agent/apps.py:7 application/dashboard.py:275
+#: application/menu.py:121
+msgid "Agent"
+msgstr "Агент"
+
+#: application/agent/forms.py:7 application/iceman_imports/forms.py:7
+#: application/iceman_imports/forms.py:12
+#: application/iceman_imports/forms.py:17 application/survey/forms.py:16
+#: application/survey/forms.py:88
+msgid "Xls-file"
+msgstr "Excel-файл"
+
+#: application/agent/models.py:17 application/agent/models.py:37
+#: application/agent/models.py:54 application/agent/models.py:86
+#: application/agent/models.py:102 application/agent/models.py:214
+#: application/agent/models.py:408 application/agent/models.py:450
+#: application/agent/resources.py:38 application/iceman/models.py:104
+#: application/inspector/models.py:7 application/inspector/models.py:24
+#: application/inspector/models.py:40 application/inspector/models.py:56
+#: application/inspector/models.py:72 application/loyalty/models.py:14
+#: application/loyalty/models.py:30 application/loyalty/models.py:49
+#: application/loyalty/models.py:84 application/profi/models.py:75
+#: application/profi/models.py:109 application/profi/models.py:148
+#: application/solar_staff/models.py:34
+#: application/solar_staff_accounts/models.py:7
+#: application/survey/models/all.py:30 application/survey/models/all.py:49
+#: application/survey/models/all.py:63 application/survey/models/all.py:78
+#: application/survey/models/all.py:121 application/survey/models/all.py:271
+#: application/survey/models/all.py:311 application/survey/models/all.py:365
+#: application/survey/models/all.py:379 application/survey/models/all.py:393
+#: application/survey/models/all.py:447 application/survey/models/all.py:464
+#: application/survey/models/all.py:485 application/survey/models/all.py:552
+#: application/survey/models/all.py:572 application/survey/models/all.py:605
+#: application/survey/models/all.py:656 application/survey/models/te.py:341
+#: application/survey/models/te.py:427 application/survey/models_old.py:47
+#: application/survey/models_old.py:114 application/survey/models_old.py:128
+#: application/survey/models_old.py:142 application/survey/models_old.py:195
+#: application/survey/models_old.py:228 application/survey/models_old.py:390
+#: application/survey/models_old.py:442 application/telegram/models.py:18
+#: application/telegram/models.py:52 application/telegram/models.py:69
+msgid "Name"
+msgstr "Имя"
+
+#: application/agent/models.py:18 application/survey/models/all.py:31
+msgid "Default"
+msgstr "По умолчанию"
+
+#: application/agent/models.py:20
+msgid "Payment name"
+msgstr "Название оплаты"
+
+#: application/agent/models.py:21
+msgid "Payment connection string"
+msgstr "Строка подключения платежей"
+
+#: application/agent/models.py:23 application/loyalty/prefs.py:7
+msgid "Telegram channel Id"
+msgstr "Телеграм канал id"
+
+#: application/agent/models.py:28 application/agent/models.py:55
+msgid "Store category"
+msgstr "Категория магазина"
+
+#: application/agent/models.py:29 application/agent/models.py:81
+msgid "Store categories"
+msgstr "Категории магазинов"
+
+#: application/agent/models.py:38 application/agent/models.py:101
+#: application/agent/models.py:407 application/agent/models.py:486
+#: application/survey/filters.py:26 application/survey/models/all.py:411
+#: application/survey/models/all.py:450 application/survey/models/all.py:781
+#: application/survey/models_old.py:160 application/survey/models_old.py:198
+msgid "Code"
+msgstr "Код"
+
+#: application/agent/models.py:39
+msgid "Source 1c"
+msgstr "Соответствие в 1с"
+
+#: application/agent/models.py:40
+msgid "E-mail sending orders"
+msgstr "E-mail отправки заказов"
+
+#: application/agent/models.py:40
+msgid "Separated by comma"
+msgstr "Несколько адресов разделяются через запятую ,"
+
+#: application/agent/models.py:46
+msgid "Cities"
+msgstr "Города"
+
+#: application/agent/models.py:59
+msgid "Only for user"
+msgstr "Только для пользователей"
+
+#: application/agent/models.py:61 application/agent/models.py:76
+msgid "Departments"
+msgstr "Отделы"
+
+#: application/agent/models.py:68 application/agent/models.py:107
+#: application/agent/models.py:142 application/inspector/models.py:64
+#: application/survey/models/all.py:385 application/survey/models_old.py:134
+msgid "Categories"
+msgstr "Группы"
+
+#: application/agent/models.py:87
+msgid "Cashback percent"
+msgstr "Процент кешбека"
+
+#: application/agent/models.py:87
+msgid "in %"
+msgstr "в %"
+
+#: application/agent/models.py:92 application/agent/models.py:108
+#: application/agent/models.py:411
+msgid "Super group"
+msgstr "Разделы"
+
+#: application/agent/models.py:93
+msgid "Super groups"
+msgstr "Раздел"
+
+#: application/agent/models.py:104 application/iceman/admin.py:246
+#: application/survey/admin.py:598 application/survey/admin.py:1475
+#: application/survey/admin.py:1527 application/survey/admin.py:1718
+#: application/survey/models/all.py:449 application/survey/models/te.py:466
+#: application/survey/models/te.py:589 application/survey/models_old.py:197
+#: application/survey/models_old.py:416
+msgid "Image"
+msgstr "Изображение"
+
+#: application/agent/models.py:110 application/ai/prefs.py:7
+#: application/inspector/prefs.py:7 application/loyalty/models.py:34
+#: application/loyalty/models.py:53 application/survey/models/all.py:763
+msgid "Url"
+msgstr "Url"
+
+#: application/agent/models.py:112 application/agent/models.py:415
+msgid "Unit"
+msgstr "Ед. измерения"
+
+#: application/agent/models.py:114
+msgid "Box count"
+msgstr "Кол-во в коробке"
+
+#: application/agent/models.py:115
+msgid "Minimum count"
+msgstr "Минимальное количество"
+
+#: application/agent/models.py:117
+msgid "Is popular"
+msgstr "Популярный"
+
+#: application/agent/models.py:118
+msgid "Is Oeskimo"
+msgstr "Оэскимо"
+
+#: application/agent/models.py:119 application/agent/models.py:167
+msgid "Is processed"
+msgstr "В процессе"
+
+#: application/agent/models.py:120
+msgid "Is not delete"
+msgstr "Не удалять"
+
+#: application/agent/models.py:121
+msgid "Is no order"
+msgstr "Нет кнопки с заказом"
+
+#: application/agent/models.py:122
+msgid "Is only text"
+msgstr "Выводить только текст"
+
+#: application/agent/models.py:124
+msgid "Cashback"
+msgstr "Кешбек, руб."
+
+#: application/agent/models.py:125 application/inspector/models.py:31
+#: application/inspector/models.py:76
+msgid "Manufacturer"
+msgstr "Производитель"
+
+#: application/agent/models.py:126 application/inspector/models.py:47
+#: application/inspector/models.py:78
+msgid "Brand"
+msgstr "Бренд"
+
+#: application/agent/models.py:128
+msgid "Rest"
+msgstr "Остаток"
+
+#: application/agent/models.py:133 application/agent/models.py:147
+#: application/agent/models.py:164 application/agent/models.py:434
+#: application/archive/models.py:46 application/archive/models.py:60
+#: application/survey/models/all.py:455 application/survey/models/all.py:636
+#: application/survey/models/te.py:513 application/survey/models/te.py:541
+#: application/survey/models/te.py:558 application/survey/models/te.py:585
+#: application/survey/models_old.py:203 application/survey/models_old.py:212
+#: application/survey/models_old.py:511 application/survey/models_old.py:528
+msgid "Good"
+msgstr "Товар"
+
+#: application/agent/models.py:134
+msgid "Goods"
+msgstr "Товары"
+
+#: application/agent/models.py:154 application/agent/models.py:172
+msgid "Good price"
+msgstr "Цена товара"
+
+#: application/agent/models.py:155 application/agent/models.py:173
+msgid "Good prices"
+msgstr "Цеы товара"
+
+#: application/agent/models.py:165 application/agent/models.py:257
+#: application/loyalty/models.py:106
+msgid "Price type"
+msgstr "Тип цены"
+
+#: application/agent/models.py:183 application/iceman_imports/models.py:12
+#: application/iceman_imports/models.py:47
+#: application/iceman_imports/models.py:82 application/survey/models/te.py:720
+#: application/survey/models/te.py:755 application/survey/models_old.py:458
+msgid "In process"
+msgstr "В процессе"
+
+#: application/agent/models.py:184 application/agent/models.py:299
+#: application/iceman/models.py:431 application/iceman_imports/models.py:13
+#: application/iceman_imports/models.py:48
+#: application/iceman_imports/models.py:83 application/profi/models.py:176
+#: application/survey/models/te.py:29 application/survey/models/te.py:721
+#: application/survey/models/te.py:756 application/survey/models_old.py:263
+#: application/survey/models_old.py:459
+msgid "Finished"
+msgstr "Завершено"
+
+#: application/agent/models.py:185 application/agent/models.py:298
+#: application/agent/models.py:311 application/iceman_imports/models.py:14
+#: application/iceman_imports/models.py:49
+#: application/iceman_imports/models.py:84 application/survey/models/te.py:722
+#: application/survey/models/te.py:757 application/survey/models_old.py:460
+msgid "Canceled"
+msgstr "Отменено"
+
+#: application/agent/models.py:186 application/agent/utils.py:204
+#: application/iceman_imports/models.py:15
+#: application/iceman_imports/models.py:50
+#: application/iceman_imports/models.py:85 application/solar_staff/models.py:12
+#: application/survey/models/te.py:47 application/survey/models/te.py:366
+#: application/survey/models/te.py:723 application/survey/models/te.py:758
+#: application/survey/models_old.py:278 application/survey/models_old.py:461
+msgid "Error"
+msgstr "Ошибка"
+
+#: application/agent/models.py:189 application/iceman_imports/models.py:18
+#: application/iceman_imports/models.py:53
+#: application/iceman_imports/models.py:88 application/survey/models/te.py:726
+#: application/survey/models/te.py:761 application/survey/models_old.py:464
+msgid "File name"
+msgstr "Имя файла"
+
+#: application/agent/models.py:191 application/archive/models.py:11
+#: application/archive/models.py:33 application/archive/models.py:44
+#: application/archive/models.py:58 application/archive/models.py:72
+#: application/iceman_imports/models.py:20
+#: application/iceman_imports/models.py:55
+#: application/iceman_imports/models.py:90 application/profi/models.py:182
+#: application/survey/models/te.py:90 application/survey/models/te.py:374
+#: application/survey/models/te.py:632 application/survey/models/te.py:728
+#: application/survey/models/te.py:763 application/survey/models_old.py:297
+#: application/survey/models_old.py:466
+msgid "Date start"
+msgstr "Дата начала"
+
+#: application/agent/models.py:192 application/iceman_imports/models.py:21
+#: application/iceman_imports/models.py:56
+#: application/iceman_imports/models.py:91 application/profi/models.py:183
+#: application/survey/models/te.py:91 application/survey/models/te.py:633
+#: application/survey/models/te.py:729 application/survey/models/te.py:764
+#: application/survey/models_old.py:298 application/survey/models_old.py:467
+msgid "Date end"
+msgstr "Дата завершения"
+
+#: application/agent/models.py:194 application/iceman_imports/models.py:23
+#: application/iceman_imports/models.py:58
+#: application/iceman_imports/models.py:93 application/survey/models/te.py:731
+#: application/survey/models/te.py:766 application/survey/models_old.py:469
+msgid "Rows count"
+msgstr "Количество строк"
+
+#: application/agent/models.py:195 application/iceman_imports/models.py:24
+#: application/iceman_imports/models.py:59
+#: application/iceman_imports/models.py:94 application/survey/models/te.py:732
+#: application/survey/models/te.py:767 application/survey/models_old.py:470
+msgid "Rows process"
+msgstr "Обработано строк"
+
+#: application/agent/models.py:199 application/iceman_imports/models.py:28
+#: application/iceman_imports/models.py:63
+#: application/iceman_imports/models.py:98 application/survey/models/te.py:736
+#: application/survey/models/te.py:771 application/survey/models_old.py:474
+msgid "Report text"
+msgstr "Текст отчета"
+
+#: application/agent/models.py:204 application/survey/models/te.py:745
+#: application/survey/models_old.py:479
+msgid "Data import"
+msgstr "Импорт данных"
+
+#: application/agent/models.py:205 application/survey/models/te.py:746
+#: application/survey/models_old.py:480
+msgid "Data imports"
+msgstr "Импорт данных"
+
+#: application/agent/models.py:213 application/agent/models.py:465
+#: application/agent/resources.py:37 application/iceman/models.py:23
+#: application/mobile/models.py:16 application/profi/models.py:191
+#: application/solar_staff/models.py:80 application/survey/models/all.py:269
+#: application/survey/models/all.py:309 application/survey/models/all.py:329
+#: application/survey/models/te.py:797
+msgid "Date create"
+msgstr "Дата создания"
+
+#: application/agent/models.py:215 application/agent/resources.py:39
+#: application/loyalty/models.py:85
+msgid "Contact face"
+msgstr "Контактное лицо"
+
+#: application/agent/models.py:216 application/agent/resources.py:40
+#: application/loyalty/models.py:86 application/profi/models.py:43
+#: application/survey/models/all.py:120 application/survey/models/all.py:173
+#: application/survey/models/all.py:780 application/survey/models/all.py:798
+#: application/survey/models/te.py:628 application/survey/models_old.py:46
+msgid "Phone"
+msgstr "Телефон"
+
+#: application/agent/models.py:219 application/loyalty/models.py:90
+msgid "Sales Representative"
+msgstr "Торговый представитель"
+
+#: application/agent/models.py:221 application/agent/models.py:321
+#: application/agent/models.py:435 application/iceman/admin.py:406
+#: application/iceman/models.py:21 application/iceman_imports/admin.py:18
+#: application/iceman_imports/admin.py:46
+#: application/iceman_imports/admin.py:74
+#: application/iceman_imports/models.py:30
+#: application/iceman_imports/models.py:65
+#: application/iceman_imports/models.py:100
+#: application/iceman_imports/models.py:129 application/mobile/models.py:15
+#: application/profi/models.py:126 application/profi/models.py:179
+#: application/solar_staff/admin.py:42 application/solar_staff/models.py:75
+#: application/supervisor/models.py:9 application/survey/admin.py:237
+#: application/survey/admin.py:1353 application/survey/admin.py:1727
+#: application/survey/admin.py:1814 application/survey/forms.py:95
+#: application/survey/models/all.py:268 application/survey/models/all.py:289
+#: application/survey/models/all.py:307 application/survey/models/all.py:328
+#: application/survey/models/all.py:345 application/survey/models/te.py:83
+#: application/survey/models/te.py:173 application/survey/models/te.py:624
+#: application/survey/models/te.py:738 application/survey/models/te.py:773
+#: application/survey/models/te.py:791 application/survey/models_old.py:294
+#: application/telegram/models.py:84
+msgid "User"
+msgstr "Пользователь"
+
+#: application/agent/models.py:226
+msgid "Organization name"
+msgstr "Название организации"
+
+#: application/agent/models.py:227
+msgid "Organization full name"
+msgstr "Полное название организации"
+
+#: application/agent/models.py:228
+msgid "Director title"
+msgstr "Должность директора"
+
+#: application/agent/models.py:229
+msgid "Director name"
+msgstr "Фио директора"
+
+#: application/agent/models.py:231
+msgid "KPP"
+msgstr "KPP"
+
+#: application/agent/models.py:232
+msgid "OGRN"
+msgstr "OGRN"
+
+#: application/agent/models.py:233
+msgid "OKVED"
+msgstr "OKVED"
+
+#: application/agent/models.py:234 application/iceman/models.py:115
+#: application/iceman/models.py:158 application/survey/filters.py:109
+#: application/survey/forms.py:38 application/survey/models/all.py:398
+#: application/survey/models/all.py:412 application/survey/models/all.py:413
+#: application/survey/models_old.py:147 application/survey/models_old.py:161
+#: application/survey/models_old.py:162
+msgid "Region"
+msgstr "Регион"
+
+#: application/agent/models.py:236
+msgid "Is agreement"
+msgstr "Принял соглашение"
+
+#: application/agent/models.py:238 application/loyalty/models.py:92
+msgid "Department"
+msgstr "Отдел"
+
+#: application/agent/models.py:240 application/loyalty/models.py:58
+#: application/loyalty/models.py:67 application/loyalty/models.py:94
+msgid "Loyalty program"
+msgstr "Программа лояльности"
+
+#: application/agent/models.py:242 application/loyalty/models.py:96
+msgid "1c code"
+msgstr "Код 1c"
+
+#: application/agent/models.py:243 application/loyalty/models.py:97
+msgid "1c code user"
+msgstr "Код пользователя 1c"
+
+#: application/agent/models.py:245 application/loyalty/models.py:99
+msgid "Loyalty plan"
+msgstr "План покупок руб"
+
+#: application/agent/models.py:246 application/loyalty/models.py:100
+msgid "Loyalty fact"
+msgstr "Факт покупок руб"
+
+#: application/agent/models.py:247 application/loyalty/models.py:101
+msgid "Loyalty cashback"
+msgstr "Кэш-бэк начислен руб"
+
+#: application/agent/models.py:248 application/loyalty/models.py:102
+msgid "Loyalty sumcashback"
+msgstr "Кэш-бэк заработан руб"
+
+#: application/agent/models.py:249 application/loyalty/models.py:103
+msgid "Loyalty debt"
+msgstr "Текущая задолженность руб"
+
+#: application/agent/models.py:250 application/loyalty/models.py:104
+msgid "Loyalty overdue_debt"
+msgstr "Просроченная задолженность руб"
+
+#: application/agent/models.py:252
+msgid "Loyalty cashback payed"
+msgstr "Кэш-бэк выплачен (период) руб"
+
+#: application/agent/models.py:253
+msgid "Loyalty cashback to payed"
+msgstr "Кэш-бэк к оплате руб"
+
+#: application/agent/models.py:255
+msgid "Store deleted"
+msgstr "Отвязать магазин"
+
+#: application/agent/models.py:265 application/loyalty/models.py:112
+#: application/profi/models.py:188 application/survey/models/all.py:427
+#: application/survey/models/all.py:491 application/survey/models_old.py:175
+#: application/survey/models_old.py:234
+msgid "Stores"
+msgstr "Магазины"
+
+#: application/agent/models.py:294 application/solar_staff/models.py:69
+msgid "New"
+msgstr "Новый"
+
+#: application/agent/models.py:295 application/agent/models.py:309
+#: application/iceman/models.py:434 application/solar_staff/models.py:71
+#: application/survey/models/te.py:32 application/survey/models_old.py:266
+msgid "Payed"
+msgstr "Оплачено"
+
+#: application/agent/models.py:296 application/iceman/models.py:433
+#: application/solar_staff/models.py:70 application/survey/models/te.py:31
+#: application/survey/models_old.py:265
+msgid "Pay in Solar"
+msgstr "Заплатить в Solar"
+
+#: application/agent/models.py:297
+msgid "Payed cashback"
+msgstr "Выплачен кешбек"
+
+#: application/agent/models.py:300 application/solar_staff/models.py:72
+msgid "Error payment"
+msgstr "Ошибка оплаты"
+
+#: application/agent/models.py:304
+msgid "Pay to driver"
+msgstr "Водителю"
+
+#: application/agent/models.py:305
+msgid "Pay via telegram"
+msgstr "В Телеграме"
+
+#: application/agent/models.py:310
+msgid "Bonus"
+msgstr "Бонус"
+
+#: application/agent/models.py:315 application/survey/models/te.py:70
+msgid "Not need"
+msgstr "Не нужно"
+
+#: application/agent/models.py:316 application/survey/models/te.py:71
+msgid "Wait"
+msgstr "Ожидание"
+
+#: application/agent/models.py:317 application/survey/models/te.py:72
+msgid "Sent"
+msgstr "Отправлено"
+
+#: application/agent/models.py:320
+msgid "Date order"
+msgstr "Дата заказа"
+
+#: application/agent/models.py:323
+msgid "Delivery address"
+msgstr "Адрес доставки"
+
+#: application/agent/models.py:324
+msgid "Delivery date"
+msgstr "Дата доставки"
+
+#: application/agent/models.py:327
+msgid "Cashback sum"
+msgstr "Кешбек, руб."
+
+#: application/agent/models.py:328
+msgid "Re calc cashback sum"
+msgstr "Пересчитать сумму кешбека"
+
+#: application/agent/models.py:330 application/profi/models.py:198
+#: application/profi/models.py:201 application/profi/models.py:205
+#: application/solar_staff/admin.py:158 application/solar_staff/models.py:78
+#: application/survey/models/all.py:598 application/survey/models/te.py:333
+msgid "Comment"
+msgstr "Комментарий"
+
+#: application/agent/models.py:331 application/survey/models/te.py:102
+#: application/survey/models_old.py:306
+msgid "Status comments"
+msgstr "Комментарий к статусу"
+
+#: application/agent/models.py:332 application/survey/models/te.py:103
+#: application/survey/models_old.py:307
+msgid "What comes to the user when the status changes"
+msgstr "То что приходит пользователю при изменении статуса"
+
+#: application/agent/models.py:334 application/agent/models.py:419
+#: application/agent/models.py:433
+msgid "For store"
+msgstr "Для магазина"
+
+#: application/agent/models.py:336
+msgid "Need check"
+msgstr "Нужен чек"
+
+#: application/agent/models.py:338 application/survey/models/te.py:138
+msgid "Telegram channel status"
+msgstr "Телеграм канал статус"
+
+#: application/agent/models.py:341 application/agent/resources.py:19
+msgid "Payment firm"
+msgstr "Платежная фирма"
+
+#: application/agent/models.py:342 application/agent/resources.py:20
+msgid "1c sum"
+msgstr "Сумма по 1с"
+
+#: application/agent/models.py:343 application/agent/resources.py:21
+msgid "1c pay sum"
+msgstr "Оплаченная сумма"
+
+#: application/agent/models.py:344 application/agent/resources.py:22
+msgid "1c status"
+msgstr "Статус в 1с"
+
+#: application/agent/models.py:346
+msgid "1c cashback"
+msgstr "1c кешбек"
+
+#: application/agent/models.py:349 application/solar_staff/models.py:84
+#: application/solar_staff_accounts/models.py:14
+#: application/survey/models/all.py:501
+msgid "Solar staff account"
+msgstr "Solar staff аккаунт"
+
+#: application/agent/models.py:353
+msgid "Payment status"
+msgstr "Статус оплаты"
+
+#: application/agent/models.py:354 application/solar_staff/models.py:76
+msgid "Payment sum"
+msgstr "Сумма оплаты"
+
+#: application/agent/models.py:394 application/agent/models.py:403
+#: application/profi/admin.py:150 application/profi/models.py:214
+#: application/solar_staff/models.py:30
+msgid "Order"
+msgstr "Заказ"
+
+#: application/agent/models.py:395 application/dashboard.py:227
+#: application/menu.py:104 application/profi/models.py:215
+msgid "Orders"
+msgstr "Заказы"
+
+#: application/agent/models.py:398
+#, python-format
+msgid "Order %s"
+msgstr "Заказ №%s"
+
+#: application/agent/models.py:405 application/agent/models.py:436
+#: application/survey/models/all.py:640
+msgid "Count"
+msgstr "Количество"
+
+#: application/agent/models.py:412
+msgid "Source good"
+msgstr "Источник"
+
+#: application/agent/models.py:424
+msgid "Order good"
+msgstr "Товар"
+
+#: application/agent/models.py:425
+msgid "Orders goods"
+msgstr "Товары"
+
+#: application/agent/models.py:441
+msgid "Cart item"
+msgstr "Товар корзины"
+
+#: application/agent/models.py:442
+msgid "Cart"
+msgstr "Корзина"
+
+#: application/agent/models.py:451
+msgid "Schedule file"
+msgstr "Файл графика"
+
+#: application/agent/models.py:456 application/agent/models.py:457
+msgid "Delivery schedule"
+msgstr "График доставки"
+
+#: application/agent/models.py:466
+msgid "Payment source"
+msgstr "Источник оплаты"
+
+#: application/agent/models.py:467
+msgid "Payment provider"
+msgstr "Платежный провайдер"
+
+#: application/agent/models.py:468
+msgid "Currency"
+msgstr "Валюта"
+
+#: application/agent/models.py:469
+msgid "Total amount"
+msgstr "Сумма платежа"
+
+#: application/agent/models.py:470
+msgid "Order info"
+msgstr "Информация о заказе"
+
+#: application/agent/models.py:471
+msgid "Telegram payment id"
+msgstr "Id платежа в Телеграме"
+
+#: application/agent/models.py:472
+msgid "Provider payment id"
+msgstr "Id платежа провайдера"
+
+#: application/agent/models.py:478 application/dashboard.py:245
+#: application/dashboard.py:293 application/menu.py:108
+#: application/solar_staff/models.py:91
+msgid "Payments"
+msgstr "Платежи"
+
+#: application/agent/models.py:488
+msgid "Is used"
+msgstr "Использован"
+
+#: application/agent/models.py:495
+msgid "Promo code"
+msgstr "Промо код"
+
+#: application/agent/models.py:496
+msgid "Promo codes"
+msgstr "Промо коды"
+
+#: application/agent/models.py:507 application/solar_staff/models.py:14
+msgid "Success"
+msgstr "Успешно"
+
+#: application/agent/models.py:519
+msgid "Tinkoff payment"
+msgstr "Платеж Tinkoff"
+
+#: application/agent/models.py:520
+msgid "Tinkoff payments"
+msgstr "Платежи Tinkoff"
+
+#: application/agent/prefs.py:7
+msgid "Order e-mail"
+msgstr "E-mail уведомления о заказах"
+
+#: application/agent/prefs.py:8 application/agent/prefs.py:15
+#: application/agent/prefs.py:21 application/agent/prefs.py:27
+msgid "Agent bot"
+msgstr "Агент бот"
+
+#: application/agent/prefs.py:14
+msgid "Dadata api key"
+msgstr "Dadata ключ API"
+
+#: application/agent/prefs.py:20
+msgid "Dadata secret key"
+msgstr "Dadata ключ Secret"
+
+#: application/agent/prefs.py:26
+msgid "Time day ends"
+msgstr "Время окончания дня для заказов"
+
+#: application/agent/resources.py:11 application/agent/resources.py:46
+#: application/survey/models/all.py:166 application/survey/models/te.py:196
+msgid "User name"
+msgstr "Имя"
+
+#: application/agent/resources.py:12 application/agent/resources.py:47
+msgid "User surname"
+msgstr "Фамилия"
+
+#: application/agent/resources.py:13 application/agent/resources.py:48
+msgid "User email"
+msgstr "E-mail"
+
+#: application/agent/resources.py:14
+msgid "Store name"
+msgstr "Магазин"
+
+#: application/agent/resources.py:15 application/supervisor/models.py:37
+#: application/survey/models/te.py:689
+msgid "Store address"
+msgstr "Адрес магазина"
+
+#: application/agent/resources.py:16
+msgid "Store inn"
+msgstr "ИНН"
+
+#: application/agent/resources.py:17
+msgid "Store city"
+msgstr "Город"
+
+#: application/agent/resources.py:44
+msgid "City code"
+msgstr "Код города"
+
+#: application/agent/resources.py:45
+msgid "User id"
+msgstr "Ид пользователя"
+
+#: application/agent/resources.py:50
+msgid "User phone"
+msgstr "Телефон пользователя"
+
+#: application/agent/resources.py:51
+msgid "Last order id"
+msgstr "Id заказа"
+
+#: application/agent/resources.py:52
+msgid "Last order date"
+msgstr "Дата заказа"
+
+#: application/agent/utils.py:65
+msgid "Column with price not found"
+msgstr ""
+"Колонка с ценой не найдена, добавьте колонку \"Цена\" или \"Цена код города\""
+
+#: application/agent/views.py:49 application/iceman_imports/views.py:50
+#: application/iceman_imports/views.py:118
+#: application/iceman_imports/views.py:183 application/survey/views.py:212
+#: application/survey/views.py:1846
+msgid "Import data task sending successfully"
+msgstr ""
+"Задача на импорт была добавлена успешно. Через какое-то время данные будут "
+"загруженны в систему. Страница будет обновлена через пару секунд."
+
+#: application/ai/apps.py:7 application/ai/prefs.py:8
+#: application/ai/prefs.py:14
+msgid "Shop Survey AI"
+msgstr "Shop Survey AI"
+
+#: application/ai/prefs.py:13 application/inspector/prefs.py:13
+msgid "Token"
+msgstr "Токен"
+
+#: application/archive/admin.py:237 application/survey/admin.py:1168
+msgid "Map"
+msgstr "Карта"
+
+#: application/archive/admin.py:248
+msgid "Images all"
+msgstr "Все изображения"
+
+#: application/archive/admin.py:259 application/survey/admin.py:1182
+msgid "Images before"
+msgstr "Фото до работы"
+
+#: application/archive/admin.py:270 application/survey/admin.py:1196
+msgid "Images after"
+msgstr "Фото после работы"
+
+#: application/archive/admin.py:281 application/survey/admin.py:1210
+msgid "Images check"
+msgstr "Фото чека"
+
+#: application/archive/admin.py:327 application/survey/admin.py:929
+#: application/survey/admin.py:968 application/survey/admin.py:989
+#: application/survey/admin.py:1260 application/survey/models/te.py:101
+#: application/survey/models_old.py:305
+msgid "Comments"
+msgstr "Комментарии"
+
+#: application/archive/admin.py:336 application/survey/admin.py:942
+#: application/survey/admin.py:978 application/survey/admin.py:1003
+#: application/survey/admin.py:1274
+msgid "Coordinates"
+msgstr "Местонахождение"
+
+#: application/archive/admin.py:339 application/inspector/apps.py:7
+#: application/inspector/prefs.py:8 application/inspector/prefs.py:14
+#: application/survey/admin.py:946 application/survey/admin.py:1006
+#: application/survey/admin.py:1277
+msgid "Inspector"
+msgstr "Инспектор"
+
+#: application/archive/admin.py:347 application/survey/admin.py:955
+#: application/survey/admin.py:1013 application/survey/admin.py:1285
+#: application/survey/admin.py:1398
+msgid "Mailing"
+msgstr "Рассылка"
+
+#: application/archive/admin.py:351 application/survey/admin.py:922
+msgid "Images"
+msgstr "Изображения"
+
+#: application/archive/admin.py:357 application/survey/models/te.py:566
+#: application/survey/models/te.py:578 application/survey/models_old.py:535
+msgid "Avail assortments before"
+msgstr "Наличие товаров до работы"
+
+#: application/archive/admin.py:360 application/survey/models/te.py:522
+#: application/survey/models/te.py:534 application/survey/models_old.py:518
+msgid "Avail assortments"
+msgstr "Наличие товаров"
+
+#: application/archive/admin.py:363 application/survey/models/all.py:557
+#: application/survey/models/all.py:577 application/survey/models/all.py:599
+#: application/survey/models/all.py:618 application/survey/models/te.py:334
+msgid "Questionnaire"
+msgstr "Анкета для задачи"
+
+#: application/archive/apps.py:7 application/dashboard.py:136
+msgid "Archive"
+msgstr "Архив"
+
+#: application/archive/models.py:12 application/iceman/models.py:14
+#: application/mobile/models.py:8 application/profi/admin.py:128
+#: application/profi/models.py:161 application/profi/models.py:180
+#: application/solar_staff/admin.py:48 application/survey/filters.py:61
+#: application/survey/forms.py:13 application/survey/forms.py:27
+#: application/survey/forms.py:107 application/survey/models/all.py:543
+#: application/survey/models/all.py:602 application/survey/models/all.py:638
+#: application/survey/models/all.py:671 application/survey/models/te.py:85
+#: application/survey/models/te.py:178 application/survey/models_old.py:252
+#: application/survey/models_old.py:295 application/survey/models_old.py:488
+msgid "Task"
+msgstr "Задача"
+
+#: application/archive/models.py:25
+msgid "Task execution [archive]"
+msgstr "Выполнение задачи [архив]"
+
+#: application/archive/models.py:26
+msgid "Tasks execution [archive]"
+msgstr "Выполнение задач [архив]"
+
+#: application/archive/models.py:31 application/archive/models.py:42
+#: application/archive/models.py:56 application/archive/models.py:70
+#: application/solar_staff/models.py:21 application/solar_staff/models.py:28
+#: application/supervisor/models.py:28 application/survey/admin.py:925
+#: application/survey/models/te.py:248 application/survey/models/te.py:324
+#: application/survey/models/te.py:337 application/survey/models/te.py:370
+#: application/survey/models/te.py:445 application/survey/models/te.py:491
+#: application/survey/models/te.py:511 application/survey/models/te.py:539
+#: application/survey/models/te.py:556 application/survey/models/te.py:583
+#: application/survey/models/te.py:879 application/survey/models_old.py:345
+#: application/survey/models_old.py:414 application/survey/models_old.py:509
+#: application/survey/models_old.py:526
+msgid "Task execution"
+msgstr "Выполнение задачи"
+
+#: application/dashboard.py:41 application/menu.py:38
+#: templates/survey/import.html:4 templates/survey/import.html:64
+#: templates/survey/import.html:70
+msgid "Import data"
+msgstr "Импорт данных"
+
+#: application/dashboard.py:43 application/dashboard.py:222
+#: application/menu.py:40 application/menu.py:86
+#: templates/iceman/import-tasks.html:4 templates/iceman/import-tasks.html:64
+#: templates/iceman/import-tasks.html:70 templates/survey/import-tasks.html:4
+#: templates/survey/import-tasks.html:64 templates/survey/import-tasks.html:70
+msgid "Import tasks"
+msgstr "Импорт задач"
+
+#: application/dashboard.py:47 application/dashboard.py:61
+#: application/dashboard.py:76 application/dashboard.py:160
+#: application/dashboard.py:190 application/dashboard.py:213
+msgid "Quick links"
+msgstr "Быстрые ссылки"
+
+#: application/dashboard.py:53 application/menu.py:48
+#: templates/survey/export.html:4 templates/survey/export.html:52
+#: templates/survey/export.html:58
+msgid "Export data"
+msgstr "Экспорт данных"
+
+#: application/dashboard.py:54 application/dashboard.py:68
+#: application/menu.py:49 templates/survey/images.html:4
+#: templates/survey/images.html:65 templates/survey/images.html:71
+#: templates/survey/images.html:112
+msgid "Download images"
+msgstr "Выгрузка фото"
+
+#: application/dashboard.py:55 application/dashboard.py:67
+#: application/dashboard.py:223 application/menu.py:52 application/menu.py:87
+#: application/profi/models.py:136 templates/iceman/reports.html:4
+#: templates/iceman/reports.html:58 templates/iceman/reports.html:64
+#: templates/iceman/reports.iceman_task_list.html:70
+#: templates/iceman/reports.icemans.html:68
+#: templates/survey/reports.devicesurveyors.html:62
+#: templates/survey/reports.html:4 templates/survey/reports.html:58
+#: templates/survey/reports.html:64 templates/survey/reports.surveyors.html:68
+msgid "Reports"
+msgstr "Отчеты"
+
+#: application/dashboard.py:56 application/dashboard.py:71
+#: application/dashboard.py:84 templates/iceman/import-products.html:58
+#: templates/iceman/import-stores.html:58 templates/iceman/import-tasks.html:58
+#: templates/iceman/message_v2.html:60 templates/iceman/reports.html:53
+#: templates/iceman/reports.iceman_task_list.html:59
+#: templates/iceman/reports.icemans.html:58 templates/mobile/message.html:60
+#: templates/survey/export.html:46 templates/survey/images.html:59
+#: templates/survey/import-tasks.html:58 templates/survey/import.html:58
+#: templates/survey/reports.devicesurveyors.html:54
+#: templates/survey/reports.html:53 templates/survey/reports.surveyors.html:58
+#: templates/telegram/message.html:46 templates/telegram/message_group.html:46
+#: templates/telegram/message_group_file.html:46
+#: templates/telegram/message_stores.html:46
+#: templates/telegram/message_stores_file.html:46
+#: templates/users/change_password.html:58
+msgid "Log out"
+msgstr "Выйти"
+
+#: application/dashboard.py:69 application/dashboard.py:82
+#: templates/iceman/import-products.html:56
+#: templates/iceman/import-stores.html:56 templates/iceman/import-tasks.html:56
+#: templates/iceman/message_v2.html:58 templates/iceman/reports.html:51
+#: templates/iceman/reports.iceman_task_list.html:57
+#: templates/iceman/reports.icemans.html:56 templates/mobile/message.html:58
+#: templates/survey/export.html:44 templates/survey/images.html:57
+#: templates/survey/import-tasks.html:56 templates/survey/import.html:56
+#: templates/survey/reports.devicesurveyors.html:52
+#: templates/survey/reports.html:51 templates/survey/reports.surveyors.html:56
+#: templates/telegram/message.html:44 templates/telegram/message_group.html:44
+#: templates/telegram/message_group_file.html:44
+#: templates/telegram/message_stores.html:44
+#: templates/telegram/message_stores_file.html:44
+#: templates/users/change_password.html:4
+#: templates/users/change_password.html:56
+#: templates/users/change_password.html:64
+#: templates/users/change_password.html:70
+msgid "Change password"
+msgstr "Изменить пароль"
+
+#: application/dashboard.py:91 application/survey/admin.py:1395
+msgid "Users"
+msgstr "Пользователи"
+
+#: application/dashboard.py:95 application/dashboard.py:200
+#: application/dashboard.py:236 application/dashboard.py:265
+#: application/dashboard.py:283 application/iceman_imports/admin.py:21
+#: application/iceman_imports/admin.py:49
+#: application/iceman_imports/admin.py:77 application/menu.py:94
+#: application/survey/admin.py:167 application/survey/admin.py:190
+#: application/survey/admin.py:210 application/survey/admin.py:1356
+#: application/survey/admin.py:1709
+msgid "Data"
+msgstr "Данные"
+
+#: application/dashboard.py:112 application/menu.py:54 application/menu.py:158
+#: application/survey/apps.py:7 application/survey/prefs.py:8
+#: application/survey/prefs.py:14
+msgid "Chistaya liniya"
+msgstr "«Чистая линия»"
+
+#: application/dashboard.py:122 application/dashboard.py:126
+#: application/profi/models.py:162 application/survey/admin.py:1804
+#: application/survey/models/all.py:544 application/survey/models_old.py:253
+msgid "Tasks"
+msgstr "Задачи"
+
+#: application/dashboard.py:156
+msgid "Telegram bot"
+msgstr "Телеграм бот"
+
+#: application/dashboard.py:166 application/menu.py:60
+msgid "Run bot"
+msgstr "Запустить бота"
+
+#: application/dashboard.py:167 application/dashboard.py:196
+#: application/dashboard.py:219 application/menu.py:61 application/menu.py:73
+#: application/menu.py:83 templates/iceman/message_v2.html:4
+#: templates/iceman/message_v2.html:65 templates/iceman/message_v2.html:70
+#: templates/mobile/message.html:4 templates/mobile/message.html:65
+#: templates/mobile/message.html:70 templates/profi/message.html:4
+#: templates/profi/message.html:27 templates/profi/message.html:32
+#: templates/telegram/message.html:4 templates/telegram/message.html:51
+#: templates/telegram/message.html:56
+msgid "Sending messages"
+msgstr "Рассылка сообщений"
+
+#: application/dashboard.py:168 application/menu.py:62
+#: templates/telegram/message_group.html:4
+#: templates/telegram/message_group.html:51
+#: templates/telegram/message_group.html:56
+#: templates/telegram/message_group_file.html:4
+#: templates/telegram/message_group_file.html:51
+#: templates/telegram/message_group_file.html:57
+#: templates/telegram/message_stores_file.html:57
+msgid "Sending messages group"
+msgstr "Рассылка сообщений группе"
+
+#: application/dashboard.py:169 application/menu.py:63
+#: templates/telegram/message_stores.html:4
+#: templates/telegram/message_stores.html:51
+#: templates/telegram/message_stores.html:56
+#: templates/telegram/message_stores_file.html:4
+#: templates/telegram/message_stores_file.html:51
+msgid "Sending messages stores"
+msgstr "Рассылка сообщений магазинам"
+
+#: application/dashboard.py:173
+msgid "Channels"
+msgstr "Каналы"
+
+#: application/dashboard.py:177 application/dashboard.py:249
+#: application/dashboard.py:289 application/menu.py:112
+msgid "Manage"
+msgstr "Управление"
+
+#: application/dashboard.py:186 application/menu.py:71
+#: application/mobile/apps.py:7 application/mobile/prefs.py:8
+msgid "Mobile app"
+msgstr "Моб. приложение"
+
+#: application/dashboard.py:209 application/iceman/apps.py:7
+#: application/iceman/prefs.py:8 application/iceman/prefs.py:14
+#: application/iceman/prefs.py:20 application/iceman_imports/apps.py:7
+#: application/menu.py:81 application/survey/admin.py:437
+msgid "Iceman"
+msgstr "Айсмен"
+
+#: application/dashboard.py:220 application/menu.py:84
+#: templates/iceman/import-stores.html:4 templates/iceman/import-stores.html:64
+#: templates/iceman/import-stores.html:70
+msgid "Import stores"
+msgstr "Импорт магазинов"
+
+#: application/dashboard.py:221 application/menu.py:85
+#: templates/iceman/import-products.html:4
+#: templates/iceman/import-products.html:64
+#: templates/iceman/import-products.html:70
+msgid "Import products"
+msgstr "Импорт товаров"
+
+#: application/dashboard.py:231 application/menu.py:89
+msgid "Mobile application"
+msgstr "Моб. приложение"
+
+#: application/dashboard.py:261 application/loyalty/apps.py:7
+#: application/loyalty/prefs.py:8
+msgid "Loyalty bot"
+msgstr "Бот лояльности"
+
+#: application/dashboard.py:279 application/solar_staff/admin.py:74
+msgid "User data"
+msgstr "Пользовательские данные"
+
+#: application/dashboard.py:331 application/menu.py:147 application/menu.py:170
+msgid "Administration"
+msgstr "Администрирование"
+
+#: application/dashboard.py:335
+msgid "Authentication"
+msgstr "Авторизация"
+
+#: application/dashboard.py:340
+msgid "API"
+msgstr "API"
+
+#: application/dashboard.py:344 templates/agent/import.html:99
+#: templates/iceman/import-products.html:131
+#: templates/iceman/import-stores.html:131
+#: templates/iceman/import-tasks.html:131
+#: templates/survey/import-tasks.html:131 templates/survey/import.html:149
+msgid "Import"
+msgstr "Импорт"
+
+#: application/dashboard.py:348
+msgid "System management"
+msgstr "Управление системой"
+
+#: application/dashboard.py:352 application/survey/models/all.py:771
+msgid "Requests"
+msgstr "Запросы"
+
+#: application/dashboard.py:359 application/iceman/admin.py:375
+msgid "Settings"
+msgstr "Настройки"
+
+#: application/dashboard.py:366 application/dashboard.py:397
+msgid "Recent Actions"
+msgstr "Последние действия"
+
+#: application/dump/apps.py:7
+msgid "Dump"
+msgstr "Дамп"
+
+#: application/iceman/admin.py:22 application/iceman/models.py:25
+#: application/mobile/admin.py:16 application/mobile/models.py:18
+msgid "Message"
+msgstr "Сообщение"
+
+#: application/iceman/admin.py:31 application/iceman/models.py:30
+#: application/iceman_imports/admin.py:100
+#: application/iceman_imports/models.py:127 application/mobile/admin.py:25
+#: application/mobile/models.py:23 application/survey/admin.py:1616
+#: application/survey/admin.py:1643 application/survey/models/all.py:722
+#: application/survey/models/all.py:747 application/survey/models/all.py:765
+msgid "Result"
+msgstr "Результат"
+
+#: application/iceman/admin.py:157 application/survey/admin.py:317
+msgid "Geo location"
+msgstr "Гео локация"
+
+#: application/iceman/forms.py:20 application/mobile/forms.py:18
+msgid "Рекомендатель"
+msgstr ""
+
+#: application/iceman/forms.py:23 application/mobile/forms.py:21
+#: application/survey/models/all.py:158 application/survey/models/te.py:212
+msgid "Legal status"
+msgstr "Юр. статус"
+
+#: application/iceman/forms.py:24 application/iceman/forms.py:28
+#: application/iceman/forms.py:45 application/mobile/forms.py:22
+#: application/mobile/forms.py:26 application/survey/filters.py:32
+#: application/survey/filters.py:69
+msgid "All"
+msgstr "Все"
+
+#: application/iceman/forms.py:27 application/mobile/forms.py:25
+msgid "Тип пользователя"
+msgstr ""
+
+#: application/iceman/forms.py:44
+msgid "Есть просрочка по любому заказу"
+msgstr ""
+
+#: application/iceman/forms.py:45 application/survey/forms.py:48
+#: application/survey/forms.py:49 application/survey/forms.py:50
+#: application/survey/forms.py:51 application/survey/forms.py:52
+#: application/survey/forms.py:53
+msgid "Yes"
+msgstr "Да"
+
+#: application/iceman/forms.py:45 application/survey/forms.py:48
+#: application/survey/forms.py:49 application/survey/forms.py:50
+#: application/survey/forms.py:51 application/survey/forms.py:52
+#: application/survey/forms.py:53
+msgid "No"
+msgstr "Нет"
+
+#: application/iceman/forms.py:48 application/iceman/models.py:24
+#: application/mobile/forms.py:41 application/mobile/models.py:17
+msgid "Title"
+msgstr "Заголовок"
+
+#: application/iceman/forms.py:51 application/mobile/forms.py:44
+#: application/profi/forms.py:13 application/telegram/forms.py:11
+#: application/telegram/forms.py:30 application/telegram/forms.py:36
+msgid "Message text"
+msgstr "Текст сообщения"
+
+#: application/iceman/models.py:13 application/mobile/models.py:7
+msgid "Important message"
+msgstr "Важное сообщение"
+
+#: application/iceman/models.py:15 application/mobile/models.py:9
+#: application/survey/models/te.py:649
+msgid "Act"
+msgstr "Акт"
+
+#: application/iceman/models.py:28 application/mobile/models.py:21
+msgid "Is sent"
+msgstr "Отправлено"
+
+#: application/iceman/models.py:35 application/iceman/models.py:39
+#: application/mobile/models.py:28 application/mobile/models.py:32
+msgid "Notification"
+msgstr "Уведомление"
+
+#: application/iceman/models.py:36 application/mobile/models.py:29
+msgid "Notifications"
+msgstr "Уведомления"
+
+#: application/iceman/models.py:116 application/profi/models.py:189
+#: application/survey/models/all.py:399 application/survey/models/all.py:492
+#: application/survey/models_old.py:148 application/survey/models_old.py:235
+msgid "Regions"
+msgstr "Регионы"
+
+#: application/iceman/models.py:430 application/survey/models/te.py:28
+#: application/survey/models_old.py:262
+msgid "Started"
+msgstr "Начато"
+
+#: application/iceman/models.py:432 application/profi/models.py:173
+#: application/survey/models/te.py:30 application/survey/models_old.py:264
+msgid "Checked"
+msgstr "Одобрено"
+
+#: application/iceman/models.py:435 application/survey/models/te.py:33
+#: application/survey/models_old.py:267
+msgid "Denied"
+msgstr "Отказано"
+
+#: application/iceman/models.py:436 application/survey/models/te.py:34
+#: application/survey/models_old.py:268
+msgid "Not payed"
+msgstr "Не оплачено"
+
+#: application/iceman/models.py:437 application/survey/models/te.py:35
+msgid "Temp denied"
+msgstr "Предварительный отказ"
+
+#: application/iceman/models.py:598 application/profi/models.py:207
+#: application/survey/models/all.py:517 application/survey/models/all.py:673
+#: application/survey/models_old.py:244 application/survey/models_old.py:490
+msgid "How many times a week"
+msgstr "Периодичность в неделю"
+
+#: application/iceman/models.py:599 application/survey/models/all.py:674
+msgid "How many times a month"
+msgstr "Периодичность в месяц"
+
+#: application/iceman/models.py:600 application/iceman/models.py:632
+#: application/profi/models.py:208 application/survey/models/all.py:420
+#: application/survey/models/all.py:675 application/survey/models_old.py:169
+#: application/survey/models_old.py:491
+msgid "Days of weeks"
+msgstr "Дни недели заданий"
+
+#: application/iceman/models.py:601 application/profi/models.py:209
+#: application/survey/models/all.py:516 application/survey/models/all.py:676
+#: application/survey/models_old.py:243 application/survey/models_old.py:492
+msgid "Execution once"
+msgstr "Выполнить один раз"
+
+#: application/iceman/prefs.py:7 application/mobile/prefs.py:7
+#: application/survey/models/all.py:275 application/survey/models/all.py:314
+msgid "Version"
+msgstr "Версия"
+
+#: application/iceman/views.py:75 application/mobile/views.py:108
+#: application/profi/views.py:29 application/telegram/views.py:36
+#: application/telegram/views.py:130 application/telegram/views.py:226
+msgid "The message was successfully sent out"
+msgstr "Сообщение было успешно разослано"
+
+#: application/iceman_imports/admin.py:15
+#: application/iceman_imports/admin.py:43
+#: application/iceman_imports/admin.py:71
+#: application/iceman_imports/models.py:32
+#: application/iceman_imports/models.py:67
+#: application/iceman_imports/models.py:102 application/loyalty/models.py:33
+#: application/loyalty/models.py:52 application/profi/models.py:128
+#: application/profi/models.py:202 application/survey/admin.py:1350
+#: application/survey/models/te.py:740 application/survey/models/te.py:775
+#: application/telegram/forms.py:29 application/telegram/forms.py:35
+msgid "File"
+msgstr "Файл"
+
+#: application/iceman_imports/models.py:37
+msgid "Store import"
+msgstr "Импорт магазинов"
+
+#: application/iceman_imports/models.py:38
+msgid "Stores imports"
+msgstr "Импорт магазинов"
+
+#: application/iceman_imports/models.py:72
+msgid "Product import"
+msgstr "Импорт товаров"
+
+#: application/iceman_imports/models.py:73
+msgid "Products imports"
+msgstr "Импорт товаров"
+
+#: application/iceman_imports/models.py:107 application/survey/models/te.py:780
+msgid "Task import"
+msgstr "Импорт задач"
+
+#: application/iceman_imports/models.py:108 application/survey/models/te.py:781
+msgid "Tasks imports"
+msgstr "Импорт задач"
+
+#: application/iceman_imports/models.py:116
+#: application/survey/models/all.py:711 application/survey/models/all.py:736
+#: application/survey/models/all.py:761
+msgid "Request date"
+msgstr "Время запроса"
+
+#: application/iceman_imports/models.py:117
+#: application/survey/models/all.py:712 application/survey/models/all.py:737
+#: application/survey/models/all.py:762
+msgid "Request method"
+msgstr "Метод запроса"
+
+#: application/iceman_imports/models.py:118
+#: application/survey/models/all.py:713 application/survey/models/all.py:738
+msgid "Request type"
+msgstr "Тип запроса"
+
+#: application/iceman_imports/models.py:119
+#: application/survey/models/all.py:714 application/survey/models/all.py:739
+msgid "Request ip"
+msgstr "IP запроса"
+
+#: application/iceman_imports/models.py:120
+#: application/survey/models/all.py:715 application/survey/models/all.py:740
+#: application/survey/models/all.py:764
+msgid "Request text"
+msgstr "Текст запроса"
+
+#: application/iceman_imports/models.py:121
+#: application/survey/models/all.py:716 application/survey/models/all.py:741
+msgid "Request files"
+msgstr "Список файлов"
+
+#: application/iceman_imports/models.py:123
+#: application/survey/models/all.py:718 application/survey/models/all.py:743
+msgid "Request data type"
+msgstr "Тип данных"
+
+#: application/iceman_imports/models.py:124
+#: application/survey/models/all.py:719 application/survey/models/all.py:744
+msgid "Request data count"
+msgstr "Кол-во строк"
+
+#: application/iceman_imports/models.py:126
+#: application/survey/models/all.py:721 application/survey/models/all.py:746
+msgid "Processed"
+msgstr "Обработано"
+
+#: application/inspector/models.py:8 application/inspector/models.py:74
+msgid "Sku id"
+msgstr "Sku id"
+
+#: application/inspector/models.py:9 application/inspector/models.py:26
+#: application/inspector/models.py:42 application/inspector/models.py:58
+#: application/inspector/models.py:79 application/survey/models/te.py:622
+msgid "Date update"
+msgstr "Дата обновления"
+
+#: application/inspector/models.py:10 application/inspector/models.py:73
+msgid "Customer id"
+msgstr "Ид покупателя"
+
+#: application/inspector/models.py:15 application/inspector/models.py:84
+msgid "Inspector good"
+msgstr "Товар"
+
+#: application/inspector/models.py:16 application/inspector/models.py:85
+msgid "Inspector goods"
+msgstr "Товары"
+
+#: application/inspector/models.py:25 application/inspector/models.py:41
+#: application/inspector/models.py:57
+msgid "Internal id"
+msgstr "Внутренний ID"
+
+#: application/inspector/models.py:32
+msgid "Manufacturers"
+msgstr "Производители"
+
+#: application/inspector/models.py:48
+msgid "Brands"
+msgstr "Бренды"
+
+#: application/loyalty/models.py:7
+msgid "Show text"
+msgstr "Вывести текст"
+
+#: application/loyalty/models.py:8
+msgid "Receivables"
+msgstr "Дебиторская задолженность"
+
+#: application/loyalty/models.py:15 application/loyalty/models.py:50
+#: application/profi/models.py:76 application/telegram/models.py:19
+msgid "System name"
+msgstr "Системное имя"
+
+#: application/loyalty/models.py:20 application/loyalty/models.py:29
+msgid "Loyalty department"
+msgstr "Отдел"
+
+#: application/loyalty/models.py:21
+msgid "Loyalty departments"
+msgstr "Отделы"
+
+#: application/loyalty/models.py:31 application/profi/models.py:78
+#: application/profi/models.py:110 application/telegram/models.py:21
+#: application/telegram/models.py:53
+msgid "Formatting telegram message"
+msgstr "Форматирование как в сообщении Телеграм"
+
+#: application/loyalty/models.py:32
+msgid "Action"
+msgstr "Действие"
+
+#: application/loyalty/models.py:39
+msgid "Loyalty department menu item"
+msgstr "Элемент меню в боте лояльности"
+
+#: application/loyalty/models.py:40
+msgid "Loyalty departments menu items"
+msgstr "Элементы меню в боте лояльности"
+
+#: application/loyalty/models.py:59
+msgid "Loyalty programs"
+msgstr "Программы лояльности"
+
+#: application/loyalty/models.py:68
+msgid "Start date"
+msgstr "Дата начала"
+
+#: application/loyalty/models.py:69
+msgid "End date"
+msgstr "Дата завершения"
+
+#: application/loyalty/models.py:70
+msgid "Current period"
+msgstr "Текущий период"
+
+#: application/loyalty/models.py:75
+msgid "Loyalty program period"
+msgstr "Период программы лояльности"
+
+#: application/loyalty/models.py:76
+msgid "Loyalty program periods"
+msgstr "Периоды программы лояльности"
+
+#: application/loyalty/views.py:55
+msgid "Loyalty stores"
+msgstr "Магазины бота лояльности"
+
+#: application/loyalty/views.py:60
+#, python-brace-format
+msgid "Loyalty stores {date_start} {date_end}"
+msgstr "Магазины бота лояльности {date_start} {date_end}"
+
+#: application/menu.py:43 application/menu.py:155
+msgid "Dashboard"
+msgstr "Панель управления"
+
+#: application/menu.py:46
+msgid "Export/Import"
+msgstr "Импорт/экспорт"
+
+#: application/menu.py:65 application/menu.py:75
+msgid "Applications"
+msgstr "Приложения"
+
+#: application/menu.py:166 application/profi/apps.py:7
+msgid "Profi bot"
+msgstr "Бот «Профи»"
+
+#: application/profi/admin.py:82 application/survey/admin.py:122
+msgid "Personal data"
+msgstr "Персональные данные"
+
+#: application/profi/admin.py:85 application/survey/admin.py:125
+msgid "Telegram data"
+msgstr "Данные Телеграм"
+
+#: application/profi/admin.py:104 application/profi/models.py:135
+#: application/survey/models/te.py:124 application/survey/models/te.py:379
+#: application/survey/models_old.py:326
+msgid "Report"
+msgstr "Отчет"
+
+#: application/profi/admin.py:107
+msgid "For user"
+msgstr "Для пользователя"
+
+#: application/profi/admin.py:131
+msgid "User offered"
+msgstr "Предложена пользователем"
+
+#: application/profi/admin.py:156
+msgid "Where execute"
+msgstr "Где выполнять"
+
+#: application/profi/admin.py:159 application/survey/admin.py:1389
+msgid "Periodicity"
+msgstr "Периодичность"
+
+#: application/profi/admin.py:162 application/profi/models.py:197
+msgid "Is moderate"
+msgstr "Прошел модерацию"
+
+#: application/profi/admin.py:166 application/profi/models.py:194
+msgid "Is not moderate"
+msgstr "Не прошел модерацию"
+
+#: application/profi/admin.py:170 application/profi/models.py:200
+msgid "Is invoice"
+msgstr "Выставлен счет"
+
+#: application/profi/admin.py:174 application/profi/models.py:204
+msgid "Is finished"
+msgstr "Закончить"
+
+#: application/profi/forms.py:24 application/survey/forms.py:65
+msgid "One or any clients"
+msgstr "Один или несколько клиентов"
+
+#: application/profi/forms.py:31 application/survey/forms.py:72
+msgid "One or any stores"
+msgstr "Один или несколько сетей магазинов"
+
+#: application/profi/forms.py:38 application/survey/forms.py:79
+msgid "One or any regions"
+msgstr "Один или несколько регионов"
+
+#: application/profi/models.py:15 application/survey/models/all.py:13
+#: application/survey/models_old.py:12
+msgid "Not limited"
+msgstr "Не ограничено"
+
+#: application/profi/models.py:16 application/survey/models/all.py:14
+#: application/survey/models_old.py:13
+msgid "Once a week"
+msgstr "1 раз в неделю"
+
+#: application/profi/models.py:17 application/survey/models/all.py:15
+#: application/survey/models_old.py:14
+msgid "2 times per week"
+msgstr "2 раза в неделю"
+
+#: application/profi/models.py:18 application/survey/models/all.py:16
+#: application/survey/models_old.py:15
+msgid "3 times per week"
+msgstr "3 раза в неделю"
+
+#: application/profi/models.py:19 application/survey/models/all.py:17
+#: application/survey/models_old.py:16
+msgid "4 times per week"
+msgstr "4 раза в неделю"
+
+#: application/profi/models.py:20 application/survey/models/all.py:18
+#: application/survey/models_old.py:17
+msgid "5 times per week"
+msgstr "5 раз в неделю"
+
+#: application/profi/models.py:21 application/survey/models/all.py:19
+#: application/survey/models_old.py:18
+msgid "6 times per week"
+msgstr "6 раз в неделю"
+
+#: application/profi/models.py:30 application/survey/models/all.py:110
+#: application/survey/models/te.py:477 application/survey/models_old.py:37
+#: application/telegram/models.py:70
+msgid "Telegram id"
+msgstr "Id телеграма"
+
+#: application/profi/models.py:31 application/survey/models/all.py:111
+#: application/survey/models_old.py:38
+msgid "Language"
+msgstr "Язык"
+
+#: application/profi/models.py:32 application/survey/models/all.py:112
+#: application/survey/models_old.py:39
+msgid "Last name"
+msgstr "Фамилия"
+
+#: application/profi/models.py:33 application/survey/models/all.py:113
+#: application/survey/models_old.py:40
+msgid "First name"
+msgstr "Имя"
+
+#: application/profi/models.py:34 application/survey/models/all.py:114
+#: application/survey/models_old.py:41
+msgid "Telegram username"
+msgstr "Логин телеграм"
+
+#: application/profi/models.py:36
+msgid "Is telegram"
+msgstr "Из телеграм"
+
+#: application/profi/models.py:37 application/survey/models/all.py:116
+#: application/survey/models_old.py:43
+msgid "Is register"
+msgstr "Зарегистрирован"
+
+#: application/profi/models.py:39
+msgid "Company name"
+msgstr "Название компании"
+
+#: application/profi/models.py:40
+msgid "Company INN"
+msgstr "ИНН компании"
+
+#: application/profi/models.py:42 application/survey/models/all.py:164
+msgid "FIO"
+msgstr "ФИО"
+
+#: application/profi/models.py:44 application/solar_staff/models.py:33
+#: application/survey/models/all.py:131 application/survey/models/all.py:172
+#: application/survey/models/te.py:629 application/survey/models_old.py:57
+msgid "E-mail"
+msgstr "E-mail"
+
+#: application/profi/models.py:46 application/survey/models/all.py:134
+#: application/survey/models_old.py:60
+msgid "Date join"
+msgstr "Дата регистрации"
+
+#: application/profi/models.py:48
+msgid "Is manager"
+msgstr "Менеджер"
+
+#: application/profi/models.py:53
+msgid "Service user"
+msgstr "Пользователь"
+
+#: application/profi/models.py:54
+msgid "Service users"
+msgstr "Пользователи"
+
+#: application/profi/models.py:78 application/profi/models.py:104
+#: application/profi/models.py:110 application/telegram/models.py:21
+#: application/telegram/models.py:47 application/telegram/models.py:53
+#: application/telegram/models.py:101
+msgid "Value"
+msgstr "Значение"
+
+#: application/profi/models.py:85 application/telegram/models.py:28
+msgid "Telegram message/button"
+msgstr "Сообщение или кнопка телеграм"
+
+#: application/profi/models.py:86 application/telegram/models.py:29
+msgid "Telegram messages/buttons"
+msgstr "Сообщения и кнопки"
+
+#: application/profi/models.py:117 application/telegram/models.py:60
+msgid "Menu item"
+msgstr "Меню"
+
+#: application/profi/models.py:118 application/telegram/models.py:61
+msgid "Menu"
+msgstr "Меню телеграм"
+
+#: application/profi/models.py:130
+msgid "Date upload"
+msgstr "Дата загрузки"
+
+#: application/profi/models.py:145
+msgid "Good job"
+msgstr "Работа с товаром"
+
+#: application/profi/models.py:150
+msgid "For a unit of work or goods"
+msgstr "За единицу товара или услуги"
+
+#: application/profi/models.py:152
+msgid "Is offered user"
+msgstr "Предложена пользователем"
+
+#: application/profi/models.py:153
+msgid "Author"
+msgstr "Автор"
+
+#: application/profi/models.py:155
+msgid "Date offered"
+msgstr "Дата заявки"
+
+#: application/profi/models.py:156 application/solar_staff/models.py:41
+msgid "Type"
+msgstr "Тип"
+
+#: application/profi/models.py:172
+msgid "New order"
+msgstr "Новый заказ"
+
+#: application/profi/models.py:174
+msgid "Invoice"
+msgstr "Выставлен счет"
+
+#: application/profi/models.py:175
+msgid "Wait working"
+msgstr "Ожидает работы"
+
+#: application/profi/models.py:187 application/survey/models/all.py:371
+#: application/survey/models/all.py:490 application/survey/models_old.py:120
+#: application/survey/models_old.py:233
+msgid "Clients"
+msgstr "Клиенты"
+
+#: application/profi/models.py:192
+msgid "Date finish"
+msgstr "Дата завершения"
+
+#: application/profi/prefs.py:7 application/telegram/prefs.py:7
+msgid "Bot token"
+msgstr "Токен бота"
+
+#: application/profi/prefs.py:8 application/profi/prefs.py:14
+#: application/profi/prefs.py:20 application/profi/prefs.py:26
+msgid "Profi telegram bot"
+msgstr "Телеграм бот «Профи»"
+
+#: application/profi/prefs.py:13 application/telegram/prefs.py:13
+msgid "Bot name"
+msgstr "Имя бота"
+
+#: application/profi/prefs.py:19 application/telegram/prefs.py:19
+msgid "Site url"
+msgstr "Url сайта"
+
+#: application/profi/prefs.py:25 application/telegram/prefs.py:25
+msgid "AppMetrica Apikey"
+msgstr "App Metrica Api key"
+
+#: application/solar_staff/admin.py:26
+msgid "Solar staff data"
+msgstr "Данные Solar staff"
+
+#: application/solar_staff/admin.py:77
+msgid "Solar staff server answer"
+msgstr "Ответ сервера Solar staff"
+
+#: application/solar_staff/classes.py:84 application/solar_staff/classes.py:169
+#: application/solar_staff/classes.py:256
+msgid "User does not have an email field"
+msgstr "У пользователя не заполнено поле E-mail"
+
+#: application/solar_staff/classes.py:90 application/solar_staff/classes.py:175
+#: application/solar_staff/classes.py:262
+msgid "User does not have name field"
+msgstr "У пользователя не заполнено поле Имя"
+
+#: application/solar_staff/classes.py:96 application/solar_staff/classes.py:181
+#: application/solar_staff/classes.py:268
+msgid "User does not have surname field"
+msgstr "У пользователя не заполнено поле Фамилия"
+
+#: application/solar_staff/classes.py:107
+#: application/solar_staff/classes.py:192
+#: application/solar_staff/classes.py:279
+msgid "Error while user create"
+msgstr "Ошибка регистрации пользователя в системе Solar staff"
+
+#: application/solar_staff/models.py:13
+msgid "Waiting for confirm"
+msgstr "Принято в обработку"
+
+#: application/solar_staff/models.py:15
+msgid "Declined"
+msgstr "Отмена"
+
+#: application/solar_staff/models.py:16
+msgid "Refunded"
+msgstr "Отмена"
+
+#: application/solar_staff/models.py:17
+msgid "Partially completed"
+msgstr "Частично"
+
+#: application/solar_staff/models.py:22
+msgid "Order cashback"
+msgstr "Кешбек заказа"
+
+#: application/solar_staff/models.py:23
+msgid "Custom payment"
+msgstr "Через платежи"
+
+#: application/solar_staff/models.py:26
+msgid "Date payed"
+msgstr "Дата платежа"
+
+#: application/solar_staff/models.py:35 application/survey/models/all.py:122
+#: application/survey/models/all.py:165 application/survey/models/te.py:217
+#: application/survey/models_old.py:48 application/survey/models_old.py:394
+msgid "Surname"
+msgstr "Фамилия"
+
+#: application/solar_staff/models.py:38 application/survey/models/te.py:122
+#: application/survey/models/te.py:377 application/survey/models_old.py:324
+msgid "Error text"
+msgstr "Текст ошибки"
+
+#: application/solar_staff/models.py:39
+msgid "Server response"
+msgstr "Ответ сервера"
+
+#: application/solar_staff/models.py:39
+msgid "For debugging"
+msgstr "Для отладки"
+
+#: application/solar_staff/models.py:45
+msgid "Account"
+msgstr "Аккаунт"
+
+#: application/solar_staff/models.py:51
+msgid "Payment history"
+msgstr "Платеж"
+
+#: application/solar_staff/models.py:52
+msgid "Payments history"
+msgstr "История платежей"
+
+#: application/solar_staff/models.py:81
+msgid "Date payment"
+msgstr "Дата платежа"
+
+#: application/solar_staff/prefs.py:7
+#: application/solar_staff_accounts/models.py:8
+msgid "Salt value"
+msgstr "Значение Salt"
+
+#: application/solar_staff/prefs.py:8 application/solar_staff/prefs.py:14
+msgid "Solar staff"
+msgstr "Solar staff"
+
+#: application/solar_staff/prefs.py:13
+#: application/solar_staff_accounts/models.py:9
+msgid "Client id"
+msgstr "Клиент ид"
+
+#: application/solar_staff_accounts/models.py:15
+msgid "Solar staff accounts"
+msgstr "Solar staff аккаунты"
+
+#: application/supervisor/models.py:10 application/survey/models/all.py:291
+#: application/survey/models/te.py:621
+msgid "Date"
+msgstr "Дата"
+
+#: application/supervisor/models.py:11 application/survey/models/all.py:178
+msgid "Route name"
+msgstr "Название маршрута"
+
+#: application/supervisor/models.py:31 application/survey/models/te.py:681
+msgid "Task id"
+msgstr "Id задачи"
+
+#: application/supervisor/models.py:32 application/survey/models/te.py:683
+msgid "Store id"
+msgstr "Id магазина"
+
+#: application/supervisor/models.py:34 application/survey/models/te.py:684
+msgid "Store code"
+msgstr "Код магазина"
+
+#: application/supervisor/models.py:35 application/survey/models/te.py:685
+msgid "Store client name"
+msgstr "Клиент магазина"
+
+#: application/supervisor/models.py:36 application/survey/models/te.py:686
+msgid "Store category name"
+msgstr "Категория магазина"
+
+#: application/supervisor/models.py:39
+#, fuzzy
+#| msgid "Last name"
+msgid "Task name"
+msgstr "Фамилия"
+
+#: application/survey/admin.py:106 application/survey/models/all.py:145
+#: application/survey/models/te.py:141 application/survey/models_old.py:71
+msgid "Source"
+msgstr "Источник"
+
+#: application/survey/admin.py:109
+msgid "State"
+msgstr "Штат"
+
+#: application/survey/admin.py:119 application/survey/models/all.py:40
+#: application/survey/models/all.py:147 application/survey/models/te.py:204
+msgid "Rank"
+msgstr "Рейтинг"
+
+#: application/survey/admin.py:128
+msgid "Taxpayer data"
+msgstr "Данные по статусу самозанятого"
+
+#: application/survey/admin.py:140
+msgid "Security"
+msgstr "Безопасность"
+
+#: application/survey/admin.py:246 application/survey/models/te.py:112
+#: application/survey/models/te.py:475 application/survey/models/te.py:637
+#: application/survey/models_old.py:316
+msgid "Check"
+msgstr "Чек"
+
+#: application/survey/admin.py:413
+msgid "Instruction"
+msgstr "Инструкция"
+
+#: application/survey/admin.py:416 application/survey/models/all.py:469
+#: application/survey/models/all.py:498
+msgid "Task customer"
+msgstr "Заказчик задачи"
+
+#: application/survey/admin.py:419
+#, fuzzy
+#| msgid "Applications"
+msgid "Application"
+msgstr "Приложения"
+
+#: application/survey/admin.py:422 application/survey/admin.py:1401
+#: application/survey/admin.py:1817 application/survey/models/all.py:508
+msgid "Add value"
+msgstr "Увеличивать стоимость если не посещалось"
+
+#: application/survey/admin.py:425 application/survey/models/all.py:511
+msgid "Remove value"
+msgstr "Уменьшать стоимость если конкуренция"
+
+#: application/survey/admin.py:501
+msgid "Mark selected item status checked"
+msgstr "Изменить выбранным статус на «Одобрено»"
+
+#: application/survey/admin.py:559
+msgid "Mark selected item status denied"
+msgstr "Изменить выбранным статус на «Отказано»"
+
+#: application/survey/admin.py:580
+msgid "Mark selected item status completed"
+msgstr "Изменить выбранным статус на «Завершено»"
+
+#: application/survey/admin.py:596 application/survey/admin.py:1473
+#: application/survey/models/te.py:468 application/survey/models_old.py:418
+msgid "Unique status"
+msgstr "Статус уникальности"
+
+#: application/survey/admin.py:959 application/survey/admin.py:981
+#: application/survey/admin.py:1017
+msgid "AVAIL ASSORTMENT STORE"
+msgstr "НАЛИЧИЕ ТОВАРОВ В МАГАЗИНЕ"
+
+#: application/survey/admin.py:1760 application/survey/models/te.py:126
+#: application/survey/models/te.py:381 application/survey/models_old.py:328
+msgid "Inspector status"
+msgstr "Статус распознавания"
+
+#: application/survey/admin.py:1763
+msgid "Inspector working"
+msgstr "Работа инспектора"
+
+#: application/survey/admin.py:1785 application/survey/models/all.py:789
+#: application/survey/models/all.py:790
+msgid "Sms"
+msgstr "Sms"
+
+#: application/survey/admin.py:1788
+msgid "Response"
+msgstr "Ответ от сервиса Sms"
+
+#: application/survey/filters.py:11
+msgid "Exclude rank"
+msgstr "Исключить Рейтинги"
+
+#: application/survey/filters.py:33
+msgid "Moscow"
+msgstr "МСК"
+
+#: application/survey/filters.py:34
+msgid "Saint Petersburg"
+msgstr "СПБ"
+
+#: application/survey/filters.py:35 application/survey/models/all.py:98
+msgid "Other"
+msgstr "Другие"
+
+#: application/survey/filters.py:127 application/survey/models/all.py:370
+#: application/survey/models/all.py:494 application/survey/models_old.py:119
+#: application/survey/models_old.py:237
+msgid "Client"
+msgstr "Клиент"
+
+#: application/survey/forms.py:17
+msgid "Delete assortment"
+msgstr "Удалить старый ассортимент товаров"
+
+#: application/survey/forms.py:18
+msgid "Assign assortment to"
+msgstr "Привязать ассортимент к"
+
+#: application/survey/forms.py:25
+msgid "All stores"
+msgstr "Все магазины"
+
+#: application/survey/forms.py:30
+msgid "All categories"
+msgstr "Все группы"
+
+#: application/survey/forms.py:36
+msgid "All regions"
+msgstr "Все регионы"
+
+#: application/survey/forms.py:99
+msgid "Выберите пользователя"
+msgstr ""
+
+#: application/survey/forms.py:111
+msgid "Выберите задачу"
+msgstr ""
+
+#: application/survey/forms.py:119 application/survey/models/all.py:623
+#: application/survey/models/te.py:148
+msgid "Task step"
+msgstr "Шаг задачи"
+
+#: application/survey/forms.py:125
+msgid "Выберите шаг"
+msgstr ""
+
+#: application/survey/forms.py:133
+msgid "Сеть"
+msgstr ""
+
+#: application/survey/forms.py:137
+msgid "Выберите сеть"
+msgstr ""
+
+#: application/survey/models/all.py:32
+msgid "Work days"
+msgstr "Дней работал"
+
+#: application/survey/models/all.py:33
+msgid "Tasks month count"
+msgstr "Задач в месяц"
+
+#: application/survey/models/all.py:34
+msgid "Tasks count all"
+msgstr "Задач вообще"
+
+#: application/survey/models/all.py:35
+msgid "Rate"
+msgstr "Коэффициент"
+
+#: application/survey/models/all.py:41
+msgid "Ranks"
+msgstr "Рейтинги"
+
+#: application/survey/models/all.py:54
+msgid "User status"
+msgstr "Статус пользователя"
+
+#: application/survey/models/all.py:55
+msgid "User statuses"
+msgstr "Статусы пользователей"
+
+#: application/survey/models/all.py:97
+msgid "Self-employed"
+msgstr "Самозанятый"
+
+#: application/survey/models/all.py:117 application/survey/models_old.py:44
+msgid "Is banned"
+msgstr "Забанен"
+
+#: application/survey/models/all.py:118
+msgid "Testing mode"
+msgstr "Может тестировать новые функции"
+
+#: application/survey/models/all.py:124 application/survey/models_old.py:50
+msgid "Advisor fio"
+msgstr "ФИО менеджера"
+
+#: application/survey/models/all.py:126 application/survey/models_old.py:52
+msgid "Bank card"
+msgstr "Банковская карта"
+
+#: application/survey/models/all.py:127 application/survey/models_old.py:53
+msgid "Online wallet"
+msgstr "Электронный кошелек"
+
+#: application/survey/models/all.py:129 application/survey/models_old.py:55
+msgid "Balance"
+msgstr "Баланс, руб"
+
+#: application/survey/models/all.py:132 application/survey/models_old.py:58
+msgid "City/Region"
+msgstr "Город/Регион"
+
+#: application/survey/models/all.py:136 application/survey/models/all.py:139
+#: application/survey/models/all.py:292 application/survey/models/all.py:417
+#: application/survey/models/te.py:107 application/survey/models/te.py:690
+#: application/survey/models_old.py:62 application/survey/models_old.py:65
+#: application/survey/models_old.py:166 application/survey/models_old.py:311
+msgid "Longitude"
+msgstr "Долгота"
+
+#: application/survey/models/all.py:137 application/survey/models/all.py:140
+#: application/survey/models/all.py:293 application/survey/models/all.py:418
+#: application/survey/models/te.py:108 application/survey/models/te.py:691
+#: application/survey/models_old.py:63 application/survey/models_old.py:66
+#: application/survey/models_old.py:167 application/survey/models_old.py:312
+msgid "Latitude"
+msgstr "Широта"
+
+#: application/survey/models/all.py:142 application/survey/models_old.py:68
+msgid "Need Solar staff register"
+msgstr "Необходима регистрация в Solar staff"
+
+#: application/survey/models/all.py:144 application/survey/models_old.py:70
+msgid "API key"
+msgstr "API ключ"
+
+#: application/survey/models/all.py:148
+msgid "Fixed rank"
+msgstr "Фиксировать рейтинг"
+
+#: application/survey/models/all.py:150
+msgid "Only self tasks"
+msgstr "Видит только свои задачи"
+
+#: application/survey/models/all.py:163
+msgid "Taxpayer status"
+msgstr "Заполнена анкета самозанятого"
+
+#: application/survey/models/all.py:167
+msgid "Patronymic"
+msgstr "Отчество"
+
+#: application/survey/models/all.py:168
+msgid "Passport"
+msgstr "Серия и номер пасспорта"
+
+#: application/survey/models/all.py:169
+msgid "Passport series"
+msgstr "Серия паспорта"
+
+#: application/survey/models/all.py:170
+msgid "Passport number"
+msgstr "Номер паспорта"
+
+#: application/survey/models/all.py:171 application/survey/models/te.py:627
+msgid "INN"
+msgstr "ИНН"
+
+#: application/survey/models/all.py:174
+msgid "Taxpayer join date"
+msgstr "Дата заполнения анкеты"
+
+#: application/survey/models/all.py:175
+msgid "Bank account"
+msgstr "Номер счета в банке"
+
+#: application/survey/models/all.py:192 application/survey/models_old.py:76
+msgid "Telegram user"
+msgstr "Пользователь приложения"
+
+#: application/survey/models/all.py:193 application/survey/models_old.py:77
+msgid "Telegram users"
+msgstr "Пользователи приложения"
+
+#: application/survey/models/all.py:270 application/survey/models/all.py:310
+msgid "Date use"
+msgstr "Дата использования"
+
+#: application/survey/models/all.py:272 application/survey/models/all.py:312
+msgid "Device key"
+msgstr "Ключ устройства"
+
+#: application/survey/models/all.py:273 application/survey/models/all.py:313
+msgid "OS"
+msgstr "Операционная система"
+
+#: application/survey/models/all.py:280 application/survey/models/all.py:319
+msgid "Mobile device"
+msgstr "Мобильное устройство"
+
+#: application/survey/models/all.py:281 application/survey/models/all.py:320
+msgid "Mobile devices"
+msgstr "Мобильные устройства"
+
+#: application/survey/models/all.py:407 application/survey/models_old.py:156
+msgid "Chain stores"
+msgstr "Сети магазинов"
+
+#: application/survey/models/all.py:416 application/survey/models_old.py:165
+msgid "Auto calc coordinates"
+msgstr "Автоматически определить"
+
+#: application/survey/models/all.py:456 application/survey/models_old.py:204
+msgid "Production"
+msgstr "Продукция"
+
+#: application/survey/models/all.py:470
+msgid "Tasks customers"
+msgstr "Заказчики задач"
+
+#: application/survey/models/all.py:487 application/survey/models_old.py:230
+msgid "Instruction file"
+msgstr "Инструкция файл"
+
+#: application/survey/models/all.py:488 application/survey/models_old.py:231
+msgid "Instruction url"
+msgstr "Инструкция url"
+
+#: application/survey/models/all.py:505 application/survey/models/te.py:88
+msgid "Sum source"
+msgstr "Цена номинал"
+
+#: application/survey/models/all.py:509
+msgid "Add sum"
+msgstr "Увеличенная стоимость"
+
+#: application/survey/models/all.py:510
+msgid "Add days"
+msgstr "Через дней"
+
+#: application/survey/models/all.py:512
+msgid "Remove sum"
+msgstr "Уменьшенная стоимость"
+
+#: application/survey/models/all.py:513
+msgid "Remove days"
+msgstr "Через дней"
+
+#: application/survey/models/all.py:514
+msgid "Remove ppl"
+msgstr "Человек побывало на точке"
+
+#: application/survey/models/all.py:519 application/survey/models_old.py:246
+msgid "Is sales task"
+msgstr "Задача продажа"
+
+#: application/survey/models/all.py:520 application/survey/models_old.py:247
+msgid "Parse by inspector"
+msgstr "Разбирать в инспекторе"
+
+#: application/survey/models/all.py:522
+msgid "Only for user status"
+msgstr "Только для определенного статуса"
+
+#: application/survey/models/all.py:525
+msgid "Disable if store in loyalty"
+msgstr "Отключить в магазинах, участвующих в программе лояльности"
+
+#: application/survey/models/all.py:527
+msgid "New task with constructor"
+msgstr "С конструктором"
+
+#: application/survey/models/all.py:558
+msgid "Questionnaires"
+msgstr "Анкеты для задач"
+
+#: application/survey/models/all.py:567
+msgid "String"
+msgstr "Строка"
+
+#: application/survey/models/all.py:568
+msgid "Integer"
+msgstr "Число"
+
+#: application/survey/models/all.py:569 application/survey/models/all.py:574
+msgid "Choices"
+msgstr "Значения"
+
+#: application/survey/models/all.py:573 application/survey/models/te.py:428
+msgid "Question text"
+msgstr "Текст вопроса"
+
+#: application/survey/models/all.py:574
+msgid "Enter separated"
+msgstr "Разделитель: новая строка"
+
+#: application/survey/models/all.py:575 application/survey/models/all.py:608
+msgid "Require"
+msgstr "Обязательно"
+
+#: application/survey/models/all.py:578
+msgid "Question type"
+msgstr "Тип вопроса"
+
+#: application/survey/models/all.py:583
+msgid "Questionnaire question"
+msgstr "Вопрос анкеты"
+
+#: application/survey/models/all.py:584
+msgid "Questionnaires questions"
+msgstr "Вопросы анкеты"
+
+#: application/survey/models/all.py:597 application/survey/models/te.py:332
+msgid "Photos"
+msgstr "Фото"
+
+#: application/survey/models/all.py:606 application/survey/models/all.py:782
+msgid "Text"
+msgstr "Текст"
+
+#: application/survey/models/all.py:607 application/survey/models/te.py:342
+msgid "Step type"
+msgstr "Тип шага"
+
+#: application/survey/models/all.py:610
+msgid "Parse photo in inspector"
+msgstr "Разбирать фото в инспекторе"
+
+#: application/survey/models/all.py:611
+msgid "Check assortment after parse"
+msgstr "Проверять ассортимент"
+
+#: application/survey/models/all.py:612
+msgid "Check photo by manager"
+msgstr "Проверка фото аудитором"
+
+#: application/survey/models/all.py:613
+msgid "Ability to upload photos from the gallery"
+msgstr "Возможна загрузка из галереи"
+
+#: application/survey/models/all.py:624
+msgid "Tasks step"
+msgstr "Шаги задачи"
+
+#: application/survey/models/all.py:641
+#, fuzzy
+#| msgid "Is delete"
+msgid "Delete"
+msgstr "Удалять"
+
+#: application/survey/models/all.py:646 application/survey/models_old.py:218
+msgid "Store good"
+msgstr "Товар в магазине"
+
+#: application/survey/models/all.py:647 application/survey/models_old.py:219
+msgid "Assortment"
+msgstr "Ассортимент"
+
+#: application/survey/models/all.py:657 application/survey/models_old.py:443
+msgid "Agreement file"
+msgstr "Файл соглашения"
+
+#: application/survey/models/all.py:677 application/survey/models_old.py:493
+msgid "Hours start"
+msgstr "Часы начала"
+
+#: application/survey/models/all.py:678 application/survey/models_old.py:494
+msgid "Hours end"
+msgstr "Часы завершения"
+
+#: application/survey/models/all.py:679
+msgid "Only user"
+msgstr "Только для пользователя"
+
+#: application/survey/models/all.py:681 application/survey/models/te.py:700
+msgid "Telegram channel id"
+msgstr "Телеграм канал id"
+
+#: application/survey/models/all.py:683 application/survey/models/te.py:696
+msgid "Is add value"
+msgstr "Увеличивать стоимость"
+
+#: application/survey/models/all.py:684 application/survey/models/te.py:697
+msgid "New value"
+msgstr "Увеличенная новая цена"
+
+#: application/survey/models/all.py:691 application/survey/models_old.py:499
+msgid "Store task"
+msgstr "Задача в магазине"
+
+#: application/survey/models/all.py:692 application/survey/models_old.py:500
+msgid "Stores tasks"
+msgstr "Задачи в магазинах"
+
+#: application/survey/models/all.py:727
+msgid "1c request"
+msgstr "1c запрос"
+
+#: application/survey/models/all.py:728
+msgid "1c requests"
+msgstr "1c запросы"
+
+#: application/survey/models/all.py:752
+msgid "External request"
+msgstr "Внешний запрос"
+
+#: application/survey/models/all.py:753
+msgid "External requests"
+msgstr "Внешние запросы"
+
+#: application/survey/models/all.py:770
+msgid "Request"
+msgstr "Запрос"
+
+#: application/survey/models/all.py:779
+msgid "Send date"
+msgstr "Дата отправки"
+
+#: application/survey/models/all.py:783
+msgid "Response code"
+msgstr "Код ответа"
+
+#: application/survey/models/all.py:784
+msgid "Response text"
+msgstr "Текст ответа"
+
+#: application/survey/models/all.py:799
+msgid "Attempts count"
+msgstr "Количество попыток"
+
+#: application/survey/models/all.py:804
+msgid "Sms attempt"
+msgstr "Количество попыток sms"
+
+#: application/survey/models/all.py:805
+msgid "Sms attempts"
+msgstr "Количество попыток sms"
+
+#: application/survey/models/te.py:39 application/survey/models/te.py:358
+#: application/survey/models/te.py:459 application/survey/models_old.py:272
+#: application/survey/models_old.py:407
+msgid "Undefined"
+msgstr "Не указано"
+
+#: application/survey/models/te.py:40 application/survey/models/te.py:359
+#: application/survey/models_old.py:273
+msgid "Waiting for inspector"
+msgstr "Ожидание старта"
+
+#: application/survey/models/te.py:41 application/survey/models/te.py:360
+msgid "Upload wait"
+msgstr "Загрузка в процессе"
+
+#: application/survey/models/te.py:42 application/survey/models/te.py:361
+#: application/survey/models_old.py:274
+msgid "Upload error"
+msgstr "Ошибка загрузки"
+
+#: application/survey/models/te.py:43 application/survey/models/te.py:362
+#: application/survey/models_old.py:275
+msgid "Parse error"
+msgstr "Ошибка разбора"
+
+#: application/survey/models/te.py:44 application/survey/models/te.py:363
+msgid "Report process"
+msgstr "Отчет в процессе"
+
+#: application/survey/models/te.py:45 application/survey/models/te.py:364
+#: application/survey/models_old.py:276
+msgid "Report error"
+msgstr "Ошибка отчета"
+
+#: application/survey/models/te.py:46 application/survey/models/te.py:365
+#: application/survey/models_old.py:277
+msgid "Report waiting"
+msgstr "Ждем отчета"
+
+#: application/survey/models/te.py:48 application/survey/models/te.py:367
+#: application/survey/models_old.py:279
+msgid "Success parsing"
+msgstr "Успешно"
+
+#: application/survey/models/te.py:49
+#, fuzzy
+#| msgid "Shop-survey API"
+msgid "Shop survey AI"
+msgstr "Shop-survey API"
+
+#: application/survey/models/te.py:53 application/survey/models_old.py:283
+msgid "Photo before"
+msgstr "Фото до начала работы"
+
+#: application/survey/models/te.py:54 application/survey/models_old.py:284
+msgid "Photo after"
+msgstr "Фото после начала работы"
+
+#: application/survey/models/te.py:55 application/survey/models_old.py:285
+msgid "Photo check"
+msgstr "Фото чека"
+
+#: application/survey/models/te.py:56 application/survey/models_old.py:286
+msgid "All photo uploaded"
+msgstr "Все фото загружены"
+
+#: application/survey/models/te.py:59 application/survey/models_old.py:289
+msgid "Not verified"
+msgstr "Не проверено"
+
+#: application/survey/models/te.py:60 application/survey/models/te.py:615
+#: application/survey/models_old.py:290
+msgid "Correct check"
+msgstr "Правильный чек"
+
+#: application/survey/models/te.py:61 application/survey/models/te.py:616
+#: application/survey/models_old.py:291
+msgid "Incorrect check"
+msgstr "Не корректный чек"
+
+#: application/survey/models/te.py:76
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: application/survey/models/te.py:78
+msgid "Android"
+msgstr "Android"
+
+#: application/survey/models/te.py:79
+msgid "iPhone"
+msgstr "iPhone"
+
+#: application/survey/models/te.py:92
+msgid "Date end user"
+msgstr "Дата завершения пользователем"
+
+#: application/survey/models/te.py:100 application/survey/models/te.py:482
+#: application/survey/models/te.py:497 application/survey/models_old.py:304
+#: application/survey/models_old.py:427
+msgid "Confirmation image"
+msgstr "Изображение результата"
+
+#: application/survey/models/te.py:101 application/survey/models_old.py:305
+msgid "What the user writes"
+msgstr "То что пишет пользователь"
+
+#: application/survey/models/te.py:104 application/survey/models_old.py:308
+msgid "Internal comments"
+msgstr "Комментарий менеджера"
+
+#: application/survey/models/te.py:105 application/survey/models_old.py:309
+msgid "Remains in the system and is visible only to administrators."
+msgstr "Остается в системе и видно только аддминистраторам"
+
+#: application/survey/models/te.py:109 application/survey/models_old.py:313
+msgid "Distance to store"
+msgstr "Расстояние до магазина"
+
+#: application/survey/models/te.py:109 application/survey/models_old.py:313
+msgid "Meters"
+msgstr "метров"
+
+#: application/survey/models/te.py:111 application/survey/models_old.py:315
+msgid "Step"
+msgstr "Шаг"
+
+#: application/survey/models/te.py:114 application/survey/models/te.py:638
+#: application/survey/models_old.py:317
+msgid "Set check verified"
+msgstr "Проверить чек"
+
+#: application/survey/models/te.py:115 application/survey/models/te.py:639
+#: application/survey/models_old.py:318
+msgid "Set check not verified"
+msgstr "Отклонить чек"
+
+#: application/survey/models/te.py:116 application/survey/models_old.py:319
+msgid "Checked by auditor"
+msgstr "Аудитор"
+
+#: application/survey/models/te.py:121 application/survey/models/te.py:376
+#: application/survey/models_old.py:323
+msgid "Upload images message"
+msgstr "Сообщение загрузки изображений"
+
+#: application/survey/models/te.py:123 application/survey/models/te.py:378
+#: application/survey/models_old.py:325
+msgid "Recognize message"
+msgstr "Сообщение распознавания"
+
+#: application/survey/models/te.py:125 application/survey/models/te.py:380
+#: application/survey/models_old.py:327
+msgid "Positions text"
+msgstr "Сообщение с позициями"
+
+#: application/survey/models/te.py:128 application/survey/models/te.py:383
+#: application/survey/models_old.py:330
+msgid "Report id"
+msgstr "Id отчета"
+
+#: application/survey/models/te.py:130 application/survey/models_old.py:332
+msgid "Report id before"
+msgstr "Id отчета до работы"
+
+#: application/survey/models/te.py:131 application/survey/models_old.py:333
+msgid "Inspector status before"
+msgstr "Статус распознавания до"
+
+#: application/survey/models/te.py:134 application/survey/models/te.py:385
+#: application/survey/models_old.py:336
+msgid "Inspector alert"
+msgstr "Отправлено уведомление пользователю"
+
+#: application/survey/models/te.py:135 application/survey/models_old.py:337
+msgid "Inspector re work"
+msgstr "Задача будет переработана инспектором"
+
+#: application/survey/models/te.py:136 application/survey/models_old.py:338
+msgid "Inspector is work"
+msgstr "Задача будет обработана инспектором"
+
+#: application/survey/models/te.py:227 application/survey/models/te.py:235
+#: application/survey/models/te.py:414 application/survey/models/te.py:422
+msgid "Inspector link"
+msgstr "Ссылка на инспектор"
+
+#: application/survey/models/te.py:249 application/survey/models_old.py:346
+msgid "Tasks execution"
+msgstr "Выполнение задач"
+
+#: application/survey/models/te.py:316 application/survey/models_old.py:400
+msgid "Task execution check"
+msgstr "Проверка чека"
+
+#: application/survey/models/te.py:317 application/survey/models_old.py:401
+msgid "Tasks execution checks"
+msgstr "Проверка чеков"
+
+#: application/survey/models/te.py:372 application/survey/models/te.py:430
+#: application/survey/models/te.py:474 application/survey/models/te.py:516
+msgid "Step name"
+msgstr "Название шага"
+
+#: application/survey/models/te.py:390
+msgid "Task execution inspector"
+msgstr "Разбор задачи инспектором"
+
+#: application/survey/models/te.py:391
+msgid "Tasks execution inspector"
+msgstr "Разбор задач инспектором"
+
+#: application/survey/models/te.py:429
+msgid "Answer"
+msgstr "Ответ"
+
+#: application/survey/models/te.py:435 application/survey/models/te.py:451
+msgid "Task questionnaire answer"
+msgstr "Ответ на вопрос анкеты"
+
+#: application/survey/models/te.py:436 application/survey/models/te.py:452
+msgid "Task questionnaire answers"
+msgstr "Ответы на вопросы анкеты"
+
+#: application/survey/models/te.py:460 application/survey/models_old.py:408
+msgid "Enter photo"
+msgstr "Фото входа"
+
+#: application/survey/models/te.py:461 application/survey/models_old.py:409
+msgid "Photo before work"
+msgstr "Фото до начала работы"
+
+#: application/survey/models/te.py:462 application/survey/models_old.py:410
+msgid "Photo after work"
+msgstr "Фото после начала работы"
+
+#: application/survey/models/te.py:463 application/survey/models_old.py:411
+msgid "Cass check"
+msgstr "Фото чека"
+
+#: application/survey/models/te.py:468 application/survey/models_old.py:418
+msgid "Image analysis in progress..."
+msgstr "Анализ изображения в процессе..."
+
+#: application/survey/models/te.py:472 application/survey/models_old.py:422
+msgid "Image type"
+msgstr "Тип фото"
+
+#: application/survey/models/te.py:483 application/survey/models/te.py:498
+#: application/survey/models_old.py:428
+msgid "Confirmation images"
+msgstr "Изображения результата"
+
+#: application/survey/models/te.py:515 application/survey/models/te.py:542
+#: application/survey/models/te.py:560 application/survey/models_old.py:512
+#: application/survey/models_old.py:529
+msgid "Avail"
+msgstr "Наличие"
+
+#: application/survey/models/te.py:521 application/survey/models/te.py:533
+#: application/survey/models_old.py:517
+msgid "Avail assortment"
+msgstr "Наличие товара"
+
+#: application/survey/models/te.py:547
+msgid "Avail assortment all"
+msgstr "Наличие товара все"
+
+#: application/survey/models/te.py:548
+msgid "Avail assortments all"
+msgstr "Наличие товаров все"
+
+#: application/survey/models/te.py:565 application/survey/models/te.py:577
+#: application/survey/models_old.py:534
+msgid "Avail assortment before"
+msgstr "Наличие товара до работы"
+
+#: application/survey/models/te.py:613
+msgid "New act"
+msgstr "Новый акт"
+
+#: application/survey/models/te.py:614
+msgid "Waiting for verify"
+msgstr "Ждет проверки"
+
+#: application/survey/models/te.py:619
+msgid "Number"
+msgstr "Номер"
+
+#: application/survey/models/te.py:620
+msgid "1c id"
+msgstr "1c ид"
+
+#: application/survey/models/te.py:626
+msgid "Fio"
+msgstr "Фио"
+
+#: application/survey/models/te.py:635
+msgid "Sent telegram"
+msgstr "Отправлено в телеграм"
+
+#: application/survey/models/te.py:641 application/survey/models_old.py:320
+msgid "Check user"
+msgstr "Проверено аудитором чек"
+
+#: application/survey/models/te.py:643
+msgid "Link"
+msgstr "Ссылка"
+
+#: application/survey/models/te.py:644
+msgid "Manager comment"
+msgstr "Комментарий менеджера"
+
+#: application/survey/models/te.py:650 application/survey/views.py:678
+msgid "Acts"
+msgstr "Акты"
+
+#: application/survey/models/te.py:674
+msgid "Check act taxpayers"
+msgstr "Проверка чека самозанятого"
+
+#: application/survey/models/te.py:675
+msgid "Check acts taxpayers"
+msgstr "Проверка чеков самозанятых"
+
+#: application/survey/models/te.py:680
+msgid "Store task id"
+msgstr "Id задачи в магазине"
+
+#: application/survey/models/te.py:687
+msgid "Store region name"
+msgstr "Регион магазина"
+
+#: application/survey/models/te.py:688
+msgid "Store region id"
+msgstr "Ид региона"
+
+#: application/survey/models/te.py:693
+msgid "Only user id"
+msgstr "Только для пользователя id"
+
+#: application/survey/models/te.py:694
+msgid "Lock user id"
+msgstr "Залочена для пользователя id"
+
+#: application/survey/models/te.py:699
+msgid "Is delete"
+msgstr "Удалять"
+
+#: application/survey/models/te.py:702
+msgid "Update time"
+msgstr "Время обновления"
+
+#: application/survey/models/te.py:703
+msgid "Is deleted"
+msgstr "Удаленный"
+
+#: application/survey/models/te.py:710
+msgid "Store task avail"
+msgstr "Доступная задача в магазине"
+
+#: application/survey/models/te.py:711
+msgid "Stores tasks avails"
+msgstr "Доступные задачи в магазинах"
+
+#: application/survey/models/te.py:714
+#, python-format
+msgid "Store task avail # %s"
+msgstr "Доступная задача в магазине # %s"
+
+#: application/survey/models/te.py:793
+msgid "Сумма штрафа"
+msgstr ""
+
+#: application/survey/models/te.py:794
+msgid "Сумма погашения штрафа"
+msgstr ""
+
+#: application/survey/models/te.py:796
+msgid "Координатор"
+msgstr ""
+
+#: application/survey/models/te.py:877
+msgid "Penalty"
+msgstr ""
+
+#: application/survey/models/te.py:882
+msgid "Сумма погашения"
+msgstr ""
+
+#: application/survey/prefs.py:7
+msgid "Store search radius"
+msgstr "Радиус поиска магазинов, в км"
+
+#: application/survey/prefs.py:13
+msgid "Maximum year amount of tasks for non-self-employed"
+msgstr "Максимальная сумма задач для не самозанятых в год"
+
+#: application/survey/tasks.py:44
+msgid "<span style=\"color: red\">Bad image</span>"
+msgstr "<span style=\"color: green\">Изображение с ошибкой</span>"
+
+#: application/survey/tasks.py:62
+msgid "<span style=\"color: green\">Unique image</span>"
+msgstr "<span style=\"color: green\">Уникальное изображение</span>"
+
+#: application/survey/tasks.py:64
+msgid "The picture is duplicated in task"
+msgstr "Изображение дублировано из задачи"
+
+#: application/survey/utils.py:568 application/survey/utils.py:655
+msgid "Error. Excel file data not found"
+msgstr "Ошибка. Данные в Excel-файле не найдены"
+
+#: application/survey/utils.py:624 application/survey/utils.py:700
+msgid "Error. Excel file error"
+msgstr "Ошибка. Ошибка при разборе Excel-файла"
+
+#: application/survey/views.py:467
+msgid "Task execution report"
+msgstr "Отчет выполнение задач"
+
+#: application/survey/views.py:712
+#, python-brace-format
+msgid "Acts {date_start} {date_end}"
+msgstr "Акты {date_start} {date_end}"
+
+#: application/survey/views.py:800
+msgid "Taxpayers users"
+msgstr "Самозанятые пользователи"
+
+#: application/survey/views.py:903
+msgid "Agent bot orders"
+msgstr "Заказы «Агент бот»"
+
+#: application/survey/views.py:908
+#, python-brace-format
+msgid "Agent bot orders {date_start} {date_end}"
+msgstr "Заказы «Агент бот» {date_start} {date_end}"
+
+#: application/survey/views.py:1269
+msgid "Shop survey export data"
+msgstr "Экспортированные данные"
+
+#: application/survey/views.py:1735
+msgid "Задачи с отказами"
+msgstr "Задачи с отказами"
+
+#: application/telegram/forms.py:15
+msgid "Excel file"
+msgstr "Excel файл"
+
+#: application/telegram/forms.py:22
+msgid ""
+"This file is not Excel document. You need upload file with .xlsx extension."
+msgstr ""
+"Загруженный файл не является Excel-файлом. Загрузите файл с расширением .xlsx"
+
+#: application/telegram/forms.py:37
+msgid "Order button"
+msgstr "Кнопка заказа"
+
+#: application/telegram/models.py:75
+msgid "Telegram channel"
+msgstr "Телеграм канал"
+
+#: application/telegram/models.py:76
+msgid "Telegram channels"
+msgstr "Телеграм каналы"
+
+#: application/telegram/models.py:85
+msgid "Module"
+msgstr ""
+
+#: application/telegram/models.py:86
+#, fuzzy
+#| msgid "Action"
+msgid "Function"
+msgstr "Действие"
+
+#: application/telegram/models.py:91 application/telegram/models.py:92
+#: application/telegram/models.py:100
+#, fuzzy
+#| msgid "Processed"
+msgid "Process"
+msgstr "Обработано"
+
+#: application/telegram/models.py:106
+#, fuzzy
+#| msgid "Processed"
+msgid "Process attribute"
+msgstr "Обработано"
+
+#: application/telegram/models.py:107
+msgid "Process attributes"
+msgstr ""
+
+#: application/telegram/prefs.py:20
+msgid "Site"
+msgstr "Сайт"
+
+#: application/telegram/prefs.py:31
+msgid "Goods per page"
+msgstr "Товаров на страницу"
+
+#: application/telegram/views.py:96 application/telegram/views.py:192
+msgid "Uploaded file"
+msgstr "Загруженный файл"
+
+#: templates/admin/input_filter.html:3
+#, python-format
+msgid " By %(filter_title)s "
+msgstr " По %(filter_title)s "
+
+#: templates/admin/input_filter.html:18
+msgid "Remove"
+msgstr "Удалить"
+
+#: templates/admin/survey/tasksexecution/change_list.html:56
+#: templates/agent/import.html:45 templates/iceman/import-products.html:69
+#: templates/iceman/import-stores.html:69 templates/iceman/import-tasks.html:69
+#: templates/iceman/message_v2.html:69 templates/iceman/reports.html:63
+#: templates/iceman/reports.iceman_task_list.html:69
+#: templates/iceman/reports.icemans.html:67 templates/mobile/message.html:69
+#: templates/profi/message.html:31 templates/survey/export.html:57
+#: templates/survey/images.html:70 templates/survey/import-tasks.html:69
+#: templates/survey/import.html:69
+#: templates/survey/reports.devicesurveyors.html:61
+#: templates/survey/reports.html:63 templates/survey/reports.surveyors.html:67
+#: templates/telegram/message.html:55 templates/telegram/message_group.html:55
+#: templates/telegram/message_group_file.html:55
+#: templates/telegram/message_stores.html:55
+#: templates/telegram/message_stores_file.html:55
+#: templates/users/change_password.html:69
+msgid "Home"
+msgstr "Домой"
+
+#: templates/admin/survey/tasksexecution/change_list.html:76
+msgid "Please correct the error below."
+msgstr "Пожалуйста, исправьте ошибки ниже."
+
+#: templates/admin/survey/tasksexecution/change_list.html:76
+#: templates/agent/import.html:79 templates/iceman/import-products.html:108
+#: templates/iceman/import-stores.html:108
+#: templates/iceman/import-tasks.html:108 templates/iceman/message_v2.html:84
+#: templates/mobile/message.html:84 templates/profi/message.html:45
+#: templates/survey/export.html:71 templates/survey/import-tasks.html:108
+#: templates/survey/import.html:103 templates/telegram/message.html:69
+#: templates/telegram/message_group.html:69
+#: templates/telegram/message_group_file.html:82
+#: templates/telegram/message_stores.html:69
+#: templates/telegram/message_stores_file.html:82
+msgid "Please correct the errors below."
+msgstr "Пожалуйста, исправьте ошибки ниже."
+
+#: templates/admin/survey/tasksexecution/change_list.html:102
+msgid "Search"
+msgstr "Поиск"
+
+#: templates/admin/survey/tasksexecution/change_list.html:105
+#, python-format
+msgid "%(counter)s result"
+msgid_plural "%(counter)s results"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: templates/admin/survey/tasksexecution/change_list.html:105
+#, python-format
+msgid "%(full_result_count)s total"
+msgstr ""
+
+#: templates/admin/survey/tasksexecution/change_list.html:105
+msgid "Show all"
+msgstr ""
+
+#: templates/admin/survey/tasksexecution/change_list.html:115
+msgid "Filter"
+msgstr "Фильтр"
+
+#: templates/admin_tools/dashboard/modules/app_list.html:12
+msgid "Add"
+msgstr "Добавить"
+
+#: templates/admin_tools/dashboard/modules/app_list.html:13
+#: templates/users/change_password.html:121
+msgid "Change"
+msgstr "Изменить"
+
+#: templates/agent/import.html:4 templates/agent/import.html:40
+#: templates/agent/import.html:46
+msgid "Import data agent"
+msgstr "Импорт данных Агент"
+
+#: templates/agent/import.html:40 templates/iceman/import-products.html:64
+#: templates/iceman/import-stores.html:64 templates/iceman/import-tasks.html:64
+#: templates/iceman/message_v2.html:65 templates/iceman/reports.html:58
+#: templates/iceman/reports.iceman_task_list.html:64
+#: templates/iceman/reports.icemans.html:63 templates/mobile/message.html:65
+#: templates/profi/message.html:27 templates/survey/export.html:52
+#: templates/survey/images.html:65 templates/survey/import-tasks.html:64
+#: templates/survey/import.html:64
+#: templates/survey/reports.devicesurveyors.html:58
+#: templates/survey/reports.html:58 templates/survey/reports.surveyors.html:63
+#: templates/telegram/message.html:51 templates/telegram/message_group.html:51
+#: templates/telegram/message_group_file.html:51
+#: templates/telegram/message_stores.html:51
+#: templates/telegram/message_stores_file.html:51
+#: templates/users/change_password.html:64
+msgid "Django site admin"
+msgstr "Администрирование"
+
+#: templates/agent/import.html:61 templates/iceman/import-products.html:85
+#: templates/iceman/import-stores.html:85 templates/iceman/import-tasks.html:85
+#: templates/survey/import-tasks.html:85 templates/survey/import.html:85
+msgid "Refresh"
+msgstr "Обновить"
+
+#: templates/agent/import.html:62 templates/iceman/import-products.html:86
+#: templates/iceman/import-stores.html:86 templates/iceman/import-tasks.html:86
+#: templates/survey/import-tasks.html:86 templates/survey/import.html:86
+msgid "Cancel"
+msgstr "Отменить"
+
+#: templates/iceman/import-products.html:42
+#: templates/iceman/import-stores.html:42 templates/iceman/import-tasks.html:42
+#: templates/iceman/message_v2.html:44 templates/iceman/reports.html:37
+#: templates/iceman/reports.iceman_task_list.html:43
+#: templates/iceman/reports.icemans.html:42 templates/mobile/message.html:44
+#: templates/survey/export.html:30 templates/survey/images.html:43
+#: templates/survey/import-tasks.html:42 templates/survey/import.html:42
+#: templates/survey/reports.devicesurveyors.html:38
+#: templates/survey/reports.html:37 templates/survey/reports.surveyors.html:42
+#: templates/telegram/message.html:30 templates/telegram/message_group.html:30
+#: templates/telegram/message_group_file.html:30
+#: templates/telegram/message_stores.html:30
+#: templates/telegram/message_stores_file.html:30
+#: templates/users/change_password.html:42
+msgid "Welcome,"
+msgstr "Добро пожаловать, "
+
+#: templates/iceman/import-products.html:47
+#: templates/iceman/import-stores.html:47 templates/iceman/import-tasks.html:47
+#: templates/iceman/message_v2.html:49 templates/iceman/reports.html:42
+#: templates/iceman/reports.iceman_task_list.html:48
+#: templates/iceman/reports.icemans.html:47 templates/mobile/message.html:49
+#: templates/survey/export.html:35 templates/survey/images.html:48
+#: templates/survey/import-tasks.html:47 templates/survey/import.html:47
+#: templates/survey/reports.devicesurveyors.html:43
+#: templates/survey/reports.html:42 templates/survey/reports.surveyors.html:47
+#: templates/telegram/message.html:35 templates/telegram/message_group.html:35
+#: templates/telegram/message_group_file.html:35
+#: templates/telegram/message_stores.html:35
+#: templates/telegram/message_stores_file.html:35
+#: templates/users/change_password.html:47
+msgid "View site"
+msgstr "Смотреть сайт"
+
+#: templates/iceman/import-products.html:52
+#: templates/iceman/import-stores.html:52 templates/iceman/import-tasks.html:52
+#: templates/iceman/message_v2.html:54 templates/iceman/reports.html:47
+#: templates/iceman/reports.iceman_task_list.html:53
+#: templates/iceman/reports.icemans.html:52 templates/mobile/message.html:54
+#: templates/survey/export.html:40 templates/survey/images.html:53
+#: templates/survey/import-tasks.html:52 templates/survey/import.html:52
+#: templates/survey/reports.devicesurveyors.html:48
+#: templates/survey/reports.html:47 templates/survey/reports.surveyors.html:52
+#: templates/telegram/message.html:40 templates/telegram/message_group.html:40
+#: templates/telegram/message_group_file.html:40
+#: templates/telegram/message_stores.html:40
+#: templates/telegram/message_stores_file.html:40
+#: templates/users/change_password.html:52
+msgid "Documentation"
+msgstr "Документация"
+
+#: templates/iceman/import-stores.html:183
+#: templates/iceman/import-tasks.html:184 templates/survey/export.html:117
+msgid "Export"
+msgstr "Экспорт"
+
+#: templates/iceman/message_v2.html:240 templates/mobile/message.html:212
+#: templates/profi/message.html:83 templates/telegram/message.html:107
+#: templates/telegram/message_group_file.html:169
+#: templates/telegram/message_stores_file.html:193
+msgid "Send message"
+msgstr "Отправить сообщение"
+
+#: templates/iceman/reports.html:90 templates/iceman/reports.html:112
+#: templates/iceman/reports.iceman_task_list.html:106
+#: templates/iceman/reports.icemans.html:122
+#: templates/survey/reports.devicesurveyors.html:80
+#: templates/survey/reports.html:169 templates/survey/reports.html:313
+#: templates/survey/reports.surveyors.html:134
+msgid "Построить отчет"
+msgstr "Построить отчет"
+
+#: templates/iceman/reports.iceman_task_list.html:4
+msgid "Отчет по задачам торговых представителей"
+msgstr ""
+
+#: templates/iceman/reports.iceman_task_list.html:64
+#: templates/iceman/reports.iceman_task_list.html:71
+#: templates/iceman/reports.icemans.html:63
+#: templates/iceman/reports.icemans.html:69
+msgid "Icemans report"
+msgstr "Отчет по торговым представителям"
+
+#: templates/iceman/reports.icemans.html:4
+msgid "Отчет по торговым представителям"
+msgstr ""
+
+#: templates/iceman/reports.icemans.html:125
+#: templates/survey/reports.devicesurveyors.html:83
+#: templates/survey/reports.html:102 templates/survey/reports.html:135
+#: templates/survey/reports.html:213 templates/survey/reports.html:238
+#: templates/survey/reports.html:263 templates/survey/reports.html:288
+#: templates/survey/reports.html:316 templates/survey/reports.html:341
+msgid "Export to Excel"
+msgstr "Экспорт в Excel"
+
+#: templates/profi/message.html:4
+msgid "Telegram profi bot"
+msgstr "Телеграм бот «Профи»"
+
+#: templates/rest_framework/api.html:6
+msgid "Shop-survey API"
+msgstr "Shop-survey API"
+
+#: templates/survey/reports.devicesurveyors.html:3
+#: templates/survey/reports.devicesurveyors.html:63
+msgid "Отчет по версиям приложения"
+msgstr ""
+
+#: templates/survey/reports.devicesurveyors.html:58
+#: templates/survey/reports.surveyors.html:4
+#: templates/survey/reports.surveyors.html:63
+#: templates/survey/reports.surveyors.html:69
+msgid "Surveyors report"
+msgstr "Отчет по сурвеерам"
+
+#: templates/survey/reports.html:89 templates/survey/reports.html:128
+#: templates/survey/reports.html:197 templates/survey/reports.html:206
+msgid "Any"
+msgstr "Любой"
+
+#: templates/telegram/message_group.html:102
+#: templates/telegram/message_stores.html:96
+msgid "Upload file"
+msgstr "Загрузить файл"
+
+#: templates/telegram/message_group_file.html:71
+#: templates/telegram/message_stores_file.html:71
+msgid "Back"
+msgstr "Назад"
+
+#~ msgid "User status for agent"
+#~ msgstr "Статус пользователя для агента"
+
+#~ msgid "User region"
+#~ msgstr "Регион пользователя"

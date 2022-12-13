@@ -1,0 +1,21 @@
+{% extends 'admin/change_list.html' %}
+
+{% load admin_list %}
+
+{% block search %}
+    {% search_form cl %}
+    <div style="display: none; padding: 0 0 0 20px" id="archive-year">Год: &nbsp;
+        <select>
+            {% for i in archive_years %}
+                <option value="{{ i }}" {% if archive_year == i %}selected="selected"{% endif %}>{{ i }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div style="display: none; padding: 0 0 0 20px" id="archive-month">Месяц: &nbsp;
+        <select>
+            {% for i in archive_months %}
+                <option value="{{ i }}" {% if archive_month == i %}selected="selected"{% endif %}>{{ i }}</option>
+            {% endfor %}
+        </select>
+    </div>
+{% endblock %}

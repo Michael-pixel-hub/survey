@@ -1,0 +1,246 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block content_title %}<h1>{{ _('Sending messages') }}</h1>{% endblock %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <script type="text/javascript" src="/jsi18n/"></script>
+    <script type="text/javascript" src="{% static "admin/js/core.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/vendor/jquery/jquery.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/vendor/select2/select2.full.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/jquery.init.js" %}"></script>
+    <script type="text/javascript" src="{% static "autocomplete_light/autocomplete_light.js" %}"></script>
+    <script type="text/javascript" src="{% static "autocomplete_light/select2.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/admin/RelatedObjectLookups.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/actions.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/urlify.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/prepopulate.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/vendor/xregexp/xregexp.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/calendar.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/admin/DateTimeShortcuts.js" %}"></script>
+
+    <link href="{% static "admin/css/vendor/select2/select2.css" %}" type="text/css" media="screen" rel="stylesheet">
+    <link href="{% static "admin/css/autocomplete.css" %}" type="text/css" media="screen" rel="stylesheet">
+    <link href="{% static "autocomplete_light/select2.css" %}" type="text/css" media="screen" rel="stylesheet">
+    <script type="text/javascript" src="{% static "admin/js/vendor/jquery/jquery.js" %}"></script>
+    <script type="text/javascript" src="{% static "public_model/boolean_switch.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/admin/RelatedObjectLookups.js" %}"></script>
+    <script type="text/javascript" src="{% static "autocomplete_light/i18n/ru.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/iceman_messages.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/message_lenght.js" %}"></script>
+
+{% endblock %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/widgets.css" %}" />
+{% endblock %}
+
+        {% block usertools %}
+        <div id="user-tools">
+            {% block welcome-msg %}
+                {% trans 'Welcome,' %}
+                <strong>{% firstof user.get_short_name user.get_username %}</strong>.
+            {% endblock %}
+            {% block userlinks %}
+                {% if site_url %}
+                    <a href="{{ site_url }}">{% trans 'View site' %}</a> /
+                {% endif %}
+                {% if user.is_active and user.is_staff %}
+                    {% url 'django-admindocs-docroot' as docsroot %}
+                    {% if docsroot %}
+                        <a href="{{ docsroot }}">{% trans 'Documentation' %}</a> /
+                    {% endif %}
+                {% endif %}
+                {% if user.has_usable_password %}
+                <a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a> /
+                {% endif %}
+                <a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
+            {% endblock %}
+        </div>
+        {% endblock %}
+
+{% block title %}{{ _('Sending messages') }} | {{ _('Django site admin') }}{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+&rsaquo; {{ _('Sending messages') }}
+</div>
+{% endblock %}
+<!--  <script>$("#symb_count").html($("#message").val().length)</script> -->
+{% block content %}
+<div id="content-main">
+    <form enctype="multipart/form-data" action="" method="post" id="setting_form" novalidate="">
+        {% csrf_token %}
+        <p style="margin-left: 10px">
+            Предварительное количество пользователей, которые получат сообщение: <b id="users_count">Не посчитано</b>
+        </p>
+        <div>
+            {% if form.message.errors %}
+            <p class="errornote">
+                {% trans "Please correct the errors below." %}
+            </p>
+            {% endif %}
+
+            <fieldset class="module aligned">
+                <div class="form-row field-value {% if form.id_user.errors %}errors{% endif %}">
+                    {% if form.errors %}
+                    <ul class="errorlist">
+                        {% for error in form.id_user.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <div>
+                        <label for="{{ form.id_user.id_for_label }}">{{ form.id_user.label }}:</label>
+                        <select name="id_user" data-placeholder="Выберите пользователя" id="id_user" data-autocomplete-light-language="ru" data-autocomplete-light-url="/iceman/autocomplete/usersdevice/" data-autocomplete-light-function="select2">
+                        {% for i in id_user_selected %}
+                            <option value="{{ i.id }}" selected>{{ i }}</option>
+                        {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row field-value {% if form.advisor.errors %}errors{% endif %}">
+                    {% if form.errors %}
+                    <ul class="errorlist">
+                        {% for error in form.advisor.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <div>
+                        <label for="{{ form.advisor.id_for_label }}">{{ form.advisor.label }}:</label>
+                        <ul>{{ form.advisor }}</ul>
+                    </div>
+                </div>
+                <div class="form-row field-value {% if form.status_legal.errors %}errors{% endif %}">
+                    {% if form.errors %}
+                    <ul class="errorlist">
+                        {% for error in form.status_legal.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <div>
+                        <label for="{{ form.status_legal.id_for_label }}">{{ form.status_legal.label }}:</label>
+                        <ul id="status_legal" name="status_legal">{{ form.status_legal }}</ul>
+                    </div>
+                </div>
+                <div class="form-row field-value {% if form.user_type.errors %}errors{% endif %}">
+                    {% if form.errors %}
+                    <ul class="errorlist">
+                        {% for error in form.user_type.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <div>
+                        <label for="{{ form.user_type.id_for_label }}">{{ form.user_type.label }}:</label>
+                        <ul id="user_type">{{ form.user_type }}</ul>
+                    </div>
+                </div>
+                <div class="form-row field-value {% if form.iceman_status.errors %}errors{% endif %}">
+                    {% if form.errors %}
+                    <ul class="errorlist">
+                        {% for error in form.iceman_status.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <div>
+                        <label for="{{ form.iceman_status.id_for_label }}">{{ form.iceman_status.label }}:</label>
+                        <select name="iceman_status" data-placeholder="Выберите статус айсмана" id="id_iceman_status" data-autocomplete-light-language="ru" data-autocomplete-light-url="/iceman/autocomplete/statusiceman/" data-autocomplete-light-function="select2">
+                        {% for i in iceman_status_selected %}
+                            <option value="{{ i.id }}" selected>{{ i }}</option>
+                        {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row field-value {% if form.region.errors %}errors{% endif %}">
+                    {% if form.errors %}
+                    <ul class="errorlist">
+                        {% for error in form.region.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <div>
+                        <label for="{{ form.region.id_for_label }}">{{ form.region.label }}:</label>
+                        <select name="id_region" data-placeholder="Выберите регион" id="id_region" data-autocomplete-light-language="ru" data-autocomplete-light-url="/iceman/autocomplete/regions/" data-autocomplete-light-function="select2">
+                        {% for i in regions_selected %}
+                            <option value="{{ i.id }}" selected>{{ i.name }}</option>
+                        {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row field-value {% if form.last_order_date.errors %}errors{% endif %}">
+                    {% if form.errors %}
+                    <ul class="errorlist">
+                        {% for error in form.last_order_date.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <div>
+                        <label  for="{{ form.last_order_date.id_for_label }}">Нет заказа с даты:</label>
+                         <input type="text" name="last_order_date" value="{{ last_order_date|date:"d.m.Y" }}" size="10" id="id_last_order_date" class="vDateField">
+                        <span class="datetimeshortcuts">
+                        </span>
+                    </div>
+                </div>
+                <div class="form-row field-value {% if form.is_overdue.errors %}errors{% endif %}">
+                    {% if form.errors %}
+                    <ul class="errorlist">
+                        {% for error in form.is_overdue.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <div>
+                        <label for="{{ form.is_overdue.id_for_label }}">{{ form.is_overdue.label }}:</label>
+                        <ul id="is_overdue">{{ form.is_overdue }}</ul>
+                    </div>
+                </div>
+                <div class="form-row field-value {% if form.message.errors %}errors{% endif %}">
+                    {% if form.errors %}
+                    <ul class="errorlist">
+                        {% for error in form.title.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <div>
+                        <label class="required" for="{{ form.title.id_for_label }}">{{ form.title.label }}:</label>
+                        <ul id="title">{{ form.title }}</ul>
+                    </div>
+                </div>
+                <div class="form-row field-value {% if form.message.errors %}errors{% endif %}">
+                    {% if form.errors %}
+                    <ul class="errorlist">
+                        {% for error in form.message.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <div>
+                        <label class="required" for="{{ form.message.id_for_label }}">{{ form.message.label }}:</label>
+                        <ul name="message" id="message">{{ form.message }}</ul>                       
+                        <div class="help">
+                            <p><b id="symb_count"></b></p>
+                            <p>Убедитесь, что сообщение с заголовком и другими данными не больше 4 000 символов.</p>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="submit-row">
+                <input type="submit" id="send_message" name="send_message" value="{% trans "Send message" %}" class="default" disabled="True">
+            </div>
+        </div>
+
+    </form>
+</div>
+{% endblock %}

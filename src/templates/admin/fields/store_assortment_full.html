@@ -1,0 +1,32 @@
+<div style="margin: -10px -10px -11px -10px; position: relative;">
+    <table style="width: 100%">
+        <thead>
+            <tr>
+                <th style="padding: 8px 10px;" class="column-good">Товар</th>
+                <th style="padding: 8px 10px;" class="column-avail">Наличие</th>
+                <th style="padding: 8px 10px;" class="column-avail">Количество</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in data %}
+                <tr class="{% cycle 'row1' 'row2' %}">
+                    <td>
+                        <p>{{ i.name }}</p>
+                    </td>
+                    <td>
+                        <p>
+                            {% if i.in_store %}
+                                <span style="color: green">Есть в отчете</span>
+                            {% else %}
+                                <span style="color: red">Товара нет в отчете</span>
+                            {% endif %}
+                        </p>
+                    </td>
+                    <td>
+                        <p>{% if i.count == None %}-{% else %}{{ i.count }}{% endif %}</p>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+    <head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Документация к Shop-survey API</title>
+        <link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css">
+        <link rel="stylesheet" href="custom.css">
+    </head>
+    <body>
+    <div id="docute"></div>
+    <script src="https://unpkg.com/docute@4/dist/docute.js"></script>
+    <script>
+        new Docute({
+            tocVisibleDepth: 4,
+            highlight: ['http', 'json'],
+            title: 'Shop-survey API',
+            sourcePath: '/docs/v1.0/',
+            versions: {
+                'Version 1.0': {
+                    link: '/'
+                },
+            },
+            sidebar: [
+                {
+                title: 'Документация',
+                links: [
+                    {
+                        title: 'Описание',
+                        link: '/'
+                    },
+                    {
+                        title: 'Shop-survey API',
+                        link: '/survey/'
+                    },
+                ]
+                }
+            ],
+            nav: [
+                {
+                    title: 'Главная',
+                    link: '/'
+                },
+                {
+                    title: 'Shop-survey',
+                    link: '/survey/'
+                },
+                {
+                    title: 'API',
+                    link: 'https://api.shop-survey.ru/v1/survey/'
+                },
+            ]
+        })
+    </script>
+    </body>
+</html>

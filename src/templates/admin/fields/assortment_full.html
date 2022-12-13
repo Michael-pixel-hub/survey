@@ -1,0 +1,22 @@
+<div style="margin: -10px -10px -11px -10px; position: relative;">
+    <table style="width: 100%">
+        <thead>
+            <tr>
+                <th style="padding: 8px 10px;" class="column-good">Товар</th>
+                <th style="padding: 8px 10px;" class="column-avail">Наличие</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in data %}
+                <tr class="{% cycle 'row1' 'row2' %}">
+                    <td>
+                        <p>{{ i.good.name }}</p>
+                    </td>
+                    <td>
+                        <p>{% if i.avail == None %}-{% else %}{{ i.avail }}{% endif %}</p>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

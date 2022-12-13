@@ -1,0 +1,3 @@
+#result_list .field-is_fake_gps, #result_list .field-is_api_direct, #result_list .column-is_fake_gps, #result_list .column-is_api_direct {
+    display: none;
+}

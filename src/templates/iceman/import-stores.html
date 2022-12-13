@@ -1,0 +1,193 @@
+{% extends "admin/base_site.html" %}
+{% load i18n staticfiles humanize %}
+
+{% block content_title %}<h1>{{ _('Import stores') }}</h1>{% endblock %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <script type="text/javascript" src="/jsi18n/"></script>
+    <script type="text/javascript" src="{% static "admin/js/core.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/vendor/jquery/jquery.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/jquery.init.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/admin/RelatedObjectLookups.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/actions.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/urlify.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/prepopulate.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/vendor/xregexp/xregexp.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/calendar.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/admin/DateTimeShortcuts.js" %}"></script>
+    <script type="text/javascript">
+        {% if is_success or import_obj %}
+        (function($) {
+            'use strict';
+            $(document).ready(function() {
+                setTimeout(function() {
+                  location.href='?';
+                }, 2500);
+            });
+        })(django.jQuery);
+        {% endif %}
+    </script>
+{% endblock %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/widgets.css" %}" />
+{% endblock %}
+
+{% block usertools %}
+<div id="user-tools">
+    {% block welcome-msg %}
+        {% trans 'Welcome,' %}
+        <strong>{% firstof user.get_short_name user.get_username %}</strong>.
+    {% endblock %}
+    {% block userlinks %}
+        {% if site_url %}
+            <a href="{{ site_url }}">{% trans 'View site' %}</a> /
+        {% endif %}
+        {% if user.is_active and user.is_staff %}
+            {% url 'django-admindocs-docroot' as docsroot %}
+            {% if docsroot %}
+                <a href="{{ docsroot }}">{% trans 'Documentation' %}</a> /
+            {% endif %}
+        {% endif %}
+        {% if user.has_usable_password %}
+        <a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a> /
+        {% endif %}
+        <a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
+    {% endblock %}
+</div>
+{% endblock %}
+
+
+{% block title %}{{ _('Import stores') }} | {{ _('Django site admin') }}{% endblock %}
+
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+    &rsaquo; <a href="{% url 'admin:app_list' 'iceman' %}">Айсмен</a> &rsaquo; {{ _('Import stores') }}
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+
+    {% if import_obj %}
+        <p><span style="color: green">Импорт данных в процессе...</span></p>
+        <p>
+            Файл: <b>"{{ import_obj.file_name }}"</b><br/>
+            Дата начала: <b>{{ import_obj.date_start|naturaltime }}</b><br/>
+            Строк обработано: <b>{{ import_obj.rows_process }} из {{ import_obj.rows_count }}</b><br/>
+
+        </p>
+        <input type="button" value="{% trans "Refresh" %}" class="default" onclick="location.reload();"> &nbsp;
+        <input type="button" value="{% trans "Cancel" %}" class="default" onclick="location.href='?action=cancel'">
+    {% else %}
+
+    <form enctype="multipart/form-data" action="" method="post" id="import_form" novalidate="">
+        {% csrf_token %}
+
+        {% if last_import %}
+            <div style="padding: 10px 10px; background: #eee; margin: 0 0 10px 0">
+            Последний импорт:  <b style="color: {% if last_import.status == 2 %}green{% endif %}{% if last_import.status == 3 %}black{% endif %}{% if last_import.status == 4 %}red{% endif %}">{{ last_import.get_status_display }}</b>.&nbsp;
+            Сделан <b>{{ last_import.date_start|naturaltime }}</b>.&nbsp;
+            Файл: <b>"{{ last_import.file_name }}"</b>{% if last_import.rows_count is not None %} из {{ last_import.rows_count }} строк{% endif %}.&nbsp;
+            </div>
+            {% if last_import.status == 4 %}
+                <div style="padding: 10px 10px; background: #eee; margin: 0 0 10px 0">
+                    Текст ошибки: <b>{{ last_import.report_text }}</b>
+                </div>
+            {% endif %}
+        {% endif %}
+
+        <div>
+            {% if form.file.errors %}
+            <p class="errornote">
+                {% trans "Please correct the errors below." %}
+            </p>
+            {% endif %}
+            <fieldset class="module aligned ">
+                <div class="form-row field-value {% if form.file.errors %}errors{% endif %}">
+                    {% if form.errors %}
+                    <ul class="errorlist">
+                        {% for error in form.file.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <div>
+                        <label style="width: 400px" class="required" for="{{ form.file.id_for_label }}">{{ form.file.label }}:</label>
+                        {{ form.file }}
+                    </div>
+                </div>
+            <div  class="form-row field-value">
+                Скачать пример файла импорта: <a href="{% static "iceman/stores_example.xlsx" %}">stores_example.xlsx</a>
+            </div>
+            </fieldset>
+
+            <div class="submit-row">
+                <input type="submit" value="{% trans "Import" %}" class="default">
+            </div>
+        </div>
+
+
+    </form>
+
+    <h1>Экспорт магазинов</h1>
+    <form enctype="multipart/form-data" action="{% url 'iceman:export-stores' %}" method="post"  novalidate="">
+        {% csrf_token %}
+        <fieldset class="module aligned ">
+            <div class="form-row field-value {% if export_form.source.errors %}errors{% endif %}">
+                {% if form.errors %}
+                <ul class="errorlist">
+                    {% for error in export_form.source.errors %}
+                        <li>{{ error|escape }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                <div>
+                    <label style="width: 400px" class="required" for="{{ export_form.source.id_for_label }}">{{ export_form.source.label }}:</label>
+                    {{ export_form.source }}
+                </div>
+            </div>
+            <div class="form-row field-value {% if export_form.region.errors %}errors{% endif %}">
+                {% if form.errors %}
+                <ul class="errorlist">
+                    {% for error in export_form.region.errors %}
+                        <li>{{ error|escape }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                <div>
+                    <label style="width: 400px" class="required" for="{{ export_form.region.id_for_label }}">{{ export_form.region.label }}:</label>
+                    {{ export_form.region }}
+                </div>
+            </div>
+            <div class="form-row field-value {% if export_form.store_type.errors %}errors{% endif %}">
+                {% if form.errors %}
+                <ul class="errorlist">
+                    {% for error in export_form.store_type.errors %}
+                        <li>{{ error|escape }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                <div>
+                    <label style="width: 400px" class="required" for="{{ export_form.store_type.id_for_label }}">{{ export_form.store_type.label }}:</label>
+                    {{ export_form.store_type }}
+                </div>
+            </div>
+        </fieldset>
+        <div class="submit-row">
+            <input type="submit" value="{% trans "Export" %}" class="default">
+        </div>
+
+    </form>
+
+    {% endif %}
+
+
+</div>
+{% endblock %}
+

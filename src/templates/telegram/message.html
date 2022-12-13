@@ -1,0 +1,113 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block content_title %}<h1>{{ _('Sending messages') }}</h1>{% endblock %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <script type="text/javascript" src="/jsi18n/"></script>
+    <script type="text/javascript" src="{% static "admin/js/core.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/vendor/jquery/jquery.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/jquery.init.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/admin/RelatedObjectLookups.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/actions.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/urlify.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/prepopulate.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/vendor/xregexp/xregexp.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/calendar.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/admin/DateTimeShortcuts.js" %}"></script>
+{% endblock %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/widgets.css" %}" />
+{% endblock %}
+
+        {% block usertools %}
+        <div id="user-tools">
+            {% block welcome-msg %}
+                {% trans 'Welcome,' %}
+                <strong>{% firstof user.get_short_name user.get_username %}</strong>.
+            {% endblock %}
+            {% block userlinks %}
+                {% if site_url %}
+                    <a href="{{ site_url }}">{% trans 'View site' %}</a> /
+                {% endif %}
+                {% if user.is_active and user.is_staff %}
+                    {% url 'django-admindocs-docroot' as docsroot %}
+                    {% if docsroot %}
+                        <a href="{{ docsroot }}">{% trans 'Documentation' %}</a> /
+                    {% endif %}
+                {% endif %}
+                {% if user.has_usable_password %}
+                <a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a> /
+                {% endif %}
+                <a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
+            {% endblock %}
+        </div>
+        {% endblock %}
+
+{% block title %}{{ _('Sending messages') }} | {{ _('Django site admin') }}{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+&rsaquo; {{ _('Sending messages') }}
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+
+    <form enctype="multipart/form-data" action="" method="post" id="setting_form" novalidate="">
+        {% csrf_token %}
+
+        <div>
+            {% if form.message.errors %}
+            <p class="errornote">
+                {% trans "Please correct the errors below." %}
+            </p>
+            {% endif %}
+            <fieldset class="module aligned ">
+                <div class="form-row field-value {% if form.message.errors %}errors{% endif %}">
+                    {% if form.errors %}
+                    <ul class="errorlist">
+                        {% for error in form.message.errors %}
+                            <li>{{ error|escape }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    <div>
+                        <label class="required" for="{{ form.message.id_for_label }}">{{ form.message.label }}:</label>
+                        {{ form.message }}
+                        <div class="help">
+                            <p>Форматирование:</p>
+                            <p>*bold text* - выделение жирным </p>
+                            <p>_italic text_ - наклонный текст</p>
+                            <p>[inline URL](http://www.example.com/) - вставка Url с надписью</p>
+                            <p>[inline mention of a user](tg://user?id=123456789) - вставка ссылки на пользователя Телеграм</p>
+                            <p>`inline fixed-width code` - вставка оформления кода внутри текста</p>
+                            <p>```block_language<br/>
+                            pre-formatted fixed-width code block<br/>
+                            ``` - вставка блока с кодом</p>
+                            <p>
+                            <p>
+                            {% verbatim %}{{name}} - вставка имени пользователя{% endverbatim %}
+                            <p>
+                            <p>
+                            {% verbatim %}{{username}} - вставка имени пользователя в Телеграм{% endverbatim %}
+                            <p>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="submit-row">
+                <input type="submit" value="{% trans "Send message" %}" class="default">
+            </div>
+        </div>
+
+    </form>
+</div>
+{% endblock %}

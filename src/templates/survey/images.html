@@ -1,0 +1,127 @@
+{% extends "admin/base_site.html" %}
+{% load i18n staticfiles humanize %}
+
+{% block content_title %}<h1>{{ _('Download images') }}</h1>{% endblock %}
+
+{% block extrahead %}
+    <script type="text/javascript" src="/jsi18n/"></script>
+    <link href="{% static "admin/css/vendor/select2/select2.css" %}" type="text/css" media="screen" rel="stylesheet">
+    <link href="{% static "admin/css/autocomplete.css" %}" type="text/css" media="screen" rel="stylesheet">
+    <link href="{% static "autocomplete_light/select2.css" %}" type="text/css" media="screen" rel="stylesheet">
+    <script type="text/javascript" src="{% static "admin/js/vendor/jquery/jquery.js" %}"></script>
+    <script type="text/javascript" src="{% static "public_model/boolean_switch.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/vendor/select2/select2.full.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/jquery.init.js" %}"></script>
+    <script type="text/javascript" src="{% static "autocomplete_light/autocomplete_light.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/core.js" %}"></script>
+    <script type="text/javascript" src="{% static "autocomplete_light/select2.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/admin/RelatedObjectLookups.js" %}"></script>
+    <script type="text/javascript" src="{% static "autocomplete_light/i18n/ru.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/actions.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/urlify.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/prepopulate.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/vendor/xregexp/xregexp.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/calendar.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/admin/DateTimeShortcuts.js" %}"></script>
+    <script type="text/javascript" src="{% static "admin/js/download_images_v4.js" %}"></script>
+{% endblock %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/widgets.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "admin/css/changelists.css" %}">
+    <link href="{% static "admin/css/vendor/select2/select2.css" %}" type="text/css" media="screen" rel="stylesheet">
+    <link href="{% static "admin/css/autocomplete.css" %}" type="text/css" media="screen" rel="stylesheet">
+    <link href="{% static "autocomplete_light/select2.css" %}" type="text/css" media="screen" rel="stylesheet">
+{% endblock %}
+
+
+{% block usertools %}
+<div id="user-tools">
+    {% block welcome-msg %}
+        {% trans 'Welcome,' %}
+        <strong>{% firstof user.get_short_name user.get_username %}</strong>.
+    {% endblock %}
+    {% block userlinks %}
+        {% if site_url %}
+            <a href="{{ site_url }}">{% trans 'View site' %}</a> /
+        {% endif %}
+        {% if user.is_active and user.is_staff %}
+            {% url 'django-admindocs-docroot' as docsroot %}
+            {% if docsroot %}
+                <a href="{{ docsroot }}">{% trans 'Documentation' %}</a> /
+            {% endif %}
+        {% endif %}
+        {% if user.has_usable_password %}
+        <a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a> /
+        {% endif %}
+        <a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
+    {% endblock %}
+</div>
+{% endblock %}
+
+
+{% block title %}{{ _('Download images') }} | {{ _('Django site admin') }}{% endblock %}
+
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
+&rsaquo; {{ _('Download images') }}
+</div>
+{% endblock %}
+
+{% block content %}
+<div id="content-main">
+<form method="post" action="{% url 'survey:download_images' %}" id="download_images_form">
+    {% csrf_token %}
+<table>
+    <tr>
+        <td style="vertical-align: middle; padding: 0 20px 0 0; height: 59px" colspan="3">
+            Дата начала: &nbsp; с &nbsp; <input type="text" name="datetime_start" value="{{ datetime_start|date:"d.m.Y" }}" size="10" id="te_datetime_start" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        &nbsp;&nbsp;&nbsp; по &nbsp; <input type="text" name="datetime_end" value="{{ datetime_end|date:"d.m.Y" }}" size="10" id="te_datetime_end" class="vDateField">
+        <span class="datetimeshortcuts">
+        </span>
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; padding: 0 20px 0 0; height: 59px" colspan="3">
+            {{ form.user.errors }}
+            {{ form.user.label_tag }} &nbsp; {{ form.user }}
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; padding: 0 20px 0 0; height: 59px">
+            {{ form.task.errors }}
+            {{ form.task.label_tag }} &nbsp; {{ form.task }}
+        </td>
+        <td style="vertical-align: middle; padding: 0 20px 0 0; height: 59px">
+            {{ form.imagestep.errors }}
+            {{ form.imagestep.label_tag }} &nbsp; {{ form.imagestep }}
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; padding: 0 20px 0 0; height: 59px">
+            {{ form.client.errors }}
+            {{ form.client.label_tag }} &nbsp; {{ form.client }}
+        </td>
+        <td style="vertical-align: middle; padding: 10px 0 10px 0" colspan="3">
+            <div id="download_images_button"><input type="submit" style="float: none; " value="{% trans "Download images" %}" id="download_images" class="default" disabled="True"> &nbsp;</div>
+            <div id="download_images_text" style="display: none"><br />Ждите, идет загрузка фото...</div>
+        </td>
+    </tr> 
+</table>
+</form>
+</div>
+
+    <p>&nbsp;</p>
+    <p>
+        Предварительное количество изображений: <b id="images_count">Не посчитано</b>
+    </p>
+        <p>
+        Если изображений слишком много, они могут не выгрузится или занимать слишком много места. Максимальное кол-во: 5000 фото.
+    </p>
+{% endblock %}
