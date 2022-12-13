@@ -17,5 +17,3 @@ dockerfile
 docker-compose.yml
 celerybeat-schedule
 #*.js
-
-src/application/users/tests
