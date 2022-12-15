@@ -1,0 +1,1 @@
+Чтобы прочитать файл лога нужно открыть файл shop-survey/src/log/users_password_log.log

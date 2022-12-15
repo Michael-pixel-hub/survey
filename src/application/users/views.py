@@ -9,13 +9,16 @@ from django.views.generic import FormView
 
 from .forms import UserChangePasswordForm
 from .models import User
+import logging
 
+logger = logging.getLogger('django')
 
 class UserChangePasswordView(FormView):
 
     """
     Изменение пароля заданного в поле формы "E-mail" пользователя
     """
+
 
     template_name = 'users/change_password.html'
     form_class = UserChangePasswordForm
@@ -27,7 +30,8 @@ class UserChangePasswordView(FormView):
     def dispatch(self, request, *args, **kwargs):
 
         if request.user.email not in settings.ADD_TASK_USERS:
-            return HttpResponseForbidden('У вас нет прав')
+            logger.info(f'{request.user.username} нет доступа')
+            return HttpResponseForbidden(f'У вас нет прав')
 
         if self.request.method == 'POST':
             request.session['email'] = self.request.POST.get('email')
@@ -42,6 +46,7 @@ class UserChangePasswordView(FormView):
                         user.set_password(new_password)
                         user.save()
                         request.session['email'] = ''
+                        logger.info(f'{request.user.username} успешно изменил пароль')
                         messages.success(self.request, _(f'Пароль пользователя {email} успешно изменен'))
                     else:
                         messages.error(self.request, _(f'Новый пароль пользователя {email} не подтвержден повторным вводом'))

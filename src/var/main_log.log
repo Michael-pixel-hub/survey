@@ -1,0 +1,338 @@
+[2022-12-15 14:16:20,403] hello
+[2022-12-15 14:16:20,649] hello
+[2022-12-15 14:16:23,171] hello
+[2022-12-15 14:16:41,342] Forbidden: /users/password/
+[2022-12-15 14:16:44,207] Watching for file changes with StatReloader
+[2022-12-15 14:16:44,289] hello
+[2022-12-15 14:17:31,755] "GET / HTTP/1.1" 302 0
+[2022-12-15 14:17:31,803] "GET /login/?next=/ HTTP/1.1" 200 12929
+[2022-12-15 14:17:31,830] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2022-12-15 14:17:31,831] "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[2022-12-15 14:17:31,835] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2022-12-15 14:17:31,835] "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+[2022-12-15 14:17:31,895] "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+[2022-12-15 14:17:31,898] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[2022-12-15 14:17:31,913] "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+[2022-12-15 14:17:31,953] "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+[2022-12-15 14:17:31,971] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[2022-12-15 14:17:31,972] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[2022-12-15 14:20:24,334] hello
+[2022-12-15 14:20:41,576] "POST /login/?next=/ HTTP/1.1" 200 13169
+[2022-12-15 14:20:41,590] "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[2022-12-15 14:20:41,591] "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+[2022-12-15 14:20:41,591] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2022-12-15 14:20:41,617] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[2022-12-15 14:20:41,618] "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+[2022-12-15 14:20:41,667] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[2022-12-15 14:20:41,668] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[2022-12-15 14:20:41,674] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[2022-12-15 14:20:49,581] "POST /login/?next=/ HTTP/1.1" 302 0
+[2022-12-15 14:20:50,049] "GET / HTTP/1.1" 200 57173
+[2022-12-15 14:20:50,067] "GET /static/admin_tools/css/jquery/jquery-ui.css HTTP/1.1" 200 31890
+[2022-12-15 14:20:50,068] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[2022-12-15 14:20:50,068] "GET /static/admin_tools/css/menu.css HTTP/1.1" 200 5349
+[2022-12-15 14:20:50,074] "GET /static/admin_tools/css/dashboard.css HTTP/1.1" 200 6388
+[2022-12-15 14:20:50,074] "GET /static/admin_tools/js/utils.js HTTP/1.1" 200 1203
+[2022-12-15 14:20:50,088] "GET /static/admin_tools/js/jquery/jquery.min.js HTTP/1.1" 200 89501
+[2022-12-15 14:20:50,092] "GET /static/admin_tools/images/admin-tools.png HTTP/1.1" 200 7013
+[2022-12-15 14:20:50,099] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[2022-12-15 14:20:50,102] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[2022-12-15 14:20:50,186] "GET /static/admin_tools/js/jquery/jquery-ui.min.js HTTP/1.1" 200 253668
+[2022-12-15 14:20:50,193] "GET /static/admin_tools/js/menu.js HTTP/1.1" 200 2154
+[2022-12-15 14:20:50,222] "GET /static/admin_tools/js/jquery/jquery.cookie.min.js HTTP/1.1" 200 1043
+[2022-12-15 14:20:50,301] "GET /static/admin_tools/js/jquery/jquery.dashboard.js HTTP/1.1" 200 13231
+[2022-12-15 14:20:50,306] "GET /static/admin_tools/js/dashboard.js HTTP/1.1" 200 495
+[2022-12-15 14:20:50,373] "GET /static/admin_tools/css/jquery/images/ui-bg_flat_75_ffffff_40x100.png HTTP/1.1" 200 208
+[2022-12-15 14:20:50,374] "GET /static/admin_tools/css/jquery/images/ui-bg_glass_65_ffffff_1x400.png HTTP/1.1" 200 207
+[2022-12-15 14:20:50,376] "GET /static/admin_tools/css/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png HTTP/1.1" 200 262
+[2022-12-15 14:20:56,288] "GET /password_change/ HTTP/1.1" 200 25171
+[2022-12-15 14:20:56,306] "GET /static/admin/css/forms.css HTTP/1.1" 200 8518
+[2022-12-15 14:20:56,351] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[2022-12-15 14:21:40,105] "GET /users/password HTTP/1.1" 301 0
+[2022-12-15 14:21:40,143] Forbidden: /users/password/
+[2022-12-15 14:21:40,143] "GET /users/password/ HTTP/1.1" 403 25
+[2022-12-15 14:21:40,269] Not Found: /favicon.ico
+[2022-12-15 14:21:40,269] "GET /favicon.ico HTTP/1.1" 404 30535
+[2022-12-15 14:21:51,101] Forbidden: /users/password/
+[2022-12-15 14:21:51,101] "GET /users/password/ HTTP/1.1" 403 25
+[2022-12-15 14:21:51,314] /code/src/application/settings.py changed, reloading.
+[2022-12-15 14:21:52,731] Watching for file changes with StatReloader
+[2022-12-15 14:21:52,808] hello
+[2022-12-15 14:21:53,745] "GET /users/password/ HTTP/1.1" 200 26604
+[2022-12-15 14:21:53,769] "GET /static/admin/js/core.js HTTP/1.1" 200 7099
+[2022-12-15 14:21:53,778] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8941
+[2022-12-15 14:21:53,782] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6918
+[2022-12-15 14:21:53,784] "GET /static/admin/js/actions.js HTTP/1.1" 200 6766
+[2022-12-15 14:21:53,787] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1530
+[2022-12-15 14:21:53,788] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[2022-12-15 14:21:53,794] "GET /static/admin/js/calendar.js HTTP/1.1" 200 7777
+[2022-12-15 14:21:53,797] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[2022-12-15 14:21:53,798] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[2022-12-15 14:21:53,798] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 20218
+[2022-12-15 14:21:53,830] "GET /jsi18n/ HTTP/1.1" 200 14909
+[2022-12-15 14:23:34,404] /code/src/application/settings.py changed, reloading.
+[2022-12-15 14:23:35,961] autoreload Watching for file changes with StatReloader
+[2022-12-15 14:23:36,056] views hello
+[2022-12-15 14:23:37,062] basehttp "GET /users/password/ HTTP/1.1" 200 26604
+[2022-12-15 14:23:37,085] basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2022-12-15 14:23:37,132] basehttp "GET /jsi18n/ HTTP/1.1" 200 14909
+[2022-12-15 14:23:37,149] basehttp "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+[2022-12-15 14:23:37,433] basehttp "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+[2022-12-15 14:24:08,227] autoreload /code/src/application/settings.py changed, reloading.
+[2022-12-15 14:24:09,738] autoreload django.utils.autoreload Watching for file changes with StatReloader
+[2022-12-15 14:24:09,835] views django hello
+[2022-12-15 14:24:11,494] basehttp django.server "GET /users/password/ HTTP/1.1" 200 26604
+[2022-12-15 14:24:11,577] basehttp django.server "GET /jsi18n/ HTTP/1.1" 200 14909
+[2022-12-15 14:26:13,573] autoreload django.utils.autoreload /code/src/application/users/views.py changed, reloading.
+[2022-12-15 14:26:14,896] autoreload django.utils.autoreload Watching for file changes with StatReloader
+[2022-12-15 14:29:13,711] autoreload django.utils.autoreload /code/src/application/users/views.py changed, reloading.
+[2022-12-15 14:29:14,905] autoreload django.utils.autoreload Watching for file changes with StatReloader
+[2022-12-15 14:32:10,591] autoreload django.utils.autoreload /code/src/application/users/views.py changed, reloading.
+[2022-12-15 14:32:11,782] autoreload django.utils.autoreload Watching for file changes with StatReloader
+[2022-12-15 14:32:20,884] views django <WSGIRequest: GET '/users/password/'>
+[2022-12-15 14:32:22,353] views django <WSGIRequest: GET '/users/password/'>
+[2022-12-15 14:32:22,578] basehttp django.server "GET /users/password/ HTTP/1.1" 200 26604
+[2022-12-15 14:32:22,603] basehttp django.server "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2022-12-15 14:32:22,611] basehttp django.server "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[2022-12-15 14:32:22,614] basehttp django.server "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+[2022-12-15 14:32:22,614] basehttp django.server "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[2022-12-15 14:32:22,624] basehttp django.server "GET /static/admin_tools/css/menu.css HTTP/1.1" 304 0
+[2022-12-15 14:32:22,625] basehttp django.server "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2022-12-15 14:32:22,629] basehttp django.server "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2022-12-15 14:32:22,709] basehttp django.server "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2022-12-15 14:32:22,713] basehttp django.server "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[2022-12-15 14:32:22,713] basehttp django.server "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2022-12-15 14:32:22,714] basehttp django.server "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2022-12-15 14:32:22,715] basehttp django.server "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[2022-12-15 14:32:22,722] basehttp django.server "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2022-12-15 14:32:22,761] basehttp django.server "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2022-12-15 14:32:22,764] basehttp django.server "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[2022-12-15 14:32:22,765] basehttp django.server "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2022-12-15 14:32:22,771] basehttp django.server "GET /static/admin_tools/js/utils.js HTTP/1.1" 304 0
+[2022-12-15 14:32:22,771] basehttp django.server "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[2022-12-15 14:32:22,776] basehttp django.server "GET /jsi18n/ HTTP/1.1" 200 14909
+[2022-12-15 14:32:22,834] basehttp django.server "GET /static/admin_tools/js/jquery/jquery.min.js HTTP/1.1" 304 0
+[2022-12-15 14:32:22,835] basehttp django.server "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+[2022-12-15 14:32:22,837] basehttp django.server "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+[2022-12-15 14:32:22,838] basehttp django.server "GET /static/admin_tools/images/admin-tools.png HTTP/1.1" 304 0
+[2022-12-15 14:32:22,866] basehttp django.server "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[2022-12-15 14:32:22,866] basehttp django.server "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[2022-12-15 14:32:22,868] basehttp django.server "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[2022-12-15 14:32:23,004] basehttp django.server "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+[2022-12-15 14:32:23,013] basehttp django.server "GET /static/admin_tools/js/menu.js HTTP/1.1" 304 0
+[2022-12-15 14:34:30,411] autoreload django.utils.autoreload /code/src/application/users/views.py changed, reloading.
+[2022-12-15 14:34:31,950] autoreload django.utils.autoreload Watching for file changes with StatReloader
+[2022-12-15 14:34:32,602] views django <QueryDict: {}>
+[2022-12-15 14:34:32,901] basehttp django.server "GET /users/password/ HTTP/1.1" 200 26604
+[2022-12-15 14:34:32,976] basehttp django.server "GET /jsi18n/ HTTP/1.1" 200 14909
+[2022-12-15 14:34:39,117] views django <QueryDict: {}>
+[2022-12-15 14:34:39,318] basehttp django.server "GET /users/password/ HTTP/1.1" 200 26604
+[2022-12-15 14:34:39,376] basehttp django.server "GET /jsi18n/ HTTP/1.1" 200 14909
+[2022-12-15 14:34:40,357] views django <QueryDict: {}>
+[2022-12-15 14:34:40,621] basehttp django.server "GET /users/password/ HTTP/1.1" 200 26604
+[2022-12-15 14:34:40,672] basehttp django.server "GET /jsi18n/ HTTP/1.1" 200 14909
+[2022-12-15 14:34:42,701] views django <QueryDict: {}>
+[2022-12-15 14:34:42,910] basehttp django.server "GET /users/password/ HTTP/1.1" 200 26604
+[2022-12-15 14:34:42,959] basehttp django.server "GET /jsi18n/ HTTP/1.1" 200 14909
+[2022-12-15 14:35:55,869] log django.request Not Found: /api/projects/
+[2022-12-15 14:35:55,869] basehttp django.server "GET /api/projects/ HTTP/1.1" 404 30545
+[2022-12-15 14:49:34,017] autoreload django.utils.autoreload Watching for file changes with StatReloader
+[2022-12-15 14:49:37,687] views django <QueryDict: {}>
+[2022-12-15 14:49:38,100] basehttp django.server "GET /users/password/ HTTP/1.1" 200 26605
+[2022-12-15 14:49:38,124] basehttp django.server "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2022-12-15 14:49:38,127] basehttp django.server "GET /static/admin_tools/css/menu.css HTTP/1.1" 304 0
+[2022-12-15 14:49:38,130] basehttp django.server "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[2022-12-15 14:49:38,135] basehttp django.server "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2022-12-15 14:49:38,136] basehttp django.server "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[2022-12-15 14:49:38,139] basehttp django.server "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2022-12-15 14:49:38,145] basehttp django.server "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 304 0
+[2022-12-15 14:49:38,146] basehttp django.server "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2022-12-15 14:49:38,157] basehttp django.server "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[2022-12-15 14:49:38,179] basehttp django.server "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2022-12-15 14:49:38,180] basehttp django.server "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[2022-12-15 14:49:38,186] basehttp django.server "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2022-12-15 14:49:38,193] basehttp django.server "GET /jsi18n/ HTTP/1.1" 200 14909
+[2022-12-15 14:49:38,195] basehttp django.server "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2022-12-15 14:49:38,202] basehttp django.server "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2022-12-15 14:49:38,204] basehttp django.server "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2022-12-15 14:49:38,227] basehttp django.server "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[2022-12-15 14:49:38,227] basehttp django.server "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[2022-12-15 14:49:38,234] basehttp django.server "GET /static/admin_tools/js/utils.js HTTP/1.1" 304 0
+[2022-12-15 14:49:38,294] basehttp django.server "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 304 0
+[2022-12-15 14:49:38,297] basehttp django.server "GET /static/admin_tools/js/jquery/jquery.min.js HTTP/1.1" 304 0
+[2022-12-15 14:49:38,299] basehttp django.server "GET /static/debug_toolbar/css/print.css HTTP/1.1" 304 0
+[2022-12-15 14:49:38,303] basehttp django.server "GET /static/admin_tools/images/admin-tools.png HTTP/1.1" 304 0
+[2022-12-15 14:49:38,305] basehttp django.server "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[2022-12-15 14:49:38,306] basehttp django.server "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[2022-12-15 14:49:38,307] basehttp django.server "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[2022-12-15 14:49:38,419] basehttp django.server "GET /static/admin_tools/js/menu.js HTTP/1.1" 304 0
+[2022-12-15 14:49:38,419] basehttp django.server "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 304 0
+[2022-12-15 14:49:40,992] views django <QueryDict: {}>
+[2022-12-15 14:49:41,193] basehttp django.server "GET /users/password/ HTTP/1.1" 200 26604
+[2022-12-15 14:49:41,246] basehttp django.server "GET /jsi18n/ HTTP/1.1" 200 14909
+[2022-12-15 14:50:46,050] basehttp django.server "GET /users/password/ HTTP/1.1" 302 0
+[2022-12-15 14:50:46,083] basehttp django.server "GET /login/?next=/users/password/ HTTP/1.1" 200 12974
+[2022-12-15 14:51:32,571] basehttp django.server "GET /users/password/ HTTP/1.1" 302 0
+[2022-12-15 14:51:32,594] basehttp django.server "GET /login/?next=/users/password/ HTTP/1.1" 200 12974
+[2022-12-15 14:51:51,311] basehttp django.server "GET / HTTP/1.1" 302 0
+[2022-12-15 14:51:51,332] basehttp django.server "GET /login/?next=/ HTTP/1.1" 200 12929
+[2022-12-15 14:54:08,738] log django.request Not Found: /api/
+[2022-12-15 14:54:08,739] basehttp django.server "GET /api/ HTTP/1.1" 404 30509
+[2022-12-15 14:54:08,762] basehttp django.server "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 11479
+[2022-12-15 14:54:08,774] basehttp django.server "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 11275
+[2022-12-15 14:54:08,822] basehttp django.server "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+[2022-12-15 14:54:08,860] basehttp django.server "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 3531
+[2022-12-15 14:54:08,932] log django.request Not Found: /favicon.ico
+[2022-12-15 14:54:08,932] basehttp django.server "GET /favicon.ico HTTP/1.1" 404 30537
+[2022-12-15 14:54:21,654] basehttp django.server "GET / HTTP/1.1" 302 0
+[2022-12-15 14:54:21,687] basehttp django.server "GET /login/?next=/ HTTP/1.1" 200 12929
+[2022-12-15 14:54:21,704] basehttp django.server "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+[2022-12-15 14:54:21,712] basehttp django.server "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+[2022-12-15 14:54:21,714] basehttp django.server "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+[2022-12-15 14:54:21,716] basehttp django.server "GET /static/admin/css/theming_v4.css HTTP/1.1" 200 1748
+[2022-12-15 14:54:21,729] basehttp django.server "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[2022-12-15 14:54:21,755] basehttp django.server "GET /static/admin/img/logo.png HTTP/1.1" 200 2947
+[2022-12-15 14:54:21,887] basehttp django.server "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[2022-12-15 14:54:21,888] basehttp django.server "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[2022-12-15 14:54:21,894] basehttp django.server "GET /static/admin/img/favicon.ico HTTP/1.1" 200 8348
+[2022-12-15 14:54:32,241] log django.request Not Found: /api/
+[2022-12-15 14:54:32,241] basehttp django.server "GET /api/ HTTP/1.1" 404 30509
+[2022-12-15 14:55:28,074] autoreload django.utils.autoreload /code/src/application/settings.py changed, reloading.
+[2022-12-15 14:55:29,458] autoreload django.utils.autoreload Watching for file changes with StatReloader
+[2022-12-15 14:55:35,341] basehttp django.server "GET /users/password HTTP/1.1" 301 0
+[2022-12-15 14:55:35,393] basehttp django.server "GET /users/password/ HTTP/1.1" 302 0
+[2022-12-15 14:55:35,474] basehttp django.server "GET /login/?next=/users/password/ HTTP/1.1" 200 12974
+[2022-12-15 14:55:37,539] basehttp django.server "POST /login/?next=/users/password/ HTTP/1.1" 200 13214
+[2022-12-15 14:55:37,600] basehttp django.server "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[2022-12-15 14:56:21,419] basehttp django.server "POST /login/?next=/users/password/ HTTP/1.1" 302 0
+[2022-12-15 14:56:21,435] views django <QueryDict: {}>
+[2022-12-15 14:56:21,454] log django.request Forbidden: /users/password/
+[2022-12-15 14:56:21,454] basehttp django.server "GET /users/password/ HTTP/1.1" 403 0
+[2022-12-15 14:56:26,268] views django <QueryDict: {}>
+[2022-12-15 14:56:26,289] log django.request Forbidden: /users/password/
+[2022-12-15 14:56:26,289] basehttp django.server "GET /users/password/ HTTP/1.1" 403 0
+[2022-12-15 14:56:38,615] autoreload django.utils.autoreload /code/src/application/users/views.py changed, reloading.
+[2022-12-15 14:56:39,986] autoreload django.utils.autoreload Watching for file changes with StatReloader
+[2022-12-15 14:56:40,902] views django <QueryDict: {}>
+[2022-12-15 14:56:40,986] log django.request Forbidden: /users/password/
+[2022-12-15 14:56:40,987] basehttp django.server "GET /users/password/ HTTP/1.1" 403 25
+[2022-12-15 14:56:56,365] autoreload django.utils.autoreload /code/src/application/users/views.py changed, reloading.
+[2022-12-15 14:56:57,712] autoreload django.utils.autoreload Watching for file changes with StatReloader
+[2022-12-15 14:56:58,428] views django <QueryDict: {}>
+[2022-12-15 14:56:58,511] log django.request Forbidden: /users/password/
+[2022-12-15 14:56:58,511] basehttp django.server "GET /users/password/ HTTP/1.1" 403 63
+[2022-12-15 14:56:59,565] views django <QueryDict: {}>
+[2022-12-15 14:56:59,584] log django.request Forbidden: /users/password/
+[2022-12-15 14:56:59,584] basehttp django.server "GET /users/password/ HTTP/1.1" 403 63
+[2022-12-15 14:57:11,944] autoreload django.utils.autoreload /code/src/application/users/views.py changed, reloading.
+[2022-12-15 14:57:13,253] autoreload django.utils.autoreload Watching for file changes with StatReloader
+[2022-12-15 14:57:14,162] views django <QueryDict: {}>
+[2022-12-15 14:57:14,247] log django.request Forbidden: /users/password/
+[2022-12-15 14:57:14,247] basehttp django.server "GET /users/password/ HTTP/1.1" 403 41
+[2022-12-15 14:57:14,592] views django <QueryDict: {}>
+[2022-12-15 14:57:14,613] log django.request Forbidden: /users/password/
+[2022-12-15 14:57:14,613] basehttp django.server "GET /users/password/ HTTP/1.1" 403 41
+[2022-12-15 14:57:15,198] views django <QueryDict: {}>
+[2022-12-15 14:57:15,218] log django.request Forbidden: /users/password/
+[2022-12-15 14:57:15,218] basehttp django.server "GET /users/password/ HTTP/1.1" 403 41
+[2022-12-15 14:57:15,729] views django <QueryDict: {}>
+[2022-12-15 14:57:15,748] log django.request Forbidden: /users/password/
+[2022-12-15 14:57:15,748] basehttp django.server "GET /users/password/ HTTP/1.1" 403 41
+[2022-12-15 14:57:34,869] autoreload django.utils.autoreload /code/src/application/users/views.py changed, reloading.
+[2022-12-15 14:57:36,236] autoreload django.utils.autoreload Watching for file changes with StatReloader
+[2022-12-15 14:57:37,015] views django <QueryDict: {}>
+[2022-12-15 14:57:37,087] log django.request Internal Server Error: /users/password/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/code/src/application/users/views.py", line 34, in dispatch
+    return HttpResponseForbidden(f'У вас нет прав {request.Meta}')
+AttributeError: 'WSGIRequest' object has no attribute 'Meta'
+[2022-12-15 14:57:37,134] basehttp django.server "GET /users/password/ HTTP/1.1" 500 104114
+[2022-12-15 14:57:37,485] views django <QueryDict: {}>
+[2022-12-15 14:57:37,512] log django.request Internal Server Error: /users/password/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/code/src/application/users/views.py", line 34, in dispatch
+    return HttpResponseForbidden(f'У вас нет прав {request.Meta}')
+AttributeError: 'WSGIRequest' object has no attribute 'Meta'
+[2022-12-15 14:57:37,532] basehttp django.server "GET /users/password/ HTTP/1.1" 500 104110
+[2022-12-15 14:59:53,557] autoreload django.utils.autoreload /code/src/application/users/views.py changed, reloading.
+[2022-12-15 14:59:55,003] autoreload django.utils.autoreload Watching for file changes with StatReloader
+[2022-12-15 14:59:59,050] views django <QueryDict: {}>
+[2022-12-15 14:59:59,102] log django.request Forbidden: /users/password/
+[2022-12-15 14:59:59,103] basehttp django.server "GET /users/password/ HTTP/1.1" 403 43
+[2022-12-15 15:00:23,416] autoreload django.utils.autoreload /code/src/application/users/views.py changed, reloading.
+[2022-12-15 15:00:24,586] autoreload django.utils.autoreload Watching for file changes with StatReloader
+[2022-12-15 15:00:54,638] autoreload django.utils.autoreload /code/src/application/users/views.py changed, reloading.
+[2022-12-15 15:00:55,935] autoreload django.utils.autoreload Watching for file changes with StatReloader
+[2022-12-15 15:00:57,398] views django wheelside@mail.ru
+[2022-12-15 15:00:57,483] log django.request Forbidden: /users/password/
+[2022-12-15 15:00:57,483] basehttp django.server "GET /users/password/ HTTP/1.1" 403 25
+[2022-12-15 15:00:58,451] views django wheelside@mail.ru
+[2022-12-15 15:00:58,470] log django.request Forbidden: /users/password/
+[2022-12-15 15:00:58,470] basehttp django.server "GET /users/password/ HTTP/1.1" 403 25
+[2022-12-15 15:00:59,196] views django wheelside@mail.ru
+[2022-12-15 15:00:59,216] log django.request Forbidden: /users/password/
+[2022-12-15 15:00:59,216] basehttp django.server "GET /users/password/ HTTP/1.1" 403 25
+[2022-12-15 15:00:59,829] views django wheelside@mail.ru
+[2022-12-15 15:00:59,849] log django.request Forbidden: /users/password/
+[2022-12-15 15:00:59,849] basehttp django.server "GET /users/password/ HTTP/1.1" 403 25
+[2022-12-15 15:01:00,348] views django wheelside@mail.ru
+[2022-12-15 15:01:00,369] log django.request Forbidden: /users/password/
+[2022-12-15 15:01:00,369] basehttp django.server "GET /users/password/ HTTP/1.1" 403 25
+[2022-12-15 15:02:23,891] autoreload django.utils.autoreload /code/src/application/settings.py changed, reloading.
+[2022-12-15 15:02:25,365] autoreload INFO Watching for file changes with StatReloader
+[2022-12-15 15:02:26,034] views INFO wheelside@mail.ru
+[2022-12-15 15:02:26,128] log WARNING Forbidden: /users/password/
+[2022-12-15 15:02:26,128] basehttp WARNING "GET /users/password/ HTTP/1.1" 403 25
+[2022-12-15 15:02:58,811] autoreload INFO /code/src/application/settings.py changed, reloading.
+[2022-12-15 15:03:00,220] INFO autoreload Watching for file changes with StatReloader
+[2022-12-15 15:03:01,026] INFO views wheelside@mail.ru
+[2022-12-15 15:03:01,116] WARNING log Forbidden: /users/password/
+[2022-12-15 15:03:01,117] WARNING basehttp "GET /users/password/ HTTP/1.1" 403 25
+[2022-12-15 15:03:49,231] INFO autoreload /code/src/application/users/views.py changed, reloading.
+[2022-12-15 15:03:50,538] INFO autoreload Watching for file changes with StatReloader
+[2022-12-15 15:04:34,258] INFO autoreload /code/src/application/users/views.py changed, reloading.
+[2022-12-15 15:04:35,536] INFO autoreload Watching for file changes with StatReloader
+[2022-12-15 15:04:36,181] INFO views У wheelside@mail.ru нет доступа
+[2022-12-15 15:04:36,272] WARNING log Forbidden: /users/password/
+[2022-12-15 15:04:36,273] WARNING basehttp "GET /users/password/ HTTP/1.1" 403 25
+[2022-12-15 15:04:43,217] INFO views У wheelside@mail.ru нет доступа
+[2022-12-15 15:04:43,237] WARNING log Forbidden: /users/password/
+[2022-12-15 15:04:43,237] WARNING basehttp "GET /users/password/ HTTP/1.1" 403 25
+[2022-12-15 15:05:57,347] INFO autoreload /code/src/application/settings.py changed, reloading.
+[2022-12-15 15:05:58,571] | INFO | Watching for file changes with StatReloader
+[2022-12-15 15:05:59,244] | INFO | У wheelside@mail.ru нет доступа
+[2022-12-15 15:05:59,333] | WARNING | Forbidden: /users/password/
+[2022-12-15 15:05:59,334] | WARNING | "GET /users/password/ HTTP/1.1" 403 25
+[2022-12-15 15:13:13,382] | INFO | У wheelside@mail.ru нет доступа
+[2022-12-15 15:13:13,403] | WARNING | Forbidden: /users/password/
+[2022-12-15 15:13:13,403] | WARNING | "GET /users/password/ HTTP/1.1" 403 25
+[2022-12-15 15:13:13,557] | INFO | /code/src/application/users/views.py changed, reloading.
+[2022-12-15 15:13:14,892] | INFO | Watching for file changes with StatReloader
+[2022-12-15 15:13:15,718] | INFO | wheelside@mail.ru нет доступа
+[2022-12-15 15:13:15,828] | WARNING | Forbidden: /users/password/
+[2022-12-15 15:13:15,828] | WARNING | "GET /users/password/ HTTP/1.1" 403 25
+[2022-12-15 15:16:25,710] | INFO | /code/src/application/settings.py changed, reloading.

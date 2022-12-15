@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/2.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
-
+import logging
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -238,7 +238,7 @@ TAXPAYERS_STAFF_USERS = (
     'mail@engine2.ru', 'luknitskiy@yahoo.com', '9623465666@mail.ru', '9849966@mail.ru', 'val7622@yandex.ru',
 )
 ADD_TASK_USERS = (
-    'kurashevmichael@gmail.com', 'andrew@mail.ru'
+    'kurashevmichael@gmail.com', 'andrew@mail.ru',
 )
 PROMO_CODES_USERS = (
     'mail@engine2.ru', 'luknitskiy@yahoo.com', 'm.golodnyh@icecream-chl.ru',
@@ -275,3 +275,29 @@ TINKOFF_TERMINALS = (
     ('1645173777967', 'c4kqh9lxt6v0g0bb'),
     ('1647442881878', 'a0g1yru1p09zpncp'),
 )
+
+LOG_FILE = os.path.join(BASE_DIR, 'log', 'users_password_log.log')
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "file_formatter": {
+            "format": "[%(asctime)s] | %(levelname)s | %(message)s"
+        },
+    },
+    "handlers": {
+        "file_handler": {
+            "class": "logging.FileHandler",
+            "filename": LOG_FILE,
+            "formatter": "file_formatter"
+        },
+    },
+    "loggers": {
+        "django": {
+            "level": "INFO",
+            "handlers": ["file_handler",],
+        },
+    }
+
+}
