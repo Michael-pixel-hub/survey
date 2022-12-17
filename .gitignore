@@ -19,3 +19,4 @@ celerybeat-schedule
 #*.js
 
 src/.coverage
+src/application/users/.coverage

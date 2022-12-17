@@ -25,3 +25,7 @@ git+https://rown@bitbucket.org/rown/django-sort-model.git
 pytest
 pytest-django
 pytest-cov
+flake8
+flake8-django
+pylint
+pylint-django
