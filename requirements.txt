@@ -26,6 +26,3 @@ pytest
 pytest-django
 pytest-cov
 flake8
-flake8-django
-pylint
-pylint-django
