@@ -71,7 +71,7 @@ class UserChangePasswordView(FormView):
 
     def get_context_data(self, **kwargs):
 
-        # Context
+     # Context
         context = super().get_context_data(**kwargs)
         try:
             email = self.request.session['email']
@@ -80,5 +80,5 @@ class UserChangePasswordView(FormView):
         context['change_password_form'] = UserChangePasswordForm(
             initial={'email': email})
 
-        # Exit
+     # Exit
         return context
